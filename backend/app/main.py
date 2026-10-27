@@ -1,8 +1,10 @@
 import asyncio
 import logging
 from contextlib import asynccontextmanager
+from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
+from fastapi.responses import FileResponse
 
 from app.config import Settings, get_settings
 from app.countries import CountryIndex, load_countries
@@ -46,4 +48,21 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         return {"status": "ok"}
 
     app.include_router(router)
+    if settings.static_dir:
+        mount_frontend(app, Path(settings.static_dir))
     return app
+
+
+def mount_frontend(app: FastAPI, dist: Path) -> None:
+    root = dist.resolve()
+    index = root / "index.html"
+
+    @app.get("/{path:path}", include_in_schema=False)
+    async def frontend(path: str):
+        if path == "api" or path.startswith("api/"):
+            raise HTTPException(status_code=404)
+        file = (root / path).resolve()
+        if file.is_file() and file.is_relative_to(root):
+            return FileResponse(file)
+        # rutas de la web como /pais/afganistan: las resuelve React
+        return FileResponse(index)

@@ -15,6 +15,8 @@ class Settings(BaseSettings):
     deepl_api_key: str = ""
     news_interval_min: int = 45
     enable_scheduler: bool = True
+    # carpeta con la web compilada (frontend/dist); vacía en desarrollo, donde la sirve Vite
+    static_dir: str = ""
 
 
 @lru_cache
