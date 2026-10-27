@@ -11,6 +11,7 @@ from app.db import connect, init_db
 from app.http import get_client
 from app.news.job import run_news_cycle
 from app.routes import router
+from app.translate import DeepLTranslator
 
 logging.basicConfig(level=logging.INFO)
 
@@ -25,6 +26,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         app.state.db = connect(settings.db_path)
         init_db(app.state.db)
         app.state.http = get_client()
+        app.state.translator = DeepLTranslator(settings.deepl_api_key, app.state.http) if settings.deepl_api_key else None
         scheduler = None
         if settings.enable_scheduler:
             scheduler = AsyncIOScheduler()

@@ -4,7 +4,8 @@ from dataclasses import asdict
 from fastapi import APIRouter, HTTPException, Request
 
 from app.countries import Country
-from app.news.store import ArticleOut, heatmap, last_seen, recent_articles
+from app.news.store import heatmap, last_seen, recent_articles
+from app.translate import translate_titles
 
 # todos los endpoints son async: la conexión SQLite se usa solo desde el event loop
 router = APIRouter(prefix="/api")
@@ -41,5 +42,5 @@ async def get_news(request: Request, slug: str):
     country = get_country_or_404(request, slug)
     db = request.app.state.db
     articles, rng = recent_articles(db, country.iso3, time.time(), own_country=country.name_en)
-    out = [ArticleOut.untranslated(a) for a in articles]
+    out = await translate_titles(db, request.app.state.translator, articles)
     return {"range": rng, "articles": [asdict(a) for a in out], "updated_at": last_seen(db)}
