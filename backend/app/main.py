@@ -1,4 +1,5 @@
 import asyncio
+import json
 import logging
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -10,7 +11,7 @@ from app.config import Settings, get_settings
 from app.countries import CountryIndex, load_countries
 from app.db import connect, init_db
 from app.http import get_client
-from app.news.job import run_forever, run_news_cycle
+from app.news.job import ingest, run_forever
 from app.routes import router
 from app.translate import DeepLTranslator
 
@@ -30,9 +31,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         app.state.translator = DeepLTranslator(settings.deepl_api_key, app.state.http) if settings.deepl_api_key else None
         news_task = None
         if settings.enable_scheduler:
-            countries = list(app.state.countries.countries.values())
+            fips = json.loads(Path(settings.countries_path).with_name("fips.json").read_text(encoding="utf-8"))
             news_task = asyncio.create_task(run_forever(
-                lambda: run_news_cycle(app.state.db, app.state.http, countries),
+                lambda: ingest(app.state.db, app.state.http, fips),
                 settings.news_interval_min * 60,
             ))
         yield

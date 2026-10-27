@@ -1,7 +1,7 @@
 import time
 
 from app.news.gdelt import Article
-from app.news.store import save_articles
+from app.news.store import save_articles, save_counts
 
 
 def test_news_empty_country_returns_empty_list(client):
@@ -27,7 +27,7 @@ def test_news_unknown_country_404(client):
 
 def test_heatmap(client):
     now = time.time()
-    save_articles(client.app.state.db, "JPN", [Article("https://x/1", "t", "en", "x", "", now - 60)])
+    save_counts(client.app.state.db, now - 60, "en", {"JPN": 1})
     body = client.get("/api/heatmap").json()
     assert body["counts"] == {"JPN": 1}
     assert "updated_at" in body

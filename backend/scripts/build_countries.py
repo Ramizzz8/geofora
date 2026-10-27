@@ -17,12 +17,22 @@ GEO_URL = (
     "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/"
     "geojson/ne_110m_admin_0_countries.geojson"
 )
+FIPS_URL = "http://data.gdeltproject.org/api/v2/guides/LOOKUP-COUNTRIES.TXT"
 ROOT = Path(__file__).resolve().parents[2]
 COUNTRIES_OUT = ROOT / "backend" / "data" / "countries.json"
 GEO_OUT = ROOT / "frontend" / "public" / "data" / "countries.geojson"
+FIPS_OUT = ROOT / "backend" / "data" / "fips.json"
 
 # Natural Earth y REST Countries no siempre usan el mismo código
 ALIASES = {"KOS": "UNK"}
+
+# GDELT identifica los países con códigos FIPS 10-4 y nombres propios; estos no
+# coinciden por nombre con REST Countries (los islotes y zonas sin país se ignoran)
+FIPS_ALIASES = {
+    "BF": "BHS", "BK": "BIH", "CF": "COG", "CG": "COD", "EZ": "CZE", "FK": "FLK", "GZ": "PSE",
+    "IV": "CIV", "JN": "SJM", "MK": "MKD", "SH": "SHN", "SV": "SJM", "SX": "SGS", "TB": "BLM",
+    "TT": "TLS", "VM": "VNM", "VQ": "VIR", "WE": "PSE", "WZ": "SWZ",
+}
 
 
 def to_country(r: dict) -> Country:
@@ -61,10 +71,25 @@ def merge(rest: list[dict], geo: dict) -> tuple[list[Country], dict]:
     return list(countries.values()), {"type": "FeatureCollection", "features": features}
 
 
+def build_fips(lookup: str, countries: list[Country]) -> dict[str, str]:
+    by_name = {slugify(c.name_en): c.iso3 for c in countries}
+    known = {c.iso3 for c in countries}
+    out = {}
+    for line in lookup.splitlines():
+        if "	" not in line:
+            continue
+        code, name = line.split("	", 1)
+        iso3 = FIPS_ALIASES.get(code) or by_name.get(slugify(name))
+        if iso3 in known:
+            out[code] = iso3
+    return out
+
+
 def main() -> None:
     with httpx.Client(timeout=60, follow_redirects=True) as client:
         rest = client.get(REST_URL).raise_for_status().json()
         geo = client.get(GEO_URL).raise_for_status().json()
+        lookup = client.get(FIPS_URL).raise_for_status().text
     countries, geo_out = merge(rest, geo)
     COUNTRIES_OUT.parent.mkdir(parents=True, exist_ok=True)
     GEO_OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -73,7 +98,9 @@ def main() -> None:
         encoding="utf-8",
     )
     GEO_OUT.write_text(json.dumps(geo_out, ensure_ascii=False), encoding="utf-8")
-    print(f"{len(countries)} países, {len(geo_out['features'])} features")
+    fips = build_fips(lookup, countries)
+    FIPS_OUT.write_text(json.dumps(fips, indent=1, sort_keys=True), encoding="utf-8")
+    print(f"{len(countries)} países, {len(geo_out['features'])} features, {len(fips)} códigos FIPS")
 
 
 if __name__ == "__main__":

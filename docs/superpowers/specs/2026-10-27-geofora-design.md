@@ -59,7 +59,16 @@ Un globo terráqueo interactivo en la web donde, al hacer click en cualquier pa�
 
 **Por qué:** las plataformas solo tienen rankings fiables de ~60–80 países. Sin respaldo, países como Afganistán saldrían vacíos, que es justo el anti-objetivo nº 1.
 
-### Noticias: matiz importante
+### Cambio tras el despliegue (2026-10-27): archivos GKG en lugar de la API
+La API DOC de GDELT bloqueó al VPS (429 y conexiones sin respuesta) incluso con 5 s entre peticiones. Decidido con Andrés: las noticias se obtienen de los **archivos GKG que GDELT publica cada 15 min** (uno en inglés y otro traducido de ~65 idiomas, con ~1 h de retraso).
+- Cada archivo se descarga y se lee **en memoria**; nunca se escribe en disco. *Por qué:* Andrés pidió no acumular información innecesaria.
+- Una noticia se asigna a los países que más lugares menciona (como mucho 3, y solo los que tienen al menos la mitad de menciones que el principal). Esa cuenta es su **relevancia**: el panel ordena por relevancia y después por fecha.
+- De cada tanda se guardan solo las 5 noticias más relevantes por país; el mapa de calor usa recuentos aparte, por lo que cuenta todas.
+- Los titulares repetidos desde otras URL se muestran una vez.
+- 4 descargas por hora en total en lugar de cientos de peticiones; la primera vez se recuperan las últimas 2 h.
+- Se pierde la prioridad a medios del propio país (el GKG no indica el país del medio).
+
+### Noticias: matiz importante (planteamiento original con la API)
 GDELT permite filtrar por **país de la fuente** (`sourcecountry:`) y por **menciones** del país. No es lo mismo "noticias publicadas en Afganistán" que "noticias sobre Afganistán". Para la v1, la consulta combinará ambas (noticias sobre el país, con prioridad a medios del propio país) y se descartarán duplicados por URL/título. El constructor debe validar la calidad con varios países reales (uno grande, uno pequeño, uno en conflicto) antes de dar el criterio por cerrado.
 
 ### Noticias: en cualquier idioma, con traducción — decidido por Andrés

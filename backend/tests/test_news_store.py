@@ -2,7 +2,7 @@ import pytest
 
 from app.db import connect, init_db
 from app.news.gdelt import Article
-from app.news.store import heatmap, prune, recent_articles, save_articles
+from app.news.store import heatmap, prune, recent_articles, save_articles, save_counts
 
 NOW = 1_800_000_000.0
 H = 3600
@@ -33,9 +33,10 @@ def test_keeps_48h_when_enough(conn):
     assert len(arts) == 6
 
 
-def test_caps_at_20_and_own_country_first(conn):
-    save_articles(conn, "AFG", [art(i, 1 + i * 0.1) for i in range(30)] + [art(999, 40, country="Afghanistan")])
-    arts, _ = recent_articles(conn, "AFG", NOW, own_country="Afghanistan")
+def test_caps_at_20_and_most_relevant_first(conn):
+    from dataclasses import replace
+    save_articles(conn, "AFG", [art(i, 1 + i * 0.1) for i in range(30)] + [replace(art(999, 40), score=5)])
+    arts, _ = recent_articles(conn, "AFG", NOW)
     assert len(arts) == 20
     assert arts[0].url == "https://x/999"
     assert arts[1].url == "https://x/0"
@@ -47,10 +48,11 @@ def test_upsert_by_url(conn):
     assert len(recent_articles(conn, "AFG", NOW)[0]) == 1
 
 
-def test_heatmap_counts_last_24h(conn):
-    save_articles(conn, "AFG", [art(1, 2), art(2, 30)])
-    save_articles(conn, "JPN", [art(3, 5), art(4, 6)])
-    assert heatmap(conn, NOW) == {"AFG": 1, "JPN": 2}
+def test_heatmap_sums_counts_of_last_24h(conn):
+    save_counts(conn, NOW - 2 * H, "en", {"AFG": 3, "JPN": 1})
+    save_counts(conn, NOW - 2 * H, "tr", {"JPN": 4})
+    save_counts(conn, NOW - 30 * H, "en", {"AFG": 9})
+    assert heatmap(conn, NOW) == {"AFG": 3, "JPN": 5}
 
 
 def test_prune_removes_old(conn):
@@ -59,8 +61,18 @@ def test_prune_removes_old(conn):
     assert [a.url for a in recent_articles(conn, "AFG", NOW + 0)[0]] == ["https://x/1"]
 
 
-def test_same_url_counts_for_each_country(conn):
+def test_same_url_stored_for_each_country(conn):
     a = art(1, 1)
     save_articles(conn, "FRA", [a])
     save_articles(conn, "DEU", [a])
-    assert heatmap(conn, NOW) == {"FRA": 1, "DEU": 1}
+    assert len(recent_articles(conn, "FRA", NOW)[0]) == 1
+    assert len(recent_articles(conn, "DEU", NOW)[0]) == 1
+
+
+def test_same_title_from_different_urls_shown_once(conn):
+    from dataclasses import replace
+    a = art(1, 1)
+    save_articles(conn, "AFG", [a, replace(a, url="https://mirror/1", title="Titular  1")] + [art(i, 2) for i in range(2, 8)])
+    arts, _ = recent_articles(conn, "AFG", NOW)
+    assert [x.url for x in arts].count("https://mirror/1") + [x.url for x in arts].count("https://x/1") == 1
+    assert len(arts) == 7

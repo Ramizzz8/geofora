@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     countries_path: str = str(DATA_DIR / "countries.json")
     lastfm_api_key: str = ""
     deepl_api_key: str = ""
-    news_interval_min: int = 45
+    news_interval_min: int = 15  # GDELT publica una tanda cada 15 min
     enable_scheduler: bool = True
     # carpeta con la web compilada (frontend/dist); vacía en desarrollo, donde la sirve Vite
     static_dir: str = ""

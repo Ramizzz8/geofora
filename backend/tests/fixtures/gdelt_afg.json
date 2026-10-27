@@ -1,7 +1,0 @@
-{"articles": [
- {"url": "https://tolonews.com/a1", "url_mobile": "", "title": "Kabul hosts regional trade meeting", "seendate": "20261027T081500Z", "socialimage": "", "domain": "tolonews.com", "language": "English", "sourcecountry": "Afghanistan"},
- {"url": "https://aljazeera.net/a2", "url_mobile": "", "title": "أفغانستان تعلن خطة جديدة للمياه", "seendate": "20261027T070000Z", "socialimage": "", "domain": "aljazeera.net", "language": "Arabic", "sourcecountry": "Qatar"},
- {"url": "https://elpais.com/a3", "url_mobile": "", "title": "Afganistán afronta una sequía histórica", "seendate": "20261026T200000Z", "socialimage": "", "domain": "elpais.com", "language": "Spanish", "sourcecountry": "Spain"},
- {"url": "https://mirror.example/a1-copy", "url_mobile": "", "title": "Kabul  hosts regional trade meeting", "seendate": "20261027T090000Z", "socialimage": "", "domain": "mirror.example", "language": "English", "sourcecountry": "United States"},
- {"url": "https://tolonews.com/a1", "url_mobile": "", "title": "Kabul hosts regional trade meeting (updated)", "seendate": "20261027T100000Z", "socialimage": "", "domain": "tolonews.com", "language": "English", "sourcecountry": "Afghanistan"}
-]}

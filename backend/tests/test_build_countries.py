@@ -61,3 +61,13 @@ def test_merge_keeps_feature_without_rest_data():
     props = [f["properties"] for f in geo["features"]]
     assert {"iso3": "SOL", "name_es": "Somaliland", "slug": "somaliland"} in props
     assert "SOL" not in {c.iso3 for c in countries}
+
+
+def test_fips_map_by_name_and_alias():
+    from scripts.build_countries import build_fips
+    countries, _ = merge(REST, GEO)
+    lookup = "AF\tAfghanistan\r\nKV\tKosovo\r\nCF\tCongo\r\nOS\tOceans\r\n"
+    rest_cog = REST + [{**REST[0], "cca3": "COG", "name": {"common": "Republic of the Congo"},
+                        "translations": {"spa": {"common": "Congo"}}}]
+    countries, _ = merge(rest_cog, GEO)
+    assert build_fips(lookup, countries) == {"AF": "AFG", "KV": "UNK", "CF": "COG"}

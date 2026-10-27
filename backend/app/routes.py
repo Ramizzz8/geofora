@@ -46,7 +46,7 @@ async def get_heatmap(request: Request):
 async def get_news(request: Request, slug: str):
     country = get_country_or_404(request, slug)
     db = request.app.state.db
-    articles, rng = recent_articles(db, country.iso3, time.time(), own_country=country.name_en)
+    articles, rng = recent_articles(db, country.iso3, time.time())
     out = await translate_titles(db, request.app.state.translator, articles)
     return {"range": rng, "articles": [asdict(a) for a in out], "updated_at": last_seen(db)}
 
