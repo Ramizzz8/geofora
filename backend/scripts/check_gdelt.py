@@ -1,5 +1,7 @@
 """Comprobación manual de la calidad de GDELT con países reales (Tarea 4, paso 5)."""
 import asyncio
+
+import httpx
 from datetime import datetime
 
 from app.config import Settings
@@ -18,8 +20,8 @@ async def main(codes=("AFG", "LUX", "SDN")) -> None:
                 try:
                     arts = await fetch_country_news(client, countries[code])
                     break
-                except ValueError:
-                    await asyncio.sleep(15)
+                except (ValueError, httpx.HTTPError):
+                    await asyncio.sleep(30)
             else:
                 print(f"== {code}: sin respuesta (límite de GDELT)")
                 continue
