@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import GlobeGL from 'react-globe.gl'
-import { MeshPhongMaterial } from 'three'
 import { getHeatmap } from '../api'
 import { center } from '../geo'
 import { heatColor } from '../heatColor'
@@ -17,10 +16,12 @@ function useWindowSize() {
   return size
 }
 
-const PANEL_SPACE = 470 // ancho del panel lateral + margen
+const PANEL_SPACE = 570 // ancho del panel lateral + margen
 const MOBILE_LAT_SHIFT = 22
 
-export default function Globe({ onSelect, selectedIso3, panelOpen = false }) {
+const VIEW_THROTTLE_MS = 150
+
+export default function Globe({ onSelect, selectedIso3, panelOpen = false, onViewChange }) {
   const globeRef = useRef()
   const { w, h } = useWindowSize()
   // en escritorio el globo se aparta para no quedar tapado por el panel
@@ -28,7 +29,7 @@ export default function Globe({ onSelect, selectedIso3, panelOpen = false }) {
   const [features, setFeatures] = useState([])
   const [counts, setCounts] = useState({})
   const [hovered, setHovered] = useState(null)
-  const material = useMemo(() => new MeshPhongMaterial({ color: '#0b1730', shininess: 8 }), [])
+  const lastView = useRef(0)
 
   useEffect(() => {
     fetch('/data/countries.geojson').then((r) => r.json()).then((g) => setFeatures(g.features))
@@ -70,17 +71,25 @@ export default function Globe({ onSelect, selectedIso3, panelOpen = false }) {
       width={width}
       height={h}
       backgroundColor="rgba(0,0,0,0)"
-      globeMaterial={material}
+      // NASA Blue Marble (julio de 2004): color real, dominio público
+      globeImageUrl="/textures/earth-blue-marble.jpg"
       showAtmosphere
       atmosphereColor="#5b8cff"
       atmosphereAltitude={0.18}
       polygonsData={features}
       polygonCapColor={(f) =>
-        f.properties.iso3 === selectedIso3 ? '#7cc4ff'
-          : f === hovered ? '#a9d6ff'
+        f.properties.iso3 === selectedIso3 ? 'rgba(124, 196, 255, 0.45)'
+          : f === hovered ? 'rgba(169, 214, 255, 0.3)'
             : heatColor(counts[f.properties.iso3] ?? 0, max)}
-      polygonSideColor={() => 'rgba(20, 40, 80, 0.6)'}
-      polygonStrokeColor={() => 'rgba(150, 190, 255, 0.35)'}
+      polygonSideColor={() => 'rgba(124, 196, 255, 0.15)'}
+      polygonStrokeColor={() => 'rgba(255, 255, 255, 0.28)'}
+      onZoom={(pov) => {
+        const now = Date.now()
+        if (onViewChange && now - lastView.current > VIEW_THROTTLE_MS) {
+          lastView.current = now
+          onViewChange(pov)
+        }
+      }}
       polygonAltitude={(f) => (f === hovered || f.properties.iso3 === selectedIso3 ? 0.03 : 0.008)}
       polygonsTransitionDuration={250}
       polygonLabel={(f) => {

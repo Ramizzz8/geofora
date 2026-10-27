@@ -40,3 +40,25 @@ test('un fallo en música no impide ver las noticias', async () => {
   expect(await screen.findByText('Música no disponible ahora mismo')).toBeInTheDocument()
   expect(await screen.findByText('Japón es un país insular')).toBeInTheDocument()
 })
+
+const PHOTOS = { stale: false, fetched_at: 1, photos: [
+  { thumb: 'https://thumb/fuji.jpg', page: 'https://commons/fuji', author: 'Ana', license: 'CC BY-SA 4.0' },
+  { thumb: 'https://thumb/kyoto.jpg', page: 'https://commons/kyoto', author: 'Luis', license: 'CC0' },
+] }
+
+test('la primera foto es el fondo de la cabecera y todas salen en la galería con su autor', async () => {
+  mockApi({ ...ok, '/api/country/japon/photos': PHOTOS })
+  const { container } = render(<CountryPanel slug="japon" onClose={() => {}} />)
+  await screen.findByText(/Ana · CC BY-SA 4.0/)
+  expect(container.querySelector('.country-cover img')).toHaveAttribute('src', 'https://thumb/fuji.jpg')
+  expect(container.querySelectorAll('.gallery img')).toHaveLength(2)
+  expect(screen.getByText(/Luis · CC0/)).toBeInTheDocument()
+})
+
+test('sin fotos no hay galería ni portada y la ficha sigue', async () => {
+  mockApi({ ...ok, '/api/country/japon/photos': { ...PHOTOS, photos: [] } })
+  const { container } = render(<CountryPanel slug="japon" onClose={() => {}} />)
+  await screen.findByRole('heading', { name: 'Japón' })
+  expect(container.querySelector('.country-cover img')).toBeNull()
+  expect(container.querySelector('.gallery')).toBeNull()
+})

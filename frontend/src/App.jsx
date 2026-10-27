@@ -3,11 +3,14 @@ import { useNavigate, useParams, Routes, Route } from 'react-router-dom'
 import CountryPanel from './components/CountryPanel'
 import Globe from './components/Globe'
 import SearchBox from './components/SearchBox'
+import Brand from './components/Brand'
+import Starfield from './components/Starfield'
 
 function Home() {
   const { slug } = useParams()
   const navigate = useNavigate()
   const [features, setFeatures] = useState([])
+  const [view, setView] = useState(null)
 
   useEffect(() => {
     fetch('/data/countries.geojson').then((r) => r.json()).then((g) => setFeatures(g.features))
@@ -18,12 +21,10 @@ function Home() {
 
   return (
     <div className="app">
-      <header className="brand">
-        <h1>GEOFORA</h1>
-        <p>El mundo, país a país</p>
-      </header>
+      <Starfield />
+      <Brand view={view} />
       <SearchBox onSelect={goTo} />
-      <Globe onSelect={goTo} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug)} />
+      <Globe onSelect={goTo} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug)} onViewChange={setView} />
       {slug && (
         <CountryPanel
           key={slug}

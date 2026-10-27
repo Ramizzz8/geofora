@@ -1,6 +1,6 @@
 import { localTime } from '../format'
 
-export default function CountryHeader({ country }) {
+export default function CountryHeader({ country, cover }) {
   const facts = [
     ['Capital', country.capital],
     ['Idiomas', country.languages.join(', ')],
@@ -11,6 +11,9 @@ export default function CountryHeader({ country }) {
 
   return (
     <header className="country-header">
+      <div className="country-cover">
+        {cover && <img src={cover.thumb} alt="" />}
+      </div>
       <div className="title-row">
         {country.flag_svg && <img className="flag" src={country.flag_svg} alt={`Bandera de ${country.name_es}`} />}
         <h2>{country.name_es}</h2>
