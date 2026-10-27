@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate, useParams, Routes, Route } from 'react-router-dom'
 import CountryPanel from './components/CountryPanel'
 import Globe from './components/Globe'
+import SearchBox from './components/SearchBox'
 
 function Home() {
   const { slug } = useParams()
@@ -13,6 +14,7 @@ function Home() {
   }, [])
 
   const selected = features.find((f) => f.properties.slug === slug)
+  const goTo = (s) => navigate(`/pais/${s}`)
 
   return (
     <div className="app">
@@ -20,14 +22,17 @@ function Home() {
         <h1>GEOFORA</h1>
         <p>El mundo, país a país</p>
       </header>
-      <Globe onSelect={(s) => navigate(`/pais/${s}`)} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug)} />
+      <SearchBox onSelect={goTo} />
+      <Globe onSelect={goTo} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug)} />
       {slug && (
         <CountryPanel
           key={slug}
           slug={slug}
           fallbackName={selected?.properties.name_es}
           onClose={() => navigate('/')}
-        />
+        >
+          <SearchBox onSelect={goTo} />
+        </CountryPanel>
       )}
     </div>
   )
