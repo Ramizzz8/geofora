@@ -1,6 +1,6 @@
 import httpx
 
-USER_AGENT = "GEOFORA/1.0 (ajulianrague@gmail.com)"
+USER_AGENT = "GEOFORA/1.0 (https://geofora.andresrami.com)"
 
 
 def get_client() -> httpx.AsyncClient:
