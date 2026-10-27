@@ -9,9 +9,10 @@ from app.news.gkg import fetch_gkg, file_url, parse_gkg, slot_floor
 FIPS = {"AF": "AFG", "PK": "PAK", "US": "USA", "JA": "JPN", "SP": "ESP"}
 
 
-def row(url, title, locations, date="20261027161500", domain="x.com", lang=""):
+def row(url, title, locations, date="20261027161500", domain="x.com", lang="", image=""):
     fields = [""] * 27
     fields[1], fields[3], fields[4], fields[9], fields[25] = date, domain, url, locations, lang
+    fields[18] = image
     fields[26] = f"<PAGE_LINKS>a</PAGE_LINKS><PAGE_TITLE>{title}</PAGE_TITLE>"
     return "\t".join(fields)
 
@@ -102,3 +103,14 @@ async def test_fetch_gkg_unzips_in_memory_and_404_is_none():
     async with httpx.AsyncClient() as client:
         assert await fetch_gkg(client, "http://data.gdeltproject.org/gdeltv2/ok.zip") == "hola"
         assert await fetch_gkg(client, "http://data.gdeltproject.org/gdeltv2/missing.zip") is None
+
+
+def test_share_image_only_https():
+    text = "\n".join([
+        row("https://a/1", "con foto", AF, image="https://img.x/1.jpg"),
+        row("https://a/2", "foto http", AF, image="http://img.x/2.jpg"),
+        row("https://a/3", "sin foto", AF),
+    ])
+    arts, _ = parse_gkg(text, FIPS)
+    assert {a.url: a.image for a in arts["AFG"]} == {
+        "https://a/1": "https://img.x/1.jpg", "https://a/2": None, "https://a/3": None}

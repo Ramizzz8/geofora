@@ -16,17 +16,18 @@ class ArticleOut:
     translated: bool
     domain: str
     seen_at: float
+    image: str | None = None
 
     @classmethod
     def untranslated(cls, a: Article) -> "ArticleOut":
-        return cls(a.url, a.title, a.title, a.language, False, a.domain, a.seen_at)
+        return cls(a.url, a.title, a.title, a.language, False, a.domain, a.seen_at, a.image)
 
 
 def save_articles(conn: sqlite3.Connection, iso3: str, articles: list[Article]) -> None:
     conn.executemany(
-        "INSERT OR REPLACE INTO articles (url, iso3, title, language, domain, source_country, seen_at, score)"
-        " VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-        [(a.url, iso3, a.title, a.language, a.domain, a.source_country, a.seen_at, a.score) for a in articles],
+        "INSERT OR REPLACE INTO articles (url, iso3, title, language, domain, source_country, seen_at, score, image)"
+        " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        [(a.url, iso3, a.title, a.language, a.domain, a.source_country, a.seen_at, a.score, a.image) for a in articles],
     )
     conn.commit()
 
@@ -47,7 +48,7 @@ def prune(conn: sqlite3.Connection, older_than: float) -> None:
 
 def _query(conn, iso3: str, since: float) -> list[Article]:
     rows = conn.execute(
-        "SELECT url, title, language, domain, source_country, seen_at, score FROM articles"
+        "SELECT url, title, language, domain, source_country, seen_at, score, image FROM articles"
         " WHERE iso3 = ? AND seen_at >= ?"
         " ORDER BY score DESC, seen_at DESC LIMIT ?",
         (iso3, since, MAX_ARTICLES * 3),

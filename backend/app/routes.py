@@ -7,6 +7,7 @@ from fastapi import APIRouter, HTTPException, Request
 from app.countries import Country
 from app.culture import get_culture
 from app.music import get_music
+from app.photos import get_photos
 from app.news.store import heatmap, last_seen, recent_articles
 from app.translate import translate_titles
 
@@ -76,4 +77,16 @@ async def get_country_culture(request: Request, slug: str):
     except Exception:
         log.warning("culture unavailable for %s", country.iso3, exc_info=True)
         raise unavailable("Cultura")
+    return result.to_response()
+
+
+@router.get("/country/{slug}/photos")
+async def get_country_photos(request: Request, slug: str):
+    country = get_country_or_404(request, slug)
+    state = request.app.state
+    try:
+        result = await get_photos(state.db, state.http, country)
+    except Exception:
+        log.warning("photos unavailable for %s", country.iso3, exc_info=True)
+        raise unavailable("Fotos")
     return result.to_response()

@@ -9,4 +9,5 @@ class Article:
     domain: str
     source_country: str
     seen_at: float
+    image: str | None = None  # foto principal de la noticia (solo https)
     score: int = 0  # lugares del país que menciona la noticia: más alto = más relevante

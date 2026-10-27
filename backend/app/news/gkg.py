@@ -96,6 +96,8 @@ def parse_gkg(
             domain=f[3],
             source_country="",
             seen_at=seen_at,
+            # las fotos por http las bloquearía el navegador en una web https
+            image=f[18] if f[18].startswith("https://") else None,
         )
         for iso3, score in countries:
             counts[iso3] += 1

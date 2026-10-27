@@ -31,3 +31,10 @@ def test_heatmap(client):
     body = client.get("/api/heatmap").json()
     assert body["counts"] == {"JPN": 1}
     assert "updated_at" in body
+
+
+def test_news_includes_image(client):
+    now = time.time()
+    save_articles(client.app.state.db, "JPN", [Article("https://x/9", "Foto", "en", "x.com", "", now - 60, image="https://img/9.jpg")])
+    a = client.get("/api/country/japon/news").json()["articles"][0]
+    assert a["image"] == "https://img/9.jpg"
