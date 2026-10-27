@@ -1,0 +1,5021 @@
+[
+ {
+  "iso3": "ABW",
+  "iso2": "AW",
+  "slug": "aruba",
+  "name_es": "Aruba",
+  "name_en": "Aruba",
+  "capital": "Oranjestad",
+  "languages": [
+   "Dutch",
+   "Papiamento"
+  ],
+  "currencies": [
+   "AWG"
+  ],
+  "population": 107566,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/aw.svg"
+ },
+ {
+  "iso3": "AFG",
+  "iso2": "AF",
+  "slug": "afganistan",
+  "name_es": "Afganistán",
+  "name_en": "Afghanistan",
+  "capital": "Kabul",
+  "languages": [
+   "Dari",
+   "Pashto",
+   "Turkmen"
+  ],
+  "currencies": [
+   "AFN"
+  ],
+  "population": 43844000,
+  "timezones": [
+   "UTC+04:30"
+  ],
+  "flag_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg"
+ },
+ {
+  "iso3": "AGO",
+  "iso2": "AO",
+  "slug": "angola",
+  "name_es": "Angola",
+  "name_en": "Angola",
+  "capital": "Luanda",
+  "languages": [
+   "Portuguese"
+  ],
+  "currencies": [
+   "AOA"
+  ],
+  "population": 36170961,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ao.svg"
+ },
+ {
+  "iso3": "AIA",
+  "iso2": "AI",
+  "slug": "anguilla",
+  "name_es": "Anguilla",
+  "name_en": "Anguilla",
+  "capital": "The Valley",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "XCD"
+  ],
+  "population": 16010,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ai.svg"
+ },
+ {
+  "iso3": "ALA",
+  "iso2": "AX",
+  "slug": "alandia",
+  "name_es": "Alandia",
+  "name_en": "Åland Islands",
+  "capital": "Mariehamn",
+  "languages": [
+   "Swedish"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 30654,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ax.svg"
+ },
+ {
+  "iso3": "ALB",
+  "iso2": "AL",
+  "slug": "albania",
+  "name_es": "Albania",
+  "name_en": "Albania",
+  "capital": "Tirana",
+  "languages": [
+   "Albanian"
+  ],
+  "currencies": [
+   "ALL"
+  ],
+  "population": 2363314,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/al.svg"
+ },
+ {
+  "iso3": "AND",
+  "iso2": "AD",
+  "slug": "andorra",
+  "name_es": "Andorra",
+  "name_en": "Andorra",
+  "capital": "Andorra la Vella",
+  "languages": [
+   "Catalan"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 88406,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ad.svg"
+ },
+ {
+  "iso3": "ARE",
+  "iso2": "AE",
+  "slug": "emiratos-arabes-unidos",
+  "name_es": "Emiratos Árabes Unidos",
+  "name_en": "United Arab Emirates",
+  "capital": "Abu Dhabi",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "AED"
+  ],
+  "population": 11294243,
+  "timezones": [
+   "UTC+04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ae.svg"
+ },
+ {
+  "iso3": "ARG",
+  "iso2": "AR",
+  "slug": "argentina",
+  "name_es": "Argentina",
+  "name_en": "Argentina",
+  "capital": "Buenos Aires",
+  "languages": [
+   "Guaraní",
+   "Spanish"
+  ],
+  "currencies": [
+   "ARS"
+  ],
+  "population": 46735004,
+  "timezones": [
+   "UTC-03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ar.svg"
+ },
+ {
+  "iso3": "ARM",
+  "iso2": "AM",
+  "slug": "armenia",
+  "name_es": "Armenia",
+  "name_en": "Armenia",
+  "capital": "Yerevan",
+  "languages": [
+   "Armenian"
+  ],
+  "currencies": [
+   "AMD"
+  ],
+  "population": 3076200,
+  "timezones": [
+   "UTC+04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/am.svg"
+ },
+ {
+  "iso3": "ASM",
+  "iso2": "AS",
+  "slug": "samoa-americana",
+  "name_es": "Samoa Americana",
+  "name_en": "American Samoa",
+  "capital": "Pago Pago",
+  "languages": [
+   "English",
+   "Samoan"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 49710,
+  "timezones": [
+   "UTC-11:00"
+  ],
+  "flag_svg": "https://flagcdn.com/as.svg"
+ },
+ {
+  "iso3": "ATA",
+  "iso2": "AQ",
+  "slug": "antartida",
+  "name_es": "Antártida",
+  "name_en": "Antarctica",
+  "capital": null,
+  "languages": [],
+  "currencies": [],
+  "population": 1300,
+  "timezones": [
+   "UTC-03:00",
+   "UTC+03:00",
+   "UTC+05:00",
+   "UTC+06:00",
+   "UTC+07:00",
+   "UTC+08:00",
+   "UTC+10:00",
+   "UTC+12:00"
+  ],
+  "flag_svg": "https://flagcdn.com/aq.svg"
+ },
+ {
+  "iso3": "ATF",
+  "iso2": "TF",
+  "slug": "tierras-australes-y-antarticas-francesas",
+  "name_es": "Tierras Australes y Antárticas Francesas",
+  "name_en": "French Southern and Antarctic Lands",
+  "capital": "Port-aux-Français",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 400,
+  "timezones": [
+   "UTC+05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/tf.svg"
+ },
+ {
+  "iso3": "ATG",
+  "iso2": "AG",
+  "slug": "antigua-y-barbuda",
+  "name_es": "Antigua y Barbuda",
+  "name_en": "Antigua and Barbuda",
+  "capital": "Saint John's",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "XCD"
+  ],
+  "population": 103603,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ag.svg"
+ },
+ {
+  "iso3": "AUS",
+  "iso2": "AU",
+  "slug": "australia",
+  "name_es": "Australia",
+  "name_en": "Australia",
+  "capital": "Canberra",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "AUD"
+  ],
+  "population": 27536874,
+  "timezones": [
+   "UTC+05:00",
+   "UTC+06:30",
+   "UTC+07:00",
+   "UTC+08:00",
+   "UTC+09:30",
+   "UTC+10:00",
+   "UTC+10:30",
+   "UTC+11:30"
+  ],
+  "flag_svg": "https://flagcdn.com/au.svg"
+ },
+ {
+  "iso3": "AUT",
+  "iso2": "AT",
+  "slug": "austria",
+  "name_es": "Austria",
+  "name_en": "Austria",
+  "capital": "Vienna",
+  "languages": [
+   "German"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 9200931,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/at.svg"
+ },
+ {
+  "iso3": "AZE",
+  "iso2": "AZ",
+  "slug": "azerbaiyan",
+  "name_es": "Azerbaiyán",
+  "name_en": "Azerbaijan",
+  "capital": "Baku",
+  "languages": [
+   "Azerbaijani"
+  ],
+  "currencies": [
+   "AZN"
+  ],
+  "population": 10241722,
+  "timezones": [
+   "UTC+04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/az.svg"
+ },
+ {
+  "iso3": "BDI",
+  "iso2": "BI",
+  "slug": "burundi",
+  "name_es": "Burundi",
+  "name_en": "Burundi",
+  "capital": "Gitega",
+  "languages": [
+   "French",
+   "Kirundi"
+  ],
+  "currencies": [
+   "BIF"
+  ],
+  "population": 12332788,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bi.svg"
+ },
+ {
+  "iso3": "BEL",
+  "iso2": "BE",
+  "slug": "belgica",
+  "name_es": "Bélgica",
+  "name_en": "Belgium",
+  "capital": "Brussels",
+  "languages": [
+   "German",
+   "French",
+   "Dutch"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 11825551,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/be.svg"
+ },
+ {
+  "iso3": "BEN",
+  "iso2": "BJ",
+  "slug": "benin",
+  "name_es": "Benín",
+  "name_en": "Benin",
+  "capital": "Porto-Novo",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "XOF"
+  ],
+  "population": 13224860,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bj.svg"
+ },
+ {
+  "iso3": "BES",
+  "iso2": "BQ",
+  "slug": "caribe-neerlandes",
+  "name_es": "Caribe Neerlandés",
+  "name_en": "Caribbean Netherlands",
+  "capital": "Kralendijk",
+  "languages": [
+   "English",
+   "Dutch",
+   "Papiamento"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 31980,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bq.svg"
+ },
+ {
+  "iso3": "BFA",
+  "iso2": "BF",
+  "slug": "burkina-faso",
+  "name_es": "Burkina Faso",
+  "name_en": "Burkina Faso",
+  "capital": "Ouagadougou",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "XOF"
+  ],
+  "population": 24070553,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/bf.svg"
+ },
+ {
+  "iso3": "BGD",
+  "iso2": "BD",
+  "slug": "bangladesh",
+  "name_es": "Bangladesh",
+  "name_en": "Bangladesh",
+  "capital": "Dhaka",
+  "languages": [
+   "Bengali"
+  ],
+  "currencies": [
+   "BDT"
+  ],
+  "population": 169828911,
+  "timezones": [
+   "UTC+06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bd.svg"
+ },
+ {
+  "iso3": "BGR",
+  "iso2": "BG",
+  "slug": "bulgaria",
+  "name_es": "Bulgaria",
+  "name_en": "Bulgaria",
+  "capital": "Sofia",
+  "languages": [
+   "Bulgarian"
+  ],
+  "currencies": [
+   "BGN"
+  ],
+  "population": 6437360,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bg.svg"
+ },
+ {
+  "iso3": "BHR",
+  "iso2": "BH",
+  "slug": "bahrein",
+  "name_es": "Bahrein",
+  "name_en": "Bahrain",
+  "capital": "Manama",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "BHD"
+  ],
+  "population": 1594654,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bh.svg"
+ },
+ {
+  "iso3": "BHS",
+  "iso2": "BS",
+  "slug": "bahamas",
+  "name_es": "Bahamas",
+  "name_en": "Bahamas",
+  "capital": "Nassau",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "BSD",
+   "USD"
+  ],
+  "population": 398165,
+  "timezones": [
+   "UTC-05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bs.svg"
+ },
+ {
+  "iso3": "BIH",
+  "iso2": "BA",
+  "slug": "bosnia-y-herzegovina",
+  "name_es": "Bosnia y Herzegovina",
+  "name_en": "Bosnia and Herzegovina",
+  "capital": "Sarajevo",
+  "languages": [
+   "Bosnian",
+   "Croatian",
+   "Serbian"
+  ],
+  "currencies": [
+   "BAM"
+  ],
+  "population": 3422000,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ba.svg"
+ },
+ {
+  "iso3": "BLM",
+  "iso2": "BL",
+  "slug": "san-bartolome",
+  "name_es": "San Bartolomé",
+  "name_en": "Saint Barthélemy",
+  "capital": "Gustavia",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 10562,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bl.svg"
+ },
+ {
+  "iso3": "BLR",
+  "iso2": "BY",
+  "slug": "bielorrusia",
+  "name_es": "Bielorrusia",
+  "name_en": "Belarus",
+  "capital": "Minsk",
+  "languages": [
+   "Belarusian",
+   "Russian"
+  ],
+  "currencies": [
+   "BYN"
+  ],
+  "population": 9109280,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/by.svg"
+ },
+ {
+  "iso3": "BLZ",
+  "iso2": "BZ",
+  "slug": "belice",
+  "name_es": "Belice",
+  "name_en": "Belize",
+  "capital": "Belmopan",
+  "languages": [
+   "Belizean Creole",
+   "English",
+   "Spanish"
+  ],
+  "currencies": [
+   "BZD"
+  ],
+  "population": 417634,
+  "timezones": [
+   "UTC-06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bz.svg"
+ },
+ {
+  "iso3": "BMU",
+  "iso2": "BM",
+  "slug": "bermudas",
+  "name_es": "Bermudas",
+  "name_en": "Bermuda",
+  "capital": "Hamilton",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "BMD"
+  ],
+  "population": 64055,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bm.svg"
+ },
+ {
+  "iso3": "BOL",
+  "iso2": "BO",
+  "slug": "bolivia",
+  "name_es": "Bolivia",
+  "name_en": "Bolivia",
+  "capital": "Sucre",
+  "languages": [
+   "Aymara",
+   "Guaraní",
+   "Quechua",
+   "Spanish"
+  ],
+  "currencies": [
+   "BOB"
+  ],
+  "population": 11365333,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bo.svg"
+ },
+ {
+  "iso3": "BRA",
+  "iso2": "BR",
+  "slug": "brasil",
+  "name_es": "Brasil",
+  "name_en": "Brazil",
+  "capital": "Brasília",
+  "languages": [
+   "Portuguese"
+  ],
+  "currencies": [
+   "BRL"
+  ],
+  "population": 213421037,
+  "timezones": [
+   "UTC-05:00",
+   "UTC-04:00",
+   "UTC-03:00",
+   "UTC-02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/br.svg"
+ },
+ {
+  "iso3": "BRB",
+  "iso2": "BB",
+  "slug": "barbados",
+  "name_es": "Barbados",
+  "name_en": "Barbados",
+  "capital": "Bridgetown",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "BBD"
+  ],
+  "population": 267800,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bb.svg"
+ },
+ {
+  "iso3": "BRN",
+  "iso2": "BN",
+  "slug": "brunei",
+  "name_es": "Brunei",
+  "name_en": "Brunei",
+  "capital": "Bandar Seri Begawan",
+  "languages": [
+   "Malay"
+  ],
+  "currencies": [
+   "BND",
+   "SGD"
+  ],
+  "population": 455500,
+  "timezones": [
+   "UTC+08:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bn.svg"
+ },
+ {
+  "iso3": "BTN",
+  "iso2": "BT",
+  "slug": "butan",
+  "name_es": "Bután",
+  "name_en": "Bhutan",
+  "capital": "Thimphu",
+  "languages": [
+   "Dzongkha"
+  ],
+  "currencies": [
+   "BTN",
+   "INR"
+  ],
+  "population": 784043,
+  "timezones": [
+   "UTC+06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bt.svg"
+ },
+ {
+  "iso3": "BVT",
+  "iso2": "BV",
+  "slug": "isla-bouvet",
+  "name_es": "Isla Bouvet",
+  "name_en": "Bouvet Island",
+  "capital": null,
+  "languages": [
+   "Norwegian"
+  ],
+  "currencies": [],
+  "population": 0,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bv.svg"
+ },
+ {
+  "iso3": "BWA",
+  "iso2": "BW",
+  "slug": "botswana",
+  "name_es": "Botswana",
+  "name_en": "Botswana",
+  "capital": "Gaborone",
+  "languages": [
+   "English",
+   "Tswana"
+  ],
+  "currencies": [
+   "BWP"
+  ],
+  "population": 2359609,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/bw.svg"
+ },
+ {
+  "iso3": "CAF",
+  "iso2": "CF",
+  "slug": "republica-centroafricana",
+  "name_es": "República Centroafricana",
+  "name_en": "Central African Republic",
+  "capital": "Bangui",
+  "languages": [
+   "French",
+   "Sango"
+  ],
+  "currencies": [
+   "XAF"
+  ],
+  "population": 6470307,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cf.svg"
+ },
+ {
+  "iso3": "CAN",
+  "iso2": "CA",
+  "slug": "canada",
+  "name_es": "Canadá",
+  "name_en": "Canada",
+  "capital": "Ottawa",
+  "languages": [
+   "English",
+   "French"
+  ],
+  "currencies": [
+   "CAD"
+  ],
+  "population": 41651653,
+  "timezones": [
+   "UTC-08:00",
+   "UTC-07:00",
+   "UTC-06:00",
+   "UTC-05:00",
+   "UTC-04:00",
+   "UTC-03:30"
+  ],
+  "flag_svg": "https://flagcdn.com/ca.svg"
+ },
+ {
+  "iso3": "CCK",
+  "iso2": "CC",
+  "slug": "islas-cocos-o-islas-keeling",
+  "name_es": "Islas Cocos o Islas Keeling",
+  "name_en": "Cocos (Keeling) Islands",
+  "capital": "West Island",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "AUD"
+  ],
+  "population": 593,
+  "timezones": [
+   "UTC+06:30"
+  ],
+  "flag_svg": "https://flagcdn.com/cc.svg"
+ },
+ {
+  "iso3": "CHE",
+  "iso2": "CH",
+  "slug": "suiza",
+  "name_es": "Suiza",
+  "name_en": "Switzerland",
+  "capital": "Bern",
+  "languages": [
+   "French",
+   "Swiss German",
+   "Italian",
+   "Romansh"
+  ],
+  "currencies": [
+   "CHF"
+  ],
+  "population": 9082848,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ch.svg"
+ },
+ {
+  "iso3": "CHL",
+  "iso2": "CL",
+  "slug": "chile",
+  "name_es": "Chile",
+  "name_en": "Chile",
+  "capital": "Santiago",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "CLP"
+  ],
+  "population": 20206953,
+  "timezones": [
+   "UTC-06:00",
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cl.svg"
+ },
+ {
+  "iso3": "CHN",
+  "iso2": "CN",
+  "slug": "china",
+  "name_es": "China",
+  "name_en": "China",
+  "capital": "Beijing",
+  "languages": [
+   "Chinese"
+  ],
+  "currencies": [
+   "CNY"
+  ],
+  "population": 1408280000,
+  "timezones": [
+   "UTC+08:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cn.svg"
+ },
+ {
+  "iso3": "CIV",
+  "iso2": "CI",
+  "slug": "costa-de-marfil",
+  "name_es": "Costa de Marfil",
+  "name_en": "Ivory Coast",
+  "capital": "Yamoussoukro",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "XOF"
+  ],
+  "population": 31719275,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/ci.svg"
+ },
+ {
+  "iso3": "CMR",
+  "iso2": "CM",
+  "slug": "camerun",
+  "name_es": "Camerún",
+  "name_en": "Cameroon",
+  "capital": "Yaoundé",
+  "languages": [
+   "English",
+   "French"
+  ],
+  "currencies": [
+   "XAF"
+  ],
+  "population": 29442327,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cm.svg"
+ },
+ {
+  "iso3": "COD",
+  "iso2": "CD",
+  "slug": "congo-rep-dem",
+  "name_es": "Congo (Rep. Dem.)",
+  "name_en": "DR Congo",
+  "capital": "Kinshasa",
+  "languages": [
+   "French",
+   "Kikongo",
+   "Lingala",
+   "Tshiluba",
+   "Swahili"
+  ],
+  "currencies": [
+   "CDF"
+  ],
+  "population": 112832000,
+  "timezones": [
+   "UTC+01:00",
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cd.svg"
+ },
+ {
+  "iso3": "COG",
+  "iso2": "CG",
+  "slug": "congo",
+  "name_es": "Congo",
+  "name_en": "Republic of the Congo",
+  "capital": "Brazzaville",
+  "languages": [
+   "French",
+   "Kikongo",
+   "Lingala"
+  ],
+  "currencies": [
+   "XAF"
+  ],
+  "population": 6142180,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cg.svg"
+ },
+ {
+  "iso3": "COK",
+  "iso2": "CK",
+  "slug": "islas-cook",
+  "name_es": "Islas Cook",
+  "name_en": "Cook Islands",
+  "capital": "Avarua",
+  "languages": [
+   "English",
+   "Cook Islands Māori"
+  ],
+  "currencies": [
+   "CKD",
+   "NZD"
+  ],
+  "population": 15040,
+  "timezones": [
+   "UTC-10:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ck.svg"
+ },
+ {
+  "iso3": "COL",
+  "iso2": "CO",
+  "slug": "colombia",
+  "name_es": "Colombia",
+  "name_en": "Colombia",
+  "capital": "Bogotá",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "COP"
+  ],
+  "population": 53057212,
+  "timezones": [
+   "UTC-05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/co.svg"
+ },
+ {
+  "iso3": "COM",
+  "iso2": "KM",
+  "slug": "comoras",
+  "name_es": "Comoras",
+  "name_en": "Comoros",
+  "capital": "Moroni",
+  "languages": [
+   "Arabic",
+   "French",
+   "Comorian"
+  ],
+  "currencies": [
+   "KMF"
+  ],
+  "population": 919901,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/km.svg"
+ },
+ {
+  "iso3": "CPV",
+  "iso2": "CV",
+  "slug": "cabo-verde",
+  "name_es": "Cabo Verde",
+  "name_en": "Cape Verde",
+  "capital": "Praia",
+  "languages": [
+   "Portuguese"
+  ],
+  "currencies": [
+   "CVE"
+  ],
+  "population": 491233,
+  "timezones": [
+   "UTC-01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cv.svg"
+ },
+ {
+  "iso3": "CRI",
+  "iso2": "CR",
+  "slug": "costa-rica",
+  "name_es": "Costa Rica",
+  "name_en": "Costa Rica",
+  "capital": "San José",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "CRC"
+  ],
+  "population": 5309625,
+  "timezones": [
+   "UTC-06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cr.svg"
+ },
+ {
+  "iso3": "CUB",
+  "iso2": "CU",
+  "slug": "cuba",
+  "name_es": "Cuba",
+  "name_en": "Cuba",
+  "capital": "Havana",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "CUC",
+   "CUP"
+  ],
+  "population": 9748007,
+  "timezones": [
+   "UTC-05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cu.svg"
+ },
+ {
+  "iso3": "CUW",
+  "iso2": "CW",
+  "slug": "curazao",
+  "name_es": "Curazao",
+  "name_en": "Curaçao",
+  "capital": "Willemstad",
+  "languages": [
+   "English",
+   "Dutch",
+   "Papiamento"
+  ],
+  "currencies": [
+   "ANG"
+  ],
+  "population": 156115,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cw.svg"
+ },
+ {
+  "iso3": "CXR",
+  "iso2": "CX",
+  "slug": "isla-de-navidad",
+  "name_es": "Isla de Navidad",
+  "name_en": "Christmas Island",
+  "capital": "Flying Fish Cove",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "AUD"
+  ],
+  "population": 1692,
+  "timezones": [
+   "UTC+07:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cx.svg"
+ },
+ {
+  "iso3": "CYM",
+  "iso2": "KY",
+  "slug": "islas-caiman",
+  "name_es": "Islas Caimán",
+  "name_en": "Cayman Islands",
+  "capital": "George Town",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "KYD"
+  ],
+  "population": 84738,
+  "timezones": [
+   "UTC-05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ky.svg"
+ },
+ {
+  "iso3": "CYP",
+  "iso2": "CY",
+  "slug": "chipre",
+  "name_es": "Chipre",
+  "name_en": "Cyprus",
+  "capital": "Nicosia",
+  "languages": [
+   "Greek",
+   "Turkish"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 1442614,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cy.svg"
+ },
+ {
+  "iso3": "CZE",
+  "iso2": "CZ",
+  "slug": "chequia",
+  "name_es": "Chequia",
+  "name_en": "Czechia",
+  "capital": "Prague",
+  "languages": [
+   "Czech",
+   "Slovak"
+  ],
+  "currencies": [
+   "CZK"
+  ],
+  "population": 10882341,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/cz.svg"
+ },
+ {
+  "iso3": "DEU",
+  "iso2": "DE",
+  "slug": "alemania",
+  "name_es": "Alemania",
+  "name_en": "Germany",
+  "capital": "Berlin",
+  "languages": [
+   "German"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 83491249,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/de.svg"
+ },
+ {
+  "iso3": "DJI",
+  "iso2": "DJ",
+  "slug": "djibouti",
+  "name_es": "Djibouti",
+  "name_en": "Djibouti",
+  "capital": "Djibouti",
+  "languages": [
+   "Arabic",
+   "French"
+  ],
+  "currencies": [
+   "DJF"
+  ],
+  "population": 1066809,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/dj.svg"
+ },
+ {
+  "iso3": "DMA",
+  "iso2": "DM",
+  "slug": "dominica",
+  "name_es": "Dominica",
+  "name_en": "Dominica",
+  "capital": "Roseau",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "XCD"
+  ],
+  "population": 67408,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/dm.svg"
+ },
+ {
+  "iso3": "DNK",
+  "iso2": "DK",
+  "slug": "dinamarca",
+  "name_es": "Dinamarca",
+  "name_en": "Denmark",
+  "capital": "Copenhagen",
+  "languages": [
+   "Danish"
+  ],
+  "currencies": [
+   "DKK"
+  ],
+  "population": 6011488,
+  "timezones": [
+   "UTC-04:00",
+   "UTC-03:00",
+   "UTC-01:00",
+   "UTC",
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/dk.svg"
+ },
+ {
+  "iso3": "DOM",
+  "iso2": "DO",
+  "slug": "republica-dominicana",
+  "name_es": "República Dominicana",
+  "name_en": "Dominican Republic",
+  "capital": "Santo Domingo",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "DOP"
+  ],
+  "population": 10771504,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/do.svg"
+ },
+ {
+  "iso3": "DZA",
+  "iso2": "DZ",
+  "slug": "argelia",
+  "name_es": "Argelia",
+  "name_en": "Algeria",
+  "capital": "Algiers",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "DZD"
+  ],
+  "population": 47400000,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/dz.svg"
+ },
+ {
+  "iso3": "ECU",
+  "iso2": "EC",
+  "slug": "ecuador",
+  "name_es": "Ecuador",
+  "name_en": "Ecuador",
+  "capital": "Quito",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 18103660,
+  "timezones": [
+   "UTC-06:00",
+   "UTC-05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ec.svg"
+ },
+ {
+  "iso3": "EGY",
+  "iso2": "EG",
+  "slug": "egipto",
+  "name_es": "Egipto",
+  "name_en": "Egypt",
+  "capital": "Cairo",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "EGP"
+  ],
+  "population": 107271260,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/eg.svg"
+ },
+ {
+  "iso3": "ERI",
+  "iso2": "ER",
+  "slug": "eritrea",
+  "name_es": "Eritrea",
+  "name_en": "Eritrea",
+  "capital": "Asmara",
+  "languages": [
+   "Arabic",
+   "English",
+   "Tigrinya"
+  ],
+  "currencies": [
+   "ERN"
+  ],
+  "population": 3607000,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/er.svg"
+ },
+ {
+  "iso3": "ESH",
+  "iso2": "EH",
+  "slug": "sahara-occidental",
+  "name_es": "Sahara Occidental",
+  "name_en": "Western Sahara",
+  "capital": "El Aaiún",
+  "languages": [
+   "Berber",
+   "Hassaniya",
+   "Spanish"
+  ],
+  "currencies": [
+   "DZD",
+   "MAD",
+   "MRU"
+  ],
+  "population": 600904,
+  "timezones": [
+   "UTC+00:00"
+  ],
+  "flag_svg": "https://flagcdn.com/eh.svg"
+ },
+ {
+  "iso3": "ESP",
+  "iso2": "ES",
+  "slug": "espana",
+  "name_es": "España",
+  "name_en": "Spain",
+  "capital": "Madrid",
+  "languages": [
+   "Spanish",
+   "Catalan",
+   "Basque",
+   "Galician"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 49315949,
+  "timezones": [
+   "UTC",
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/es.svg"
+ },
+ {
+  "iso3": "EST",
+  "iso2": "EE",
+  "slug": "estonia",
+  "name_es": "Estonia",
+  "name_en": "Estonia",
+  "capital": "Tallinn",
+  "languages": [
+   "Estonian"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 1369995,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ee.svg"
+ },
+ {
+  "iso3": "ETH",
+  "iso2": "ET",
+  "slug": "etiopia",
+  "name_es": "Etiopía",
+  "name_en": "Ethiopia",
+  "capital": "Addis Ababa",
+  "languages": [
+   "Amharic"
+  ],
+  "currencies": [
+   "ETB"
+  ],
+  "population": 111652998,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/et.svg"
+ },
+ {
+  "iso3": "FIN",
+  "iso2": "FI",
+  "slug": "finlandia",
+  "name_es": "Finlandia",
+  "name_en": "Finland",
+  "capital": "Helsinki",
+  "languages": [
+   "Finnish",
+   "Swedish"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 5650325,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/fi.svg"
+ },
+ {
+  "iso3": "FJI",
+  "iso2": "FJ",
+  "slug": "fiyi",
+  "name_es": "Fiyi",
+  "name_en": "Fiji",
+  "capital": "Suva",
+  "languages": [
+   "English",
+   "Fijian",
+   "Fiji Hindi"
+  ],
+  "currencies": [
+   "FJD"
+  ],
+  "population": 900869,
+  "timezones": [
+   "UTC+12:00"
+  ],
+  "flag_svg": "https://flagcdn.com/fj.svg"
+ },
+ {
+  "iso3": "FLK",
+  "iso2": "FK",
+  "slug": "islas-malvinas",
+  "name_es": "Islas Malvinas",
+  "name_en": "Falkland Islands",
+  "capital": "Stanley",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "FKP"
+  ],
+  "population": 3662,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/fk.svg"
+ },
+ {
+  "iso3": "FRA",
+  "iso2": "FR",
+  "slug": "francia",
+  "name_es": "Francia",
+  "name_en": "France",
+  "capital": "Paris",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 66351959,
+  "timezones": [
+   "UTC-10:00",
+   "UTC-09:30",
+   "UTC-09:00",
+   "UTC-08:00",
+   "UTC-04:00",
+   "UTC-03:00",
+   "UTC+01:00",
+   "UTC+02:00",
+   "UTC+03:00",
+   "UTC+04:00",
+   "UTC+05:00",
+   "UTC+10:00",
+   "UTC+11:00",
+   "UTC+12:00"
+  ],
+  "flag_svg": "https://flagcdn.com/fr.svg"
+ },
+ {
+  "iso3": "FRO",
+  "iso2": "FO",
+  "slug": "islas-faroe",
+  "name_es": "Islas Faroe",
+  "name_en": "Faroe Islands",
+  "capital": "Tórshavn",
+  "languages": [
+   "Danish",
+   "Faroese"
+  ],
+  "currencies": [
+   "DKK",
+   "FOK"
+  ],
+  "population": 54885,
+  "timezones": [
+   "UTC+00:00"
+  ],
+  "flag_svg": "https://flagcdn.com/fo.svg"
+ },
+ {
+  "iso3": "FSM",
+  "iso2": "FM",
+  "slug": "micronesia",
+  "name_es": "Micronesia",
+  "name_en": "Micronesia",
+  "capital": "Palikir",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 105564,
+  "timezones": [
+   "UTC+10:00",
+   "UTC+11:00"
+  ],
+  "flag_svg": "https://flagcdn.com/fm.svg"
+ },
+ {
+  "iso3": "GAB",
+  "iso2": "GA",
+  "slug": "gabon",
+  "name_es": "Gabón",
+  "name_en": "Gabon",
+  "capital": "Libreville",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "XAF"
+  ],
+  "population": 2469296,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ga.svg"
+ },
+ {
+  "iso3": "GBR",
+  "iso2": "GB",
+  "slug": "reino-unido",
+  "name_es": "Reino Unido",
+  "name_en": "United Kingdom",
+  "capital": "London",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "GBP"
+  ],
+  "population": 69281437,
+  "timezones": [
+   "UTC-08:00",
+   "UTC-05:00",
+   "UTC-04:00",
+   "UTC-03:00",
+   "UTC-02:00",
+   "UTC",
+   "UTC+01:00",
+   "UTC+02:00",
+   "UTC+06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gb.svg"
+ },
+ {
+  "iso3": "GEO",
+  "iso2": "GE",
+  "slug": "georgia",
+  "name_es": "Georgia",
+  "name_en": "Georgia",
+  "capital": "Tbilisi",
+  "languages": [
+   "Georgian"
+  ],
+  "currencies": [
+   "GEL"
+  ],
+  "population": 4000921,
+  "timezones": [
+   "UTC+04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ge.svg"
+ },
+ {
+  "iso3": "GGY",
+  "iso2": "GG",
+  "slug": "guernsey",
+  "name_es": "Guernsey",
+  "name_en": "Guernsey",
+  "capital": "St. Peter Port",
+  "languages": [
+   "English",
+   "French",
+   "Guernésiais"
+  ],
+  "currencies": [
+   "GBP",
+   "GGP"
+  ],
+  "population": 64781,
+  "timezones": [
+   "UTC+00:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gg.svg"
+ },
+ {
+  "iso3": "GHA",
+  "iso2": "GH",
+  "slug": "ghana",
+  "name_es": "Ghana",
+  "name_en": "Ghana",
+  "capital": "Accra",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "GHS"
+  ],
+  "population": 33742380,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/gh.svg"
+ },
+ {
+  "iso3": "GIB",
+  "iso2": "GI",
+  "slug": "gibraltar",
+  "name_es": "Gibraltar",
+  "name_en": "Gibraltar",
+  "capital": "Gibraltar",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "GIP"
+  ],
+  "population": 38000,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gi.svg"
+ },
+ {
+  "iso3": "GIN",
+  "iso2": "GN",
+  "slug": "guinea",
+  "name_es": "Guinea",
+  "name_en": "Guinea",
+  "capital": "Conakry",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "GNF"
+  ],
+  "population": 14363931,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/gn.svg"
+ },
+ {
+  "iso3": "GLP",
+  "iso2": "GP",
+  "slug": "guadalupe",
+  "name_es": "Guadalupe",
+  "name_en": "Guadeloupe",
+  "capital": "Basse-Terre",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 378561,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gp.svg"
+ },
+ {
+  "iso3": "GMB",
+  "iso2": "GM",
+  "slug": "gambia",
+  "name_es": "Gambia",
+  "name_en": "Gambia",
+  "capital": "Banjul",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "GMD"
+  ],
+  "population": 2422712,
+  "timezones": [
+   "UTC+00:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gm.svg"
+ },
+ {
+  "iso3": "GNB",
+  "iso2": "GW",
+  "slug": "guinea-bisau",
+  "name_es": "Guinea-Bisáu",
+  "name_en": "Guinea-Bissau",
+  "capital": "Bissau",
+  "languages": [
+   "Portuguese",
+   "Upper Guinea Creole"
+  ],
+  "currencies": [
+   "XOF"
+  ],
+  "population": 1781308,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/gw.svg"
+ },
+ {
+  "iso3": "GNQ",
+  "iso2": "GQ",
+  "slug": "guinea-ecuatorial",
+  "name_es": "Guinea Ecuatorial",
+  "name_en": "Equatorial Guinea",
+  "capital": "Ciudad de la Paz",
+  "languages": [
+   "French",
+   "Portuguese",
+   "Spanish"
+  ],
+  "currencies": [
+   "XAF"
+  ],
+  "population": 1668768,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gq.svg"
+ },
+ {
+  "iso3": "GRC",
+  "iso2": "GR",
+  "slug": "grecia",
+  "name_es": "Grecia",
+  "name_en": "Greece",
+  "capital": "Athens",
+  "languages": [
+   "Greek"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 10400720,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gr.svg"
+ },
+ {
+  "iso3": "GRD",
+  "iso2": "GD",
+  "slug": "grenada",
+  "name_es": "Grenada",
+  "name_en": "Grenada",
+  "capital": "St. George's",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "XCD"
+  ],
+  "population": 109021,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gd.svg"
+ },
+ {
+  "iso3": "GRL",
+  "iso2": "GL",
+  "slug": "groenlandia",
+  "name_es": "Groenlandia",
+  "name_en": "Greenland",
+  "capital": "Nuuk",
+  "languages": [
+   "Greenlandic"
+  ],
+  "currencies": [
+   "DKK"
+  ],
+  "population": 56542,
+  "timezones": [
+   "UTC-04:00",
+   "UTC-03:00",
+   "UTC-01:00",
+   "UTC+00:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gl.svg"
+ },
+ {
+  "iso3": "GTM",
+  "iso2": "GT",
+  "slug": "guatemala",
+  "name_es": "Guatemala",
+  "name_en": "Guatemala",
+  "capital": "Guatemala City",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "GTQ"
+  ],
+  "population": 18079810,
+  "timezones": [
+   "UTC-06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gt.svg"
+ },
+ {
+  "iso3": "GUF",
+  "iso2": "GF",
+  "slug": "guayana-francesa",
+  "name_es": "Guayana Francesa",
+  "name_en": "French Guiana",
+  "capital": "Cayenne",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 292354,
+  "timezones": [
+   "UTC-03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gf.svg"
+ },
+ {
+  "iso3": "GUM",
+  "iso2": "GU",
+  "slug": "guam",
+  "name_es": "Guam",
+  "name_en": "Guam",
+  "capital": "Hagåtña",
+  "languages": [
+   "Chamorro",
+   "English",
+   "Spanish"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 153836,
+  "timezones": [
+   "UTC+10:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gu.svg"
+ },
+ {
+  "iso3": "GUY",
+  "iso2": "GY",
+  "slug": "guyana",
+  "name_es": "Guyana",
+  "name_en": "Guyana",
+  "capital": "Georgetown",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "GYD"
+  ],
+  "population": 772975,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gy.svg"
+ },
+ {
+  "iso3": "HKG",
+  "iso2": "HK",
+  "slug": "hong-kong",
+  "name_es": "Hong Kong",
+  "name_en": "Hong Kong",
+  "capital": "City of Victoria",
+  "languages": [
+   "English",
+   "Chinese"
+  ],
+  "currencies": [
+   "HKD"
+  ],
+  "population": 7527500,
+  "timezones": [
+   "UTC+08:00"
+  ],
+  "flag_svg": "https://flagcdn.com/hk.svg"
+ },
+ {
+  "iso3": "HMD",
+  "iso2": "HM",
+  "slug": "islas-heard-y-mcdonald",
+  "name_es": "Islas Heard y McDonald",
+  "name_en": "Heard Island and McDonald Islands",
+  "capital": null,
+  "languages": [
+   "English"
+  ],
+  "currencies": [],
+  "population": 0,
+  "timezones": [
+   "UTC+05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/hm.svg"
+ },
+ {
+  "iso3": "HND",
+  "iso2": "HN",
+  "slug": "honduras",
+  "name_es": "Honduras",
+  "name_en": "Honduras",
+  "capital": "Tegucigalpa",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "HNL"
+  ],
+  "population": 9892632,
+  "timezones": [
+   "UTC-06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/hn.svg"
+ },
+ {
+  "iso3": "HRV",
+  "iso2": "HR",
+  "slug": "croacia",
+  "name_es": "Croacia",
+  "name_en": "Croatia",
+  "capital": "Zagreb",
+  "languages": [
+   "Croatian"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 3866233,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/hr.svg"
+ },
+ {
+  "iso3": "HTI",
+  "iso2": "HT",
+  "slug": "haiti",
+  "name_es": "Haití",
+  "name_en": "Haiti",
+  "capital": "Port-au-Prince",
+  "languages": [
+   "French",
+   "Haitian Creole"
+  ],
+  "currencies": [
+   "HTG"
+  ],
+  "population": 11867032,
+  "timezones": [
+   "UTC-05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ht.svg"
+ },
+ {
+  "iso3": "HUN",
+  "iso2": "HU",
+  "slug": "hungria",
+  "name_es": "Hungría",
+  "name_en": "Hungary",
+  "capital": "Budapest",
+  "languages": [
+   "Hungarian"
+  ],
+  "currencies": [
+   "HUF"
+  ],
+  "population": 9539502,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/hu.svg"
+ },
+ {
+  "iso3": "IDN",
+  "iso2": "ID",
+  "slug": "indonesia",
+  "name_es": "Indonesia",
+  "name_en": "Indonesia",
+  "capital": "Jakarta",
+  "languages": [
+   "Indonesian"
+  ],
+  "currencies": [
+   "IDR"
+  ],
+  "population": 284438782,
+  "timezones": [
+   "UTC+07:00",
+   "UTC+08:00",
+   "UTC+09:00"
+  ],
+  "flag_svg": "https://flagcdn.com/id.svg"
+ },
+ {
+  "iso3": "IMN",
+  "iso2": "IM",
+  "slug": "isla-de-man",
+  "name_es": "Isla de Man",
+  "name_en": "Isle of Man",
+  "capital": "Douglas",
+  "languages": [
+   "English",
+   "Manx"
+  ],
+  "currencies": [
+   "GBP",
+   "IMP"
+  ],
+  "population": 84530,
+  "timezones": [
+   "UTC+00:00"
+  ],
+  "flag_svg": "https://flagcdn.com/im.svg"
+ },
+ {
+  "iso3": "IND",
+  "iso2": "IN",
+  "slug": "india",
+  "name_es": "India",
+  "name_en": "India",
+  "capital": "New Delhi",
+  "languages": [
+   "English",
+   "Hindi",
+   "Tamil"
+  ],
+  "currencies": [
+   "INR"
+  ],
+  "population": 1417492000,
+  "timezones": [
+   "UTC+05:30"
+  ],
+  "flag_svg": "https://flagcdn.com/in.svg"
+ },
+ {
+  "iso3": "IOT",
+  "iso2": "IO",
+  "slug": "territorio-britanico-del-oceano-indico",
+  "name_es": "Territorio Británico del Océano Índico",
+  "name_en": "British Indian Ocean Territory",
+  "capital": "Diego Garcia",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 0,
+  "timezones": [
+   "UTC+06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/io.svg"
+ },
+ {
+  "iso3": "IRL",
+  "iso2": "IE",
+  "slug": "irlanda",
+  "name_es": "Irlanda",
+  "name_en": "Ireland",
+  "capital": "Dublin",
+  "languages": [
+   "English",
+   "Irish"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 5458600,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/ie.svg"
+ },
+ {
+  "iso3": "IRN",
+  "iso2": "IR",
+  "slug": "iran",
+  "name_es": "Iran",
+  "name_en": "Iran",
+  "capital": "Tehran",
+  "languages": [
+   "Persian (Farsi)"
+  ],
+  "currencies": [
+   "IRR"
+  ],
+  "population": 85961000,
+  "timezones": [
+   "UTC+03:30"
+  ],
+  "flag_svg": "https://flagcdn.com/ir.svg"
+ },
+ {
+  "iso3": "IRQ",
+  "iso2": "IQ",
+  "slug": "irak",
+  "name_es": "Irak",
+  "name_en": "Iraq",
+  "capital": "Baghdad",
+  "languages": [
+   "Arabic",
+   "Aramaic",
+   "Sorani"
+  ],
+  "currencies": [
+   "IQD"
+  ],
+  "population": 46118793,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/iq.svg"
+ },
+ {
+  "iso3": "ISL",
+  "iso2": "IS",
+  "slug": "islandia",
+  "name_es": "Islandia",
+  "name_en": "Iceland",
+  "capital": "Reykjavik",
+  "languages": [
+   "Icelandic"
+  ],
+  "currencies": [
+   "ISK"
+  ],
+  "population": 391810,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/is.svg"
+ },
+ {
+  "iso3": "ISR",
+  "iso2": "IL",
+  "slug": "israel",
+  "name_es": "Israel",
+  "name_en": "Israel",
+  "capital": "Jerusalem",
+  "languages": [
+   "Arabic",
+   "Hebrew"
+  ],
+  "currencies": [
+   "ILS"
+  ],
+  "population": 10134800,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/il.svg"
+ },
+ {
+  "iso3": "ITA",
+  "iso2": "IT",
+  "slug": "italia",
+  "name_es": "Italia",
+  "name_en": "Italy",
+  "capital": "Rome",
+  "languages": [
+   "Italian",
+   "Catalan"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 58927633,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/it.svg"
+ },
+ {
+  "iso3": "JAM",
+  "iso2": "JM",
+  "slug": "jamaica",
+  "name_es": "Jamaica",
+  "name_en": "Jamaica",
+  "capital": "Kingston",
+  "languages": [
+   "English",
+   "Jamaican Patois"
+  ],
+  "currencies": [
+   "JMD"
+  ],
+  "population": 2825544,
+  "timezones": [
+   "UTC-05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/jm.svg"
+ },
+ {
+  "iso3": "JEY",
+  "iso2": "JE",
+  "slug": "jersey",
+  "name_es": "Jersey",
+  "name_en": "Jersey",
+  "capital": "Saint Helier",
+  "languages": [
+   "English",
+   "French",
+   "Jèrriais"
+  ],
+  "currencies": [
+   "GBP",
+   "JEP"
+  ],
+  "population": 103267,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/je.svg"
+ },
+ {
+  "iso3": "JOR",
+  "iso2": "JO",
+  "slug": "jordania",
+  "name_es": "Jordania",
+  "name_en": "Jordan",
+  "capital": "Amman",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "JOD"
+  ],
+  "population": 11734000,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/jo.svg"
+ },
+ {
+  "iso3": "JPN",
+  "iso2": "JP",
+  "slug": "japon",
+  "name_es": "Japón",
+  "name_en": "Japan",
+  "capital": "Tokyo",
+  "languages": [
+   "Japanese"
+  ],
+  "currencies": [
+   "JPY"
+  ],
+  "population": 123210000,
+  "timezones": [
+   "UTC+09:00"
+  ],
+  "flag_svg": "https://flagcdn.com/jp.svg"
+ },
+ {
+  "iso3": "KAZ",
+  "iso2": "KZ",
+  "slug": "kazajistan",
+  "name_es": "Kazajistán",
+  "name_en": "Kazakhstan",
+  "capital": "Astana",
+  "languages": [
+   "Kazakh",
+   "Russian"
+  ],
+  "currencies": [
+   "KZT"
+  ],
+  "population": 20426568,
+  "timezones": [
+   "UTC+05:00",
+   "UTC+06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/kz.svg"
+ },
+ {
+  "iso3": "KEN",
+  "iso2": "KE",
+  "slug": "kenia",
+  "name_es": "Kenia",
+  "name_en": "Kenya",
+  "capital": "Nairobi",
+  "languages": [
+   "English",
+   "Swahili"
+  ],
+  "currencies": [
+   "KES"
+  ],
+  "population": 53330978,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ke.svg"
+ },
+ {
+  "iso3": "KGZ",
+  "iso2": "KG",
+  "slug": "kirguizistan",
+  "name_es": "Kirguizistán",
+  "name_en": "Kyrgyzstan",
+  "capital": "Bishkek",
+  "languages": [
+   "Kyrgyz",
+   "Russian"
+  ],
+  "currencies": [
+   "KGS"
+  ],
+  "population": 7281800,
+  "timezones": [
+   "UTC+06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/kg.svg"
+ },
+ {
+  "iso3": "KHM",
+  "iso2": "KH",
+  "slug": "camboya",
+  "name_es": "Camboya",
+  "name_en": "Cambodia",
+  "capital": "Phnom Penh",
+  "languages": [
+   "Khmer"
+  ],
+  "currencies": [
+   "KHR",
+   "USD"
+  ],
+  "population": 17577760,
+  "timezones": [
+   "UTC+07:00"
+  ],
+  "flag_svg": "https://flagcdn.com/kh.svg"
+ },
+ {
+  "iso3": "KIR",
+  "iso2": "KI",
+  "slug": "kiribati",
+  "name_es": "Kiribati",
+  "name_en": "Kiribati",
+  "capital": "South Tarawa",
+  "languages": [
+   "English",
+   "Gilbertese"
+  ],
+  "currencies": [
+   "AUD",
+   "KID"
+  ],
+  "population": 120740,
+  "timezones": [
+   "UTC+12:00",
+   "UTC+13:00",
+   "UTC+14:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ki.svg"
+ },
+ {
+  "iso3": "KNA",
+  "iso2": "KN",
+  "slug": "san-cristobal-y-nieves",
+  "name_es": "San Cristóbal y Nieves",
+  "name_en": "Saint Kitts and Nevis",
+  "capital": "Basseterre",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "XCD"
+  ],
+  "population": 51320,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/kn.svg"
+ },
+ {
+  "iso3": "KOR",
+  "iso2": "KR",
+  "slug": "corea-del-sur",
+  "name_es": "Corea del Sur",
+  "name_en": "South Korea",
+  "capital": "Seoul",
+  "languages": [
+   "Korean"
+  ],
+  "currencies": [
+   "KRW"
+  ],
+  "population": 51159889,
+  "timezones": [
+   "UTC+09:00"
+  ],
+  "flag_svg": "https://flagcdn.com/kr.svg"
+ },
+ {
+  "iso3": "KWT",
+  "iso2": "KW",
+  "slug": "kuwait",
+  "name_es": "Kuwait",
+  "name_en": "Kuwait",
+  "capital": "Kuwait City",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "KWD"
+  ],
+  "population": 4881254,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/kw.svg"
+ },
+ {
+  "iso3": "LAO",
+  "iso2": "LA",
+  "slug": "laos",
+  "name_es": "Laos",
+  "name_en": "Laos",
+  "capital": "Vientiane",
+  "languages": [
+   "Lao"
+  ],
+  "currencies": [
+   "LAK"
+  ],
+  "population": 7647000,
+  "timezones": [
+   "UTC+07:00"
+  ],
+  "flag_svg": "https://flagcdn.com/la.svg"
+ },
+ {
+  "iso3": "LBN",
+  "iso2": "LB",
+  "slug": "libano",
+  "name_es": "Líbano",
+  "name_en": "Lebanon",
+  "capital": "Beirut",
+  "languages": [
+   "Arabic",
+   "French"
+  ],
+  "currencies": [
+   "LBP"
+  ],
+  "population": 5490000,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/lb.svg"
+ },
+ {
+  "iso3": "LBR",
+  "iso2": "LR",
+  "slug": "liberia",
+  "name_es": "Liberia",
+  "name_en": "Liberia",
+  "capital": "Monrovia",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "LRD"
+  ],
+  "population": 5248621,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/lr.svg"
+ },
+ {
+  "iso3": "LBY",
+  "iso2": "LY",
+  "slug": "libia",
+  "name_es": "Libia",
+  "name_en": "Libya",
+  "capital": "Tripoli",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "LYD"
+  ],
+  "population": 7459000,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ly.svg"
+ },
+ {
+  "iso3": "LCA",
+  "iso2": "LC",
+  "slug": "santa-lucia",
+  "name_es": "Santa Lucía",
+  "name_en": "Saint Lucia",
+  "capital": "Castries",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "XCD"
+  ],
+  "population": 184100,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/lc.svg"
+ },
+ {
+  "iso3": "LIE",
+  "iso2": "LI",
+  "slug": "liechtenstein",
+  "name_es": "Liechtenstein",
+  "name_en": "Liechtenstein",
+  "capital": "Vaduz",
+  "languages": [
+   "German"
+  ],
+  "currencies": [
+   "CHF"
+  ],
+  "population": 40900,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/li.svg"
+ },
+ {
+  "iso3": "LKA",
+  "iso2": "LK",
+  "slug": "sri-lanka",
+  "name_es": "Sri Lanka",
+  "name_en": "Sri Lanka",
+  "capital": "Sri Jayawardenepura Kotte",
+  "languages": [
+   "Sinhala",
+   "Tamil"
+  ],
+  "currencies": [
+   "LKR"
+  ],
+  "population": 21763170,
+  "timezones": [
+   "UTC+05:30"
+  ],
+  "flag_svg": "https://flagcdn.com/lk.svg"
+ },
+ {
+  "iso3": "LSO",
+  "iso2": "LS",
+  "slug": "lesotho",
+  "name_es": "Lesotho",
+  "name_en": "Lesotho",
+  "capital": "Maseru",
+  "languages": [
+   "English",
+   "Sotho"
+  ],
+  "currencies": [
+   "LSL",
+   "ZAR"
+  ],
+  "population": 2116427,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ls.svg"
+ },
+ {
+  "iso3": "LTU",
+  "iso2": "LT",
+  "slug": "lituania",
+  "name_es": "Lituania",
+  "name_en": "Lithuania",
+  "capital": "Vilnius",
+  "languages": [
+   "Lithuanian"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 2894886,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/lt.svg"
+ },
+ {
+  "iso3": "LUX",
+  "iso2": "LU",
+  "slug": "luxemburgo",
+  "name_es": "Luxemburgo",
+  "name_en": "Luxembourg",
+  "capital": "Luxembourg",
+  "languages": [
+   "German",
+   "French",
+   "Luxembourgish"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 681973,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/lu.svg"
+ },
+ {
+  "iso3": "LVA",
+  "iso2": "LV",
+  "slug": "letonia",
+  "name_es": "Letonia",
+  "name_en": "Latvia",
+  "capital": "Riga",
+  "languages": [
+   "Latvian"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 1829000,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/lv.svg"
+ },
+ {
+  "iso3": "MAC",
+  "iso2": "MO",
+  "slug": "macao",
+  "name_es": "Macao",
+  "name_en": "Macau",
+  "capital": null,
+  "languages": [
+   "Portuguese",
+   "Chinese"
+  ],
+  "currencies": [
+   "MOP"
+  ],
+  "population": 685900,
+  "timezones": [
+   "UTC+08:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mo.svg"
+ },
+ {
+  "iso3": "MAF",
+  "iso2": "MF",
+  "slug": "saint-martin",
+  "name_es": "Saint Martin",
+  "name_en": "Saint Martin",
+  "capital": "Marigot",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 31496,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mf.svg"
+ },
+ {
+  "iso3": "MAR",
+  "iso2": "MA",
+  "slug": "marruecos",
+  "name_es": "Marruecos",
+  "name_en": "Morocco",
+  "capital": "Rabat",
+  "languages": [
+   "Arabic",
+   "Berber"
+  ],
+  "currencies": [
+   "MAD"
+  ],
+  "population": 36828330,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/ma.svg"
+ },
+ {
+  "iso3": "MCO",
+  "iso2": "MC",
+  "slug": "monaco",
+  "name_es": "Mónaco",
+  "name_en": "Monaco",
+  "capital": "Monaco",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 38423,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mc.svg"
+ },
+ {
+  "iso3": "MDA",
+  "iso2": "MD",
+  "slug": "moldavia",
+  "name_es": "Moldavia",
+  "name_en": "Moldova",
+  "capital": "Chișinău",
+  "languages": [
+   "Romanian"
+  ],
+  "currencies": [
+   "MDL"
+  ],
+  "population": 2749076,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/md.svg"
+ },
+ {
+  "iso3": "MDG",
+  "iso2": "MG",
+  "slug": "madagascar",
+  "name_es": "Madagascar",
+  "name_en": "Madagascar",
+  "capital": "Antananarivo",
+  "languages": [
+   "French",
+   "Malagasy"
+  ],
+  "currencies": [
+   "MGA"
+  ],
+  "population": 31727042,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mg.svg"
+ },
+ {
+  "iso3": "MDV",
+  "iso2": "MV",
+  "slug": "maldivas",
+  "name_es": "Maldivas",
+  "name_en": "Maldives",
+  "capital": "Malé",
+  "languages": [
+   "Maldivian"
+  ],
+  "currencies": [
+   "MVR"
+  ],
+  "population": 515132,
+  "timezones": [
+   "UTC+05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mv.svg"
+ },
+ {
+  "iso3": "MEX",
+  "iso2": "MX",
+  "slug": "mexico",
+  "name_es": "México",
+  "name_en": "Mexico",
+  "capital": "Mexico City",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "MXN"
+  ],
+  "population": 130575786,
+  "timezones": [
+   "UTC-08:00",
+   "UTC-07:00",
+   "UTC-06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mx.svg"
+ },
+ {
+  "iso3": "MHL",
+  "iso2": "MH",
+  "slug": "islas-marshall",
+  "name_es": "Islas Marshall",
+  "name_en": "Marshall Islands",
+  "capital": "Majuro",
+  "languages": [
+   "English",
+   "Marshallese"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 42418,
+  "timezones": [
+   "UTC+12:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mh.svg"
+ },
+ {
+  "iso3": "MKD",
+  "iso2": "MK",
+  "slug": "macedonia-del-norte",
+  "name_es": "Macedonia del Norte",
+  "name_en": "North Macedonia",
+  "capital": "Skopje",
+  "languages": [
+   "Macedonian"
+  ],
+  "currencies": [
+   "MKD"
+  ],
+  "population": 1822612,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mk.svg"
+ },
+ {
+  "iso3": "MLI",
+  "iso2": "ML",
+  "slug": "mali",
+  "name_es": "Mali",
+  "name_en": "Mali",
+  "capital": "Bamako",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "XOF"
+  ],
+  "population": 22395489,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/ml.svg"
+ },
+ {
+  "iso3": "MLT",
+  "iso2": "MT",
+  "slug": "malta",
+  "name_es": "Malta",
+  "name_en": "Malta",
+  "capital": "Valletta",
+  "languages": [
+   "English",
+   "Maltese"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 574250,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mt.svg"
+ },
+ {
+  "iso3": "MMR",
+  "iso2": "MM",
+  "slug": "myanmar",
+  "name_es": "Myanmar",
+  "name_en": "Myanmar",
+  "capital": "Naypyidaw",
+  "languages": [
+   "Burmese"
+  ],
+  "currencies": [
+   "MMK"
+  ],
+  "population": 51316756,
+  "timezones": [
+   "UTC+06:30"
+  ],
+  "flag_svg": "https://flagcdn.com/mm.svg"
+ },
+ {
+  "iso3": "MNE",
+  "iso2": "ME",
+  "slug": "montenegro",
+  "name_es": "Montenegro",
+  "name_en": "Montenegro",
+  "capital": "Podgorica",
+  "languages": [
+   "Montenegrin"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 623327,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/me.svg"
+ },
+ {
+  "iso3": "MNG",
+  "iso2": "MN",
+  "slug": "mongolia",
+  "name_es": "Mongolia",
+  "name_en": "Mongolia",
+  "capital": "Ulan Bator",
+  "languages": [
+   "Mongolian"
+  ],
+  "currencies": [
+   "MNT"
+  ],
+  "population": 3544835,
+  "timezones": [
+   "UTC+07:00",
+   "UTC+08:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mn.svg"
+ },
+ {
+  "iso3": "MNP",
+  "iso2": "MP",
+  "slug": "islas-marianas-del-norte",
+  "name_es": "Islas Marianas del Norte",
+  "name_en": "Northern Mariana Islands",
+  "capital": "Saipan",
+  "languages": [
+   "Carolinian",
+   "Chamorro",
+   "English"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 47329,
+  "timezones": [
+   "UTC+10:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mp.svg"
+ },
+ {
+  "iso3": "MOZ",
+  "iso2": "MZ",
+  "slug": "mozambique",
+  "name_es": "Mozambique",
+  "name_en": "Mozambique",
+  "capital": "Maputo",
+  "languages": [
+   "Portuguese"
+  ],
+  "currencies": [
+   "MZN"
+  ],
+  "population": 34090466,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mz.svg"
+ },
+ {
+  "iso3": "MRT",
+  "iso2": "MR",
+  "slug": "mauritania",
+  "name_es": "Mauritania",
+  "name_en": "Mauritania",
+  "capital": "Nouakchott",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "MRU"
+  ],
+  "population": 4927532,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/mr.svg"
+ },
+ {
+  "iso3": "MSR",
+  "iso2": "MS",
+  "slug": "montserrat",
+  "name_es": "Montserrat",
+  "name_en": "Montserrat",
+  "capital": "Plymouth",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "XCD"
+  ],
+  "population": 4386,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ms.svg"
+ },
+ {
+  "iso3": "MTQ",
+  "iso2": "MQ",
+  "slug": "martinica",
+  "name_es": "Martinica",
+  "name_en": "Martinique",
+  "capital": "Fort-de-France",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 349925,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mq.svg"
+ },
+ {
+  "iso3": "MUS",
+  "iso2": "MU",
+  "slug": "mauricio",
+  "name_es": "Mauricio",
+  "name_en": "Mauritius",
+  "capital": "Port Louis",
+  "languages": [
+   "English",
+   "French",
+   "Mauritian Creole"
+  ],
+  "currencies": [
+   "MUR"
+  ],
+  "population": 1243741,
+  "timezones": [
+   "UTC+04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mu.svg"
+ },
+ {
+  "iso3": "MWI",
+  "iso2": "MW",
+  "slug": "malawi",
+  "name_es": "Malawi",
+  "name_en": "Malawi",
+  "capital": "Lilongwe",
+  "languages": [
+   "English",
+   "Chewa"
+  ],
+  "currencies": [
+   "MWK"
+  ],
+  "population": 20734262,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/mw.svg"
+ },
+ {
+  "iso3": "MYS",
+  "iso2": "MY",
+  "slug": "malasia",
+  "name_es": "Malasia",
+  "name_en": "Malaysia",
+  "capital": "Kuala Lumpur",
+  "languages": [
+   "English",
+   "Malay"
+  ],
+  "currencies": [
+   "MYR"
+  ],
+  "population": 34231700,
+  "timezones": [
+   "UTC+08:00"
+  ],
+  "flag_svg": "https://flagcdn.com/my.svg"
+ },
+ {
+  "iso3": "MYT",
+  "iso2": "YT",
+  "slug": "mayotte",
+  "name_es": "Mayotte",
+  "name_en": "Mayotte",
+  "capital": "Mamoudzou",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 320901,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/yt.svg"
+ },
+ {
+  "iso3": "NAM",
+  "iso2": "NA",
+  "slug": "namibia",
+  "name_es": "Namibia",
+  "name_en": "Namibia",
+  "capital": "Windhoek",
+  "languages": [
+   "Afrikaans",
+   "German",
+   "English",
+   "Herero",
+   "Khoekhoe",
+   "Kwangali",
+   "Lozi",
+   "Ndonga",
+   "Tswana"
+  ],
+  "currencies": [
+   "NAD",
+   "ZAR"
+  ],
+  "population": 3022401,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/na.svg"
+ },
+ {
+  "iso3": "NCL",
+  "iso2": "NC",
+  "slug": "nueva-caledonia",
+  "name_es": "Nueva Caledonia",
+  "name_en": "New Caledonia",
+  "capital": "Nouméa",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "XPF"
+  ],
+  "population": 264596,
+  "timezones": [
+   "UTC+11:00"
+  ],
+  "flag_svg": "https://flagcdn.com/nc.svg"
+ },
+ {
+  "iso3": "NER",
+  "iso2": "NE",
+  "slug": "niger",
+  "name_es": "Níger",
+  "name_en": "Niger",
+  "capital": "Niamey",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "XOF"
+  ],
+  "population": 26312034,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ne.svg"
+ },
+ {
+  "iso3": "NFK",
+  "iso2": "NF",
+  "slug": "isla-de-norfolk",
+  "name_es": "Isla de Norfolk",
+  "name_en": "Norfolk Island",
+  "capital": "Kingston",
+  "languages": [
+   "English",
+   "Norfuk"
+  ],
+  "currencies": [
+   "AUD"
+  ],
+  "population": 2188,
+  "timezones": [
+   "UTC+11:30"
+  ],
+  "flag_svg": "https://flagcdn.com/nf.svg"
+ },
+ {
+  "iso3": "NGA",
+  "iso2": "NG",
+  "slug": "nigeria",
+  "name_es": "Nigeria",
+  "name_en": "Nigeria",
+  "capital": "Abuja",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "NGN"
+  ],
+  "population": 223800000,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ng.svg"
+ },
+ {
+  "iso3": "NIC",
+  "iso2": "NI",
+  "slug": "nicaragua",
+  "name_es": "Nicaragua",
+  "name_en": "Nicaragua",
+  "capital": "Managua",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "NIO"
+  ],
+  "population": 6803886,
+  "timezones": [
+   "UTC-06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ni.svg"
+ },
+ {
+  "iso3": "NIU",
+  "iso2": "NU",
+  "slug": "niue",
+  "name_es": "Niue",
+  "name_en": "Niue",
+  "capital": "Alofi",
+  "languages": [
+   "English",
+   "Niuean"
+  ],
+  "currencies": [
+   "NZD"
+  ],
+  "population": 1681,
+  "timezones": [
+   "UTC-11:00"
+  ],
+  "flag_svg": "https://flagcdn.com/nu.svg"
+ },
+ {
+  "iso3": "NLD",
+  "iso2": "NL",
+  "slug": "paises-bajos",
+  "name_es": "Países Bajos",
+  "name_en": "Netherlands",
+  "capital": "Amsterdam",
+  "languages": [
+   "Dutch"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 18100436,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/nl.svg"
+ },
+ {
+  "iso3": "NOR",
+  "iso2": "NO",
+  "slug": "noruega",
+  "name_es": "Noruega",
+  "name_en": "Norway",
+  "capital": "Oslo",
+  "languages": [
+   "Norwegian Nynorsk",
+   "Norwegian Bokmål",
+   "Sami"
+  ],
+  "currencies": [
+   "NOK"
+  ],
+  "population": 5606944,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/no.svg"
+ },
+ {
+  "iso3": "NPL",
+  "iso2": "NP",
+  "slug": "nepal",
+  "name_es": "Nepal",
+  "name_en": "Nepal",
+  "capital": "Kathmandu",
+  "languages": [
+   "Nepali"
+  ],
+  "currencies": [
+   "NPR"
+  ],
+  "population": 29911840,
+  "timezones": [
+   "UTC+05:45"
+  ],
+  "flag_svg": "https://flagcdn.com/np.svg"
+ },
+ {
+  "iso3": "NRU",
+  "iso2": "NR",
+  "slug": "nauru",
+  "name_es": "Nauru",
+  "name_en": "Nauru",
+  "capital": "Yaren",
+  "languages": [
+   "English",
+   "Nauru"
+  ],
+  "currencies": [
+   "AUD"
+  ],
+  "population": 11680,
+  "timezones": [
+   "UTC+12:00"
+  ],
+  "flag_svg": "https://flagcdn.com/nr.svg"
+ },
+ {
+  "iso3": "NZL",
+  "iso2": "NZ",
+  "slug": "nueva-zelanda",
+  "name_es": "Nueva Zelanda",
+  "name_en": "New Zealand",
+  "capital": "Wellington",
+  "languages": [
+   "English",
+   "Māori",
+   "New Zealand Sign Language"
+  ],
+  "currencies": [
+   "NZD"
+  ],
+  "population": 5324700,
+  "timezones": [
+   "UTC-11:00",
+   "UTC-10:00",
+   "UTC+12:00",
+   "UTC+12:45",
+   "UTC+13:00"
+  ],
+  "flag_svg": "https://flagcdn.com/nz.svg"
+ },
+ {
+  "iso3": "OMN",
+  "iso2": "OM",
+  "slug": "oman",
+  "name_es": "Omán",
+  "name_en": "Oman",
+  "capital": "Muscat",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "OMR"
+  ],
+  "population": 5343630,
+  "timezones": [
+   "UTC+04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/om.svg"
+ },
+ {
+  "iso3": "PAK",
+  "iso2": "PK",
+  "slug": "pakistan",
+  "name_es": "Pakistán",
+  "name_en": "Pakistan",
+  "capital": "Islamabad",
+  "languages": [
+   "English",
+   "Urdu"
+  ],
+  "currencies": [
+   "PKR"
+  ],
+  "population": 241499431,
+  "timezones": [
+   "UTC+05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/pk.svg"
+ },
+ {
+  "iso3": "PAN",
+  "iso2": "PA",
+  "slug": "panama",
+  "name_es": "Panamá",
+  "name_en": "Panama",
+  "capital": "Panama City",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "PAB",
+   "USD"
+  ],
+  "population": 4064780,
+  "timezones": [
+   "UTC-05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/pa.svg"
+ },
+ {
+  "iso3": "PCN",
+  "iso2": "PN",
+  "slug": "islas-pitcairn",
+  "name_es": "Islas Pitcairn",
+  "name_en": "Pitcairn Islands",
+  "capital": "Adamstown",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "NZD"
+  ],
+  "population": 35,
+  "timezones": [
+   "UTC-08:00"
+  ],
+  "flag_svg": "https://flagcdn.com/pn.svg"
+ },
+ {
+  "iso3": "PER",
+  "iso2": "PE",
+  "slug": "peru",
+  "name_es": "Perú",
+  "name_en": "Peru",
+  "capital": "Lima",
+  "languages": [
+   "Aymara",
+   "Quechua",
+   "Spanish"
+  ],
+  "currencies": [
+   "PEN"
+  ],
+  "population": 34350244,
+  "timezones": [
+   "UTC-05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/pe.svg"
+ },
+ {
+  "iso3": "PHL",
+  "iso2": "PH",
+  "slug": "filipinas",
+  "name_es": "Filipinas",
+  "name_en": "Philippines",
+  "capital": "Manila",
+  "languages": [
+   "English",
+   "Filipino"
+  ],
+  "currencies": [
+   "PHP"
+  ],
+  "population": 114123600,
+  "timezones": [
+   "UTC+08:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ph.svg"
+ },
+ {
+  "iso3": "PLW",
+  "iso2": "PW",
+  "slug": "palau",
+  "name_es": "Palau",
+  "name_en": "Palau",
+  "capital": "Ngerulmud",
+  "languages": [
+   "English",
+   "Palauan"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 16733,
+  "timezones": [
+   "UTC+09:00"
+  ],
+  "flag_svg": "https://flagcdn.com/pw.svg"
+ },
+ {
+  "iso3": "PNG",
+  "iso2": "PG",
+  "slug": "papua-nueva-guinea",
+  "name_es": "Papúa Nueva Guinea",
+  "name_en": "Papua New Guinea",
+  "capital": "Port Moresby",
+  "languages": [
+   "English",
+   "Hiri Motu",
+   "Tok Pisin"
+  ],
+  "currencies": [
+   "PGK"
+  ],
+  "population": 11781559,
+  "timezones": [
+   "UTC+10:00"
+  ],
+  "flag_svg": "https://flagcdn.com/pg.svg"
+ },
+ {
+  "iso3": "POL",
+  "iso2": "PL",
+  "slug": "polonia",
+  "name_es": "Polonia",
+  "name_en": "Poland",
+  "capital": "Warsaw",
+  "languages": [
+   "Polish"
+  ],
+  "currencies": [
+   "PLN"
+  ],
+  "population": 37392000,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/pl.svg"
+ },
+ {
+  "iso3": "PRI",
+  "iso2": "PR",
+  "slug": "puerto-rico",
+  "name_es": "Puerto Rico",
+  "name_en": "Puerto Rico",
+  "capital": "San Juan",
+  "languages": [
+   "English",
+   "Spanish"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 3203295,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/pr.svg"
+ },
+ {
+  "iso3": "PRK",
+  "iso2": "KP",
+  "slug": "corea-del-norte",
+  "name_es": "Corea del Norte",
+  "name_en": "North Korea",
+  "capital": "Pyongyang",
+  "languages": [
+   "Korean"
+  ],
+  "currencies": [
+   "KPW"
+  ],
+  "population": 25950000,
+  "timezones": [
+   "UTC+09:00"
+  ],
+  "flag_svg": "https://flagcdn.com/kp.svg"
+ },
+ {
+  "iso3": "PRT",
+  "iso2": "PT",
+  "slug": "portugal",
+  "name_es": "Portugal",
+  "name_en": "Portugal",
+  "capital": "Lisbon",
+  "languages": [
+   "Portuguese"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 10749635,
+  "timezones": [
+   "UTC-01:00",
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/pt.svg"
+ },
+ {
+  "iso3": "PRY",
+  "iso2": "PY",
+  "slug": "paraguay",
+  "name_es": "Paraguay",
+  "name_en": "Paraguay",
+  "capital": "Asunción",
+  "languages": [
+   "Guaraní",
+   "Spanish"
+  ],
+  "currencies": [
+   "PYG"
+  ],
+  "population": 6109644,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/py.svg"
+ },
+ {
+  "iso3": "PSE",
+  "iso2": "PS",
+  "slug": "palestina",
+  "name_es": "Palestina",
+  "name_en": "Palestine",
+  "capital": "Ramallah",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "EGP",
+   "ILS",
+   "JOD"
+  ],
+  "population": 5483450,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ps.svg"
+ },
+ {
+  "iso3": "PYF",
+  "iso2": "PF",
+  "slug": "polinesia-francesa",
+  "name_es": "Polinesia Francesa",
+  "name_en": "French Polynesia",
+  "capital": "Papeetē",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "XPF"
+  ],
+  "population": 279500,
+  "timezones": [
+   "UTC-10:00",
+   "UTC-09:30",
+   "UTC-09:00"
+  ],
+  "flag_svg": "https://flagcdn.com/pf.svg"
+ },
+ {
+  "iso3": "QAT",
+  "iso2": "QA",
+  "slug": "catar",
+  "name_es": "Catar",
+  "name_en": "Qatar",
+  "capital": "Doha",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "QAR"
+  ],
+  "population": 3173024,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/qa.svg"
+ },
+ {
+  "iso3": "REU",
+  "iso2": "RE",
+  "slug": "reunion",
+  "name_es": "Reunión",
+  "name_en": "Réunion",
+  "capital": "Saint-Denis",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 896175,
+  "timezones": [
+   "UTC+04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/re.svg"
+ },
+ {
+  "iso3": "ROU",
+  "iso2": "RO",
+  "slug": "rumania",
+  "name_es": "Rumania",
+  "name_en": "Romania",
+  "capital": "Bucharest",
+  "languages": [
+   "Romanian"
+  ],
+  "currencies": [
+   "RON"
+  ],
+  "population": 19036031,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ro.svg"
+ },
+ {
+  "iso3": "RUS",
+  "iso2": "RU",
+  "slug": "rusia",
+  "name_es": "Rusia",
+  "name_en": "Russia",
+  "capital": "Moscow",
+  "languages": [
+   "Russian"
+  ],
+  "currencies": [
+   "RUB"
+  ],
+  "population": 146028325,
+  "timezones": [
+   "UTC+03:00",
+   "UTC+04:00",
+   "UTC+06:00",
+   "UTC+07:00",
+   "UTC+08:00",
+   "UTC+09:00",
+   "UTC+10:00",
+   "UTC+11:00",
+   "UTC+12:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ru.svg"
+ },
+ {
+  "iso3": "RWA",
+  "iso2": "RW",
+  "slug": "ruanda",
+  "name_es": "Ruanda",
+  "name_en": "Rwanda",
+  "capital": "Kigali",
+  "languages": [
+   "English",
+   "French",
+   "Kinyarwanda"
+  ],
+  "currencies": [
+   "RWF"
+  ],
+  "population": 14104969,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/rw.svg"
+ },
+ {
+  "iso3": "SAU",
+  "iso2": "SA",
+  "slug": "arabia-saudi",
+  "name_es": "Arabia Saudí",
+  "name_en": "Saudi Arabia",
+  "capital": "Riyadh",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "SAR"
+  ],
+  "population": 35300280,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sa.svg"
+ },
+ {
+  "iso3": "SDN",
+  "iso2": "SD",
+  "slug": "sudan",
+  "name_es": "Sudán",
+  "name_en": "Sudan",
+  "capital": "Khartoum",
+  "languages": [
+   "Arabic",
+   "English"
+  ],
+  "currencies": [
+   "SDG"
+  ],
+  "population": 51662000,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sd.svg"
+ },
+ {
+  "iso3": "SEN",
+  "iso2": "SN",
+  "slug": "senegal",
+  "name_es": "Senegal",
+  "name_en": "Senegal",
+  "capital": "Dakar",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "XOF"
+  ],
+  "population": 18593258,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/sn.svg"
+ },
+ {
+  "iso3": "SGP",
+  "iso2": "SG",
+  "slug": "singapur",
+  "name_es": "Singapur",
+  "name_en": "Singapore",
+  "capital": "Singapore",
+  "languages": [
+   "English",
+   "Chinese",
+   "Malay",
+   "Tamil"
+  ],
+  "currencies": [
+   "SGD"
+  ],
+  "population": 6110200,
+  "timezones": [
+   "UTC+08:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sg.svg"
+ },
+ {
+  "iso3": "SGS",
+  "iso2": "GS",
+  "slug": "islas-georgias-del-sur-y-sandwich-del-sur",
+  "name_es": "Islas Georgias del Sur y Sandwich del Sur",
+  "name_en": "South Georgia",
+  "capital": "King Edward Point",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "GBP"
+  ],
+  "population": 0,
+  "timezones": [
+   "UTC-02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/gs.svg"
+ },
+ {
+  "iso3": "SHN",
+  "iso2": "SH",
+  "slug": "santa-elena-ascension-y-tristan-de-acuna",
+  "name_es": "Santa Elena, Ascensión y Tristán de Acuña",
+  "name_en": "Saint Helena, Ascension and Tristan da Cunha",
+  "capital": "Jamestown",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "GBP",
+   "SHP"
+  ],
+  "population": 5651,
+  "timezones": [
+   "UTC+00:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sh.svg"
+ },
+ {
+  "iso3": "SJM",
+  "iso2": "SJ",
+  "slug": "islas-svalbard-y-jan-mayen",
+  "name_es": "Islas Svalbard y Jan Mayen",
+  "name_en": "Svalbard and Jan Mayen",
+  "capital": "Longyearbyen",
+  "languages": [
+   "Norwegian"
+  ],
+  "currencies": [
+   "NOK"
+  ],
+  "population": 2530,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sj.svg"
+ },
+ {
+  "iso3": "SLB",
+  "iso2": "SB",
+  "slug": "islas-salomon",
+  "name_es": "Islas Salomón",
+  "name_en": "Solomon Islands",
+  "capital": "Honiara",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "SBD"
+  ],
+  "population": 750325,
+  "timezones": [
+   "UTC+11:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sb.svg"
+ },
+ {
+  "iso3": "SLE",
+  "iso2": "SL",
+  "slug": "sierra-leone",
+  "name_es": "Sierra Leone",
+  "name_en": "Sierra Leone",
+  "capital": "Freetown",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "SLE"
+  ],
+  "population": 9077691,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/sl.svg"
+ },
+ {
+  "iso3": "SLV",
+  "iso2": "SV",
+  "slug": "el-salvador",
+  "name_es": "El Salvador",
+  "name_en": "El Salvador",
+  "capital": "San Salvador",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 6029976,
+  "timezones": [
+   "UTC-06:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sv.svg"
+ },
+ {
+  "iso3": "SMR",
+  "iso2": "SM",
+  "slug": "san-marino",
+  "name_es": "San Marino",
+  "name_en": "San Marino",
+  "capital": "City of San Marino",
+  "languages": [
+   "Italian"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 34132,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sm.svg"
+ },
+ {
+  "iso3": "SOM",
+  "iso2": "SO",
+  "slug": "somalia",
+  "name_es": "Somalia",
+  "name_en": "Somalia",
+  "capital": "Mogadishu",
+  "languages": [
+   "Arabic",
+   "Somali"
+  ],
+  "currencies": [
+   "SOS"
+  ],
+  "population": 19655000,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/so.svg"
+ },
+ {
+  "iso3": "SPM",
+  "iso2": "PM",
+  "slug": "san-pedro-y-miquelon",
+  "name_es": "San Pedro y Miquelón",
+  "name_en": "Saint Pierre and Miquelon",
+  "capital": "Saint-Pierre",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 5819,
+  "timezones": [
+   "UTC-03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/pm.svg"
+ },
+ {
+  "iso3": "SRB",
+  "iso2": "RS",
+  "slug": "serbia",
+  "name_es": "Serbia",
+  "name_en": "Serbia",
+  "capital": "Belgrade",
+  "languages": [
+   "Serbian"
+  ],
+  "currencies": [
+   "RSD"
+  ],
+  "population": 6567783,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/rs.svg"
+ },
+ {
+  "iso3": "SSD",
+  "iso2": "SS",
+  "slug": "sudan-del-sur",
+  "name_es": "Sudán del Sur",
+  "name_en": "South Sudan",
+  "capital": "Juba",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "SSP"
+  ],
+  "population": 15786898,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ss.svg"
+ },
+ {
+  "iso3": "STP",
+  "iso2": "ST",
+  "slug": "santo-tome-y-principe",
+  "name_es": "Santo Tomé y Príncipe",
+  "name_en": "São Tomé and Príncipe",
+  "capital": "São Tomé",
+  "languages": [
+   "Portuguese"
+  ],
+  "currencies": [
+   "STN"
+  ],
+  "population": 209607,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/st.svg"
+ },
+ {
+  "iso3": "SUR",
+  "iso2": "SR",
+  "slug": "surinam",
+  "name_es": "Surinam",
+  "name_en": "Suriname",
+  "capital": "Paramaribo",
+  "languages": [
+   "Dutch"
+  ],
+  "currencies": [
+   "SRD"
+  ],
+  "population": 616500,
+  "timezones": [
+   "UTC-03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sr.svg"
+ },
+ {
+  "iso3": "SVK",
+  "iso2": "SK",
+  "slug": "republica-eslovaca",
+  "name_es": "República Eslovaca",
+  "name_en": "Slovakia",
+  "capital": "Bratislava",
+  "languages": [
+   "Slovak"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 5413813,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sk.svg"
+ },
+ {
+  "iso3": "SVN",
+  "iso2": "SI",
+  "slug": "eslovenia",
+  "name_es": "Eslovenia",
+  "name_en": "Slovenia",
+  "capital": "Ljubljana",
+  "languages": [
+   "Slovene"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 2130638,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/si.svg"
+ },
+ {
+  "iso3": "SWE",
+  "iso2": "SE",
+  "slug": "suecia",
+  "name_es": "Suecia",
+  "name_en": "Sweden",
+  "capital": "Stockholm",
+  "languages": [
+   "Swedish"
+  ],
+  "currencies": [
+   "SEK"
+  ],
+  "population": 10605098,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/se.svg"
+ },
+ {
+  "iso3": "SWZ",
+  "iso2": "SZ",
+  "slug": "suazilandia",
+  "name_es": "Suazilandia",
+  "name_en": "Eswatini",
+  "capital": "Mbabane",
+  "languages": [
+   "English",
+   "Swazi"
+  ],
+  "currencies": [
+   "SZL",
+   "ZAR"
+  ],
+  "population": 1235549,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sz.svg"
+ },
+ {
+  "iso3": "SXM",
+  "iso2": "SX",
+  "slug": "sint-maarten",
+  "name_es": "Sint Maarten",
+  "name_en": "Sint Maarten",
+  "capital": "Philipsburg",
+  "languages": [
+   "English",
+   "French",
+   "Dutch"
+  ],
+  "currencies": [
+   "ANG"
+  ],
+  "population": 41349,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sx.svg"
+ },
+ {
+  "iso3": "SYC",
+  "iso2": "SC",
+  "slug": "seychelles",
+  "name_es": "Seychelles",
+  "name_en": "Seychelles",
+  "capital": "Victoria",
+  "languages": [
+   "Seychellois Creole",
+   "English",
+   "French"
+  ],
+  "currencies": [
+   "SCR"
+  ],
+  "population": 122729,
+  "timezones": [
+   "UTC+04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sc.svg"
+ },
+ {
+  "iso3": "SYR",
+  "iso2": "SY",
+  "slug": "siria",
+  "name_es": "Siria",
+  "name_en": "Syria",
+  "capital": "Damascus",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "SYP"
+  ],
+  "population": 25620000,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/sy.svg"
+ },
+ {
+  "iso3": "TCA",
+  "iso2": "TC",
+  "slug": "islas-turks-y-caicos",
+  "name_es": "Islas Turks y Caicos",
+  "name_en": "Turks and Caicos Islands",
+  "capital": "Cockburn Town",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 50828,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/tc.svg"
+ },
+ {
+  "iso3": "TCD",
+  "iso2": "TD",
+  "slug": "chad",
+  "name_es": "Chad",
+  "name_en": "Chad",
+  "capital": "N'Djamena",
+  "languages": [
+   "Arabic",
+   "French"
+  ],
+  "currencies": [
+   "XAF"
+  ],
+  "population": 19340757,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/td.svg"
+ },
+ {
+  "iso3": "TGO",
+  "iso2": "TG",
+  "slug": "togo",
+  "name_es": "Togo",
+  "name_en": "Togo",
+  "capital": "Lomé",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "XOF"
+  ],
+  "population": 8095498,
+  "timezones": [
+   "UTC"
+  ],
+  "flag_svg": "https://flagcdn.com/tg.svg"
+ },
+ {
+  "iso3": "THA",
+  "iso2": "TH",
+  "slug": "tailandia",
+  "name_es": "Tailandia",
+  "name_en": "Thailand",
+  "capital": "Bangkok",
+  "languages": [
+   "Thai"
+  ],
+  "currencies": [
+   "THB"
+  ],
+  "population": 65859640,
+  "timezones": [
+   "UTC+07:00"
+  ],
+  "flag_svg": "https://flagcdn.com/th.svg"
+ },
+ {
+  "iso3": "TJK",
+  "iso2": "TJ",
+  "slug": "tayikistan",
+  "name_es": "Tayikistán",
+  "name_en": "Tajikistan",
+  "capital": "Dushanbe",
+  "languages": [
+   "Russian",
+   "Tajik"
+  ],
+  "currencies": [
+   "TJS"
+  ],
+  "population": 10499000,
+  "timezones": [
+   "UTC+05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/tj.svg"
+ },
+ {
+  "iso3": "TKL",
+  "iso2": "TK",
+  "slug": "islas-tokelau",
+  "name_es": "Islas Tokelau",
+  "name_en": "Tokelau",
+  "capital": "Fakaofo",
+  "languages": [
+   "English",
+   "Samoan",
+   "Tokelauan"
+  ],
+  "currencies": [
+   "NZD"
+  ],
+  "population": 2608,
+  "timezones": [
+   "UTC+13:00"
+  ],
+  "flag_svg": "https://flagcdn.com/tk.svg"
+ },
+ {
+  "iso3": "TKM",
+  "iso2": "TM",
+  "slug": "turkmenistan",
+  "name_es": "Turkmenistán",
+  "name_en": "Turkmenistan",
+  "capital": "Ashgabat",
+  "languages": [
+   "Russian",
+   "Turkmen"
+  ],
+  "currencies": [
+   "TMT"
+  ],
+  "population": 7057841,
+  "timezones": [
+   "UTC+05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/tm.svg"
+ },
+ {
+  "iso3": "TLS",
+  "iso2": "TL",
+  "slug": "timor-oriental",
+  "name_es": "Timor Oriental",
+  "name_en": "Timor-Leste",
+  "capital": "Dili",
+  "languages": [
+   "Portuguese",
+   "Tetum"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 1391221,
+  "timezones": [
+   "UTC+09:00"
+  ],
+  "flag_svg": "https://flagcdn.com/tl.svg"
+ },
+ {
+  "iso3": "TON",
+  "iso2": "TO",
+  "slug": "tonga",
+  "name_es": "Tonga",
+  "name_en": "Tonga",
+  "capital": "Nuku'alofa",
+  "languages": [
+   "English",
+   "Tongan"
+  ],
+  "currencies": [
+   "TOP"
+  ],
+  "population": 100179,
+  "timezones": [
+   "UTC+13:00"
+  ],
+  "flag_svg": "https://flagcdn.com/to.svg"
+ },
+ {
+  "iso3": "TTO",
+  "iso2": "TT",
+  "slug": "trinidad-y-tobago",
+  "name_es": "Trinidad y Tobago",
+  "name_en": "Trinidad and Tobago",
+  "capital": "Port of Spain",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "TTD"
+  ],
+  "population": 1367764,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/tt.svg"
+ },
+ {
+  "iso3": "TUN",
+  "iso2": "TN",
+  "slug": "tunez",
+  "name_es": "Túnez",
+  "name_en": "Tunisia",
+  "capital": "Tunis",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "TND"
+  ],
+  "population": 11972169,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/tn.svg"
+ },
+ {
+  "iso3": "TUR",
+  "iso2": "TR",
+  "slug": "turquia",
+  "name_es": "Turquía",
+  "name_en": "Turkey",
+  "capital": "Ankara",
+  "languages": [
+   "Turkish"
+  ],
+  "currencies": [
+   "TRY"
+  ],
+  "population": 85664944,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/tr.svg"
+ },
+ {
+  "iso3": "TUV",
+  "iso2": "TV",
+  "slug": "tuvalu",
+  "name_es": "Tuvalu",
+  "name_en": "Tuvalu",
+  "capital": "Funafuti",
+  "languages": [
+   "English",
+   "Tuvaluan"
+  ],
+  "currencies": [
+   "AUD",
+   "TVD"
+  ],
+  "population": 10643,
+  "timezones": [
+   "UTC+12:00"
+  ],
+  "flag_svg": "https://flagcdn.com/tv.svg"
+ },
+ {
+  "iso3": "TWN",
+  "iso2": "TW",
+  "slug": "taiwan",
+  "name_es": "Taiwán",
+  "name_en": "Taiwan",
+  "capital": "Taipei",
+  "languages": [
+   "Chinese"
+  ],
+  "currencies": [
+   "TWD"
+  ],
+  "population": 23317031,
+  "timezones": [
+   "UTC+08:00"
+  ],
+  "flag_svg": "https://flagcdn.com/tw.svg"
+ },
+ {
+  "iso3": "TZA",
+  "iso2": "TZ",
+  "slug": "tanzania",
+  "name_es": "Tanzania",
+  "name_en": "Tanzania",
+  "capital": "Dodoma",
+  "languages": [
+   "English",
+   "Swahili"
+  ],
+  "currencies": [
+   "TZS"
+  ],
+  "population": 68153004,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/tz.svg"
+ },
+ {
+  "iso3": "UGA",
+  "iso2": "UG",
+  "slug": "uganda",
+  "name_es": "Uganda",
+  "name_en": "Uganda",
+  "capital": "Kampala",
+  "languages": [
+   "English",
+   "Swahili"
+  ],
+  "currencies": [
+   "UGX"
+  ],
+  "population": 45905417,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ug.svg"
+ },
+ {
+  "iso3": "UKR",
+  "iso2": "UA",
+  "slug": "ucrania",
+  "name_es": "Ucrania",
+  "name_en": "Ukraine",
+  "capital": "Kyiv",
+  "languages": [
+   "Ukrainian"
+  ],
+  "currencies": [
+   "UAH"
+  ],
+  "population": 32862000,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ua.svg"
+ },
+ {
+  "iso3": "UMI",
+  "iso2": "UM",
+  "slug": "islas-ultramarinas-menores-de-estados-unidos",
+  "name_es": "Islas Ultramarinas Menores de Estados Unidos",
+  "name_en": "United States Minor Outlying Islands",
+  "capital": "Washington DC",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 0,
+  "timezones": [
+   "UTC-11:00",
+   "UTC-10:00",
+   "UTC+12:00"
+  ],
+  "flag_svg": "https://flagcdn.com/um.svg"
+ },
+ {
+  "iso3": "UNK",
+  "iso2": "XK",
+  "slug": "kosovo",
+  "name_es": "Kosovo",
+  "name_en": "Kosovo",
+  "capital": "Pristina",
+  "languages": [
+   "Albanian",
+   "Serbian"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 1585566,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/xk.svg"
+ },
+ {
+  "iso3": "URY",
+  "iso2": "UY",
+  "slug": "uruguay",
+  "name_es": "Uruguay",
+  "name_en": "Uruguay",
+  "capital": "Montevideo",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "UYU"
+  ],
+  "population": 3499451,
+  "timezones": [
+   "UTC-03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/uy.svg"
+ },
+ {
+  "iso3": "USA",
+  "iso2": "US",
+  "slug": "estados-unidos",
+  "name_es": "Estados Unidos",
+  "name_en": "United States",
+  "capital": "Washington, D.C.",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 340110988,
+  "timezones": [
+   "UTC-12:00",
+   "UTC-11:00",
+   "UTC-10:00",
+   "UTC-09:00",
+   "UTC-08:00",
+   "UTC-07:00",
+   "UTC-06:00",
+   "UTC-05:00",
+   "UTC-04:00",
+   "UTC+10:00",
+   "UTC+12:00"
+  ],
+  "flag_svg": "https://flagcdn.com/us.svg"
+ },
+ {
+  "iso3": "UZB",
+  "iso2": "UZ",
+  "slug": "uzbekistan",
+  "name_es": "Uzbekistán",
+  "name_en": "Uzbekistan",
+  "capital": "Tashkent",
+  "languages": [
+   "Russian",
+   "Uzbek"
+  ],
+  "currencies": [
+   "UZS"
+  ],
+  "population": 37859698,
+  "timezones": [
+   "UTC+05:00"
+  ],
+  "flag_svg": "https://flagcdn.com/uz.svg"
+ },
+ {
+  "iso3": "VAT",
+  "iso2": "VA",
+  "slug": "ciudad-del-vaticano",
+  "name_es": "Ciudad del Vaticano",
+  "name_en": "Vatican City",
+  "capital": "Vatican City",
+  "languages": [
+   "Italian",
+   "Latin"
+  ],
+  "currencies": [
+   "EUR"
+  ],
+  "population": 882,
+  "timezones": [
+   "UTC+01:00"
+  ],
+  "flag_svg": "https://flagcdn.com/va.svg"
+ },
+ {
+  "iso3": "VCT",
+  "iso2": "VC",
+  "slug": "san-vicente-y-granadinas",
+  "name_es": "San Vicente y Granadinas",
+  "name_en": "Saint Vincent and the Grenadines",
+  "capital": "Kingstown",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "XCD"
+  ],
+  "population": 110872,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/vc.svg"
+ },
+ {
+  "iso3": "VEN",
+  "iso2": "VE",
+  "slug": "venezuela",
+  "name_es": "Venezuela",
+  "name_en": "Venezuela",
+  "capital": "Caracas",
+  "languages": [
+   "Spanish"
+  ],
+  "currencies": [
+   "VES"
+  ],
+  "population": 28517000,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ve.svg"
+ },
+ {
+  "iso3": "VGB",
+  "iso2": "VG",
+  "slug": "islas-virgenes-del-reino-unido",
+  "name_es": "Islas Vírgenes del Reino Unido",
+  "name_en": "British Virgin Islands",
+  "capital": "Road Town",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 39471,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/vg.svg"
+ },
+ {
+  "iso3": "VIR",
+  "iso2": "VI",
+  "slug": "islas-virgenes-de-los-estados-unidos",
+  "name_es": "Islas Vírgenes de los Estados Unidos",
+  "name_en": "United States Virgin Islands",
+  "capital": "Charlotte Amalie",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "USD"
+  ],
+  "population": 87146,
+  "timezones": [
+   "UTC-04:00"
+  ],
+  "flag_svg": "https://flagcdn.com/vi.svg"
+ },
+ {
+  "iso3": "VNM",
+  "iso2": "VN",
+  "slug": "vietnam",
+  "name_es": "Vietnam",
+  "name_en": "Vietnam",
+  "capital": "Hanoi",
+  "languages": [
+   "Vietnamese"
+  ],
+  "currencies": [
+   "VND"
+  ],
+  "population": 101343800,
+  "timezones": [
+   "UTC+07:00"
+  ],
+  "flag_svg": "https://flagcdn.com/vn.svg"
+ },
+ {
+  "iso3": "VUT",
+  "iso2": "VU",
+  "slug": "vanuatu",
+  "name_es": "Vanuatu",
+  "name_en": "Vanuatu",
+  "capital": "Port Vila",
+  "languages": [
+   "Bislama",
+   "English",
+   "French"
+  ],
+  "currencies": [
+   "VUV"
+  ],
+  "population": 321409,
+  "timezones": [
+   "UTC+11:00"
+  ],
+  "flag_svg": "https://flagcdn.com/vu.svg"
+ },
+ {
+  "iso3": "WLF",
+  "iso2": "WF",
+  "slug": "wallis-y-futuna",
+  "name_es": "Wallis y Futuna",
+  "name_en": "Wallis and Futuna",
+  "capital": "Mata-Utu",
+  "languages": [
+   "French"
+  ],
+  "currencies": [
+   "XPF"
+  ],
+  "population": 11620,
+  "timezones": [
+   "UTC+12:00"
+  ],
+  "flag_svg": "https://flagcdn.com/wf.svg"
+ },
+ {
+  "iso3": "WSM",
+  "iso2": "WS",
+  "slug": "samoa",
+  "name_es": "Samoa",
+  "name_en": "Samoa",
+  "capital": "Apia",
+  "languages": [
+   "English",
+   "Samoan"
+  ],
+  "currencies": [
+   "WST"
+  ],
+  "population": 205557,
+  "timezones": [
+   "UTC+13:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ws.svg"
+ },
+ {
+  "iso3": "YEM",
+  "iso2": "YE",
+  "slug": "yemen",
+  "name_es": "Yemen",
+  "name_en": "Yemen",
+  "capital": "Sana'a",
+  "languages": [
+   "Arabic"
+  ],
+  "currencies": [
+   "YER"
+  ],
+  "population": 32684503,
+  "timezones": [
+   "UTC+03:00"
+  ],
+  "flag_svg": "https://flagcdn.com/ye.svg"
+ },
+ {
+  "iso3": "ZAF",
+  "iso2": "ZA",
+  "slug": "sudafrica",
+  "name_es": "Sudáfrica",
+  "name_en": "South Africa",
+  "capital": "Pretoria",
+  "languages": [
+   "Afrikaans",
+   "English",
+   "Southern Ndebele",
+   "Northern Sotho",
+   "Southern Sotho",
+   "Swazi",
+   "Tswana",
+   "Tsonga",
+   "Venda",
+   "Xhosa",
+   "Zulu"
+  ],
+  "currencies": [
+   "ZAR"
+  ],
+  "population": 63100945,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/za.svg"
+ },
+ {
+  "iso3": "ZMB",
+  "iso2": "ZM",
+  "slug": "zambia",
+  "name_es": "Zambia",
+  "name_en": "Zambia",
+  "capital": "Lusaka",
+  "languages": [
+   "English"
+  ],
+  "currencies": [
+   "ZMW"
+  ],
+  "population": 19693423,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/zm.svg"
+ },
+ {
+  "iso3": "ZWE",
+  "iso2": "ZW",
+  "slug": "zimbabue",
+  "name_es": "Zimbabue",
+  "name_en": "Zimbabwe",
+  "capital": "Harare",
+  "languages": [
+   "Chibarwe",
+   "English",
+   "Kalanga",
+   "Khoisan",
+   "Ndau",
+   "Northern Ndebele",
+   "Chewa",
+   "Shona",
+   "Sotho",
+   "Tonga",
+   "Tswana",
+   "Tsonga",
+   "Venda",
+   "Xhosa",
+   "Zimbabwean Sign Language"
+  ],
+  "currencies": [
+   "ZWL"
+  ],
+  "population": 17073087,
+  "timezones": [
+   "UTC+02:00"
+  ],
+  "flag_svg": "https://flagcdn.com/zw.svg"
+ }
+]

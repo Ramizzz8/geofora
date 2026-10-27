@@ -3,8 +3,10 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
 from app.config import Settings, get_settings
+from app.countries import CountryIndex, load_countries
 from app.db import connect, init_db
 from app.http import get_client
+from app.routes import router
 
 
 def create_app(settings: Settings | None = None) -> FastAPI:
@@ -13,6 +15,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @asynccontextmanager
     async def lifespan(app: FastAPI):
         app.state.settings = settings
+        app.state.countries = CountryIndex(load_countries(settings.countries_path))
         app.state.db = connect(settings.db_path)
         init_db(app.state.db)
         app.state.http = get_client()
@@ -26,4 +29,5 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     def health():
         return {"status": "ok"}
 
+    app.include_router(router)
     return app

@@ -1,0 +1,5 @@
+[
+ {"iso3":"AFG","iso2":"AF","slug":"afganistan","name_es":"Afganistán","name_en":"Afghanistan","capital":"Kabul","languages":["Dari","Pashto"],"currencies":["AFN"],"population":40218234,"timezones":["UTC+04:30"],"flag_svg":"https://flagcdn.com/af.svg"},
+ {"iso3":"JPN","iso2":"JP","slug":"japon","name_es":"Japón","name_en":"Japan","capital":"Tokyo","languages":["Japanese"],"currencies":["JPY"],"population":125836021,"timezones":["UTC+09:00"],"flag_svg":"https://flagcdn.com/jp.svg"},
+ {"iso3":"TUV","iso2":"TV","slug":"tuvalu","name_es":"Tuvalu","name_en":"Tuvalu","capital":"Funafuti","languages":["English","Tuvaluan"],"currencies":["AUD"],"population":11792,"timezones":["UTC+12:00"],"flag_svg":"https://flagcdn.com/tv.svg"}
+]
