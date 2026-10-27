@@ -18,12 +18,18 @@ sudo mkdir -p /var/lib/geofora && sudo chown geofora /var/lib/geofora
 ## 3. Variables de entorno (`/etc/geofora.env`, permisos 600)
 ```
 DB_PATH=/var/lib/geofora/geofora.db
-COUNTRIES_PATH=/opt/geofora/backend/data/countries.json  # necesario: pip install . copia app/ fuera del repo
-LASTFM_API_KEY=...        # https://www.last.fm/api/account/create (opcional)
-DEEPL_API_KEY=...         # https://www.deepl.com/pro-api (plan Free, opcional)
+COUNTRIES_PATH=/opt/geofora/backend/data/countries.json
+LASTFM_API_KEY=
+DEEPL_API_KEY=
 NEWS_INTERVAL_MIN=45
 ENABLE_SCHEDULER=true
 ```
+systemd no admite comentarios al final de una línea: cada valor va solo.
+
+- `COUNTRIES_PATH` es necesario porque `pip install .` copia `app/` fuera del repo.
+- `LASTFM_API_KEY`: se pide en https://www.last.fm/api/account/create (opcional).
+- `DEEPL_API_KEY`: plan Free en https://www.deepl.com/pro-api (opcional).
+
 Sin `LASTFM_API_KEY` la música usa solo artistas de MusicBrainz; sin `DEEPL_API_KEY` los titulares salen en su idioma original.
 
 ## 4. Servicios
