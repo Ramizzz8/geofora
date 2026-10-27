@@ -1,11 +1,15 @@
+import logging
 import time
 from dataclasses import asdict
 
 from fastapi import APIRouter, HTTPException, Request
 
 from app.countries import Country
+from app.music import get_music
 from app.news.store import heatmap, last_seen, recent_articles
 from app.translate import translate_titles
+
+log = logging.getLogger(__name__)
 
 # todos los endpoints son async: la conexión SQLite se usa solo desde el event loop
 router = APIRouter(prefix="/api")
@@ -44,3 +48,19 @@ async def get_news(request: Request, slug: str):
     articles, rng = recent_articles(db, country.iso3, time.time(), own_country=country.name_en)
     out = await translate_titles(db, request.app.state.translator, articles)
     return {"range": rng, "articles": [asdict(a) for a in out], "updated_at": last_seen(db)}
+
+
+def unavailable(section: str) -> HTTPException:
+    return HTTPException(status_code=503, detail=f"{section} no disponible ahora mismo")
+
+
+@router.get("/country/{slug}/music")
+async def get_country_music(request: Request, slug: str):
+    country = get_country_or_404(request, slug)
+    state = request.app.state
+    try:
+        result = await get_music(state.db, state.http, country, state.settings.lastfm_api_key)
+    except Exception:
+        log.warning("music unavailable for %s", country.iso3, exc_info=True)
+        raise unavailable("Música")
+    return result.to_response()
