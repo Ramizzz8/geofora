@@ -1,3 +1,5 @@
+import asyncio
+import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
 
@@ -6,6 +8,8 @@ import httpx
 from app.countries import Country
 
 GDELT_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
+GDELT_DELAY_S = 5  # GDELT pide como mucho una petición cada 5 s
+MIN_LOCAL = 5
 
 # GDELT devuelve el idioma por su nombre en inglés
 LANG_CODES = {
@@ -42,9 +46,9 @@ def _norm_title(t: str) -> str:
     return " ".join(t.lower().split())
 
 
-async def fetch_country_news(client: httpx.AsyncClient, country: Country) -> list[Article]:
+async def _query(client: httpx.AsyncClient, query: str) -> list[dict]:
     r = await client.get(GDELT_URL, params={
-        "query": f'"{country.name_en}"',
+        "query": query,
         "mode": "artlist",
         "format": "json",
         "maxrecords": 75,
@@ -53,13 +57,23 @@ async def fetch_country_news(client: httpx.AsyncClient, country: Country) -> lis
     })
     r.raise_for_status()
     try:
-        data = r.json()
+        return r.json().get("articles", [])
     except ValueError as e:
         # límite de peticiones o error: GDELT responde 200 con texto plano
         raise ValueError(f"GDELT non-JSON response: {r.text[:100]}") from e
 
+
+async def fetch_country_news(client: httpx.AsyncClient, country: Country, sleep=asyncio.sleep) -> list[Article]:
+    # Primero medios del propio país que hablan de él: la búsqueda general trae muchas
+    # noticias que solo lo mencionan de pasada. Si hay pocas, se completa con ella.
+    name = f'"{country.name_en}"'
+    raw = await _query(client, f"{name} sourcecountry:{re.sub(r'[^a-z]', '', country.name_en.lower())}")
+    if len(raw) < MIN_LOCAL:
+        await sleep(GDELT_DELAY_S)
+        raw += await _query(client, name)
+
     articles, seen_urls, seen_titles = [], set(), set()
-    for a in data.get("articles", []):
+    for a in raw:
         title = (a.get("title") or "").strip()
         key = _norm_title(title)
         if not title or a["url"] in seen_urls or key in seen_titles:

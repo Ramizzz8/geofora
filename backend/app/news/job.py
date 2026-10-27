@@ -5,12 +5,10 @@ import time
 from typing import Iterable
 
 from app.countries import Country
-from app.news.gdelt import fetch_country_news
+from app.news.gdelt import GDELT_DELAY_S, fetch_country_news
 from app.news.store import HOUR, prune, save_articles
 
 log = logging.getLogger(__name__)
-
-GDELT_DELAY_S = 5
 
 
 async def run_news_cycle(
