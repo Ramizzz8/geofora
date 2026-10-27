@@ -73,3 +73,20 @@ async def test_deepl_request_format():
     assert req.headers["Authorization"] == "DeepL-Auth-Key k"
     import json
     assert json.loads(req.content) == {"text": ["Hello"], "target_lang": "ES", "source_lang": "EN"}
+
+
+async def test_slow_language_does_not_block_others(conn):
+    import asyncio
+    import time
+
+    class Hanging(FakeTranslator):
+        async def translate(self, texts, source, target):
+            if source == "fr":
+                await asyncio.Event().wait()
+            return await super().translate(texts, source, target)
+
+    start = time.monotonic()
+    out = await translate_titles(conn, Hanging(), [art("Hello", "en"), art("Bonjour", "fr")], timeout_s=0.2)
+    assert time.monotonic() - start < 1
+    assert out[0].translated is True
+    assert out[1].translated is False

@@ -1,3 +1,4 @@
+import asyncio
 import hashlib
 import logging
 import sqlite3
@@ -12,6 +13,7 @@ from app.news.store import ArticleOut
 log = logging.getLogger(__name__)
 
 DEEPL_URL = "https://api-free.deepl.com/v2/translate"
+TRANSLATE_TIMEOUT_S = 3  # nginx corta a los 30 s: un DeepL lento no puede bloquear las noticias
 
 
 class Translator(Protocol):
@@ -37,7 +39,11 @@ def _hash(target: str, text: str) -> str:
 
 
 async def translate_titles(
-    conn: sqlite3.Connection, translator: Translator | None, articles: list[Article], target: str = "es"
+    conn: sqlite3.Connection,
+    translator: Translator | None,
+    articles: list[Article],
+    target: str = "es",
+    timeout_s: float = TRANSLATE_TIMEOUT_S,
 ) -> list[ArticleOut]:
     out = [ArticleOut.untranslated(a) for a in articles]
     pending: dict[str, list[ArticleOut]] = defaultdict(list)
@@ -50,12 +56,16 @@ async def translate_titles(
         elif translator:
             pending[o.language].append(o)
 
-    for lang, items in pending.items():
-        try:
-            translated = await translator.translate([o.title_original for o in items], lang, target)
-        except Exception:
+    async def one(lang: str, items: list[ArticleOut]):
+        return await asyncio.wait_for(
+            translator.translate([o.title_original for o in items], lang, target), timeout_s
+        )
+
+    results = await asyncio.gather(*(one(l, i) for l, i in pending.items()), return_exceptions=True)
+    for (lang, items), translated in zip(pending.items(), results):
+        if isinstance(translated, BaseException):
             # sin traducción se muestra el original con su idioma, nunca un error
-            log.warning("translation failed for %s", lang, exc_info=True)
+            log.warning("translation failed for %s: %r", lang, translated)
             continue
         for o, text in zip(items, translated):
             o.title, o.translated = text, True

@@ -9,3 +9,5 @@ dist/
 .env
 *.db
 .superpowers/
+*.db-wal
+*.db-shm

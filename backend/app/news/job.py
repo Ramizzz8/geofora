@@ -31,3 +31,19 @@ async def run_news_cycle(
             log.warning("news fetch failed for %s", country.iso3, exc_info=True)
     prune(conn, now() - 7 * 24 * HOUR)
     log.info("news cycle done: %d ok, %d failed", ok, failed)
+
+
+async def run_forever(cycle, interval_s: float, sleep=asyncio.sleep, now=time.monotonic, iterations=None) -> None:
+    """Repite cycle() cada interval_s contando desde su inicio: si un ciclo tarda más
+    que el intervalo, el siguiente empieza en seguida en vez de saltarse una vuelta."""
+    i = 0
+    while iterations is None or i < iterations:
+        start = now()
+        try:
+            await cycle()
+        except Exception:
+            log.exception("news cycle crashed")
+        elapsed = now() - start
+        log.info("news cycle took %.0f s", elapsed)
+        await sleep(max(0, interval_s - elapsed))
+        i += 1

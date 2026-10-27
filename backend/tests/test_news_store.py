@@ -57,3 +57,10 @@ def test_prune_removes_old(conn):
     save_articles(conn, "AFG", [art(1, 1), art(2, 8 * 24)])
     prune(conn, NOW - 7 * 24 * H)
     assert [a.url for a in recent_articles(conn, "AFG", NOW + 0)[0]] == ["https://x/1"]
+
+
+def test_same_url_counts_for_each_country(conn):
+    a = art(1, 1)
+    save_articles(conn, "FRA", [a])
+    save_articles(conn, "DEU", [a])
+    assert heatmap(conn, NOW) == {"FRA": 1, "DEU": 1}

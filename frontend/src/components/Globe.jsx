@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import GlobeGL from 'react-globe.gl'
 import { MeshPhongMaterial } from 'three'
 import { getHeatmap } from '../api'
+import { center } from '../geo'
 import { heatColor } from '../heatColor'
 
 const HEATMAP_REFRESH_MS = 10 * 60 * 1000
@@ -14,19 +15,6 @@ function useWindowSize() {
     return () => window.removeEventListener('resize', onResize)
   }, [])
   return size
-}
-
-// centro aproximado del país a partir de la caja que envuelve sus polígonos
-function center(feature) {
-  const rings = feature.geometry.type === 'Polygon'
-    ? feature.geometry.coordinates
-    : feature.geometry.coordinates.flat()
-  let minLat = 90, maxLat = -90, minLng = 180, maxLng = -180
-  for (const [lng, lat] of rings.flat()) {
-    minLat = Math.min(minLat, lat); maxLat = Math.max(maxLat, lat)
-    minLng = Math.min(minLng, lng); maxLng = Math.max(maxLng, lng)
-  }
-  return { lat: (minLat + maxLat) / 2, lng: (minLng + maxLng) / 2 }
 }
 
 const PANEL_SPACE = 470 // ancho del panel lateral + margen

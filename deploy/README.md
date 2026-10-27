@@ -1,6 +1,6 @@
 # Despliegue de GEOFORA en el VPS
 
-Subdominio previsto: `geofora.andresrami.com` (pendiente de confirmar). Requiere Python ≥ 3.12, Node ≥ 20, Nginx y certbot.
+Subdominio previsto: `geofora.andresrami.com` (pendiente de confirmar). Requiere Python ≥ 3.12, Node ≥ 20, Nginx y certbot. Todos los comandos de build se ejecutan como el usuario `geofora`, dueño de `/opt/geofora`.
 
 ## 1. DNS
 Registro `A` de `geofora` apuntando a la IP del VPS.
@@ -9,9 +9,10 @@ Registro `A` de `geofora` apuntando a la IP del VPS.
 ```bash
 sudo useradd --system --home /opt/geofora geofora
 sudo git clone <repo> /opt/geofora
+sudo chown -R geofora: /opt/geofora
 cd /opt/geofora/backend
-python3 -m venv .venv && .venv/bin/pip install .
-cd ../frontend && npm ci && npm run build
+sudo -u geofora python3 -m venv .venv && sudo -u geofora .venv/bin/pip install .
+cd ../frontend && sudo -u geofora npm ci && sudo -u geofora npm run build
 sudo mkdir -p /var/lib/geofora && sudo chown geofora /var/lib/geofora
 ```
 
@@ -51,11 +52,12 @@ sudo certbot --nginx -d geofora.andresrami.com
 ## Actualizar
 ```bash
 cd /opt/geofora && sudo -u geofora git pull
-backend/.venv/bin/pip install ./backend && (cd frontend && npm ci && npm run build)
+sudo -u geofora backend/.venv/bin/pip install ./backend
+(cd frontend && sudo -u geofora npm ci && sudo -u geofora npm run build)
 sudo systemctl restart geofora-api
 ```
 
 ## Regenerar los datos de países (ocasional)
 ```bash
-cd backend && .venv/bin/python -m scripts.build_countries
+cd /opt/geofora/backend && sudo -u geofora .venv/bin/python -m scripts.build_countries
 ```
