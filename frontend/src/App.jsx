@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams, Routes, Route } from 'react-router-dom'
+import CountryPanel from './components/CountryPanel'
 import Globe from './components/Globe'
 
 function Home() {
@@ -19,7 +20,15 @@ function Home() {
         <h1>GEOFORA</h1>
         <p>El mundo, país a país</p>
       </header>
-      <Globe onSelect={(s) => navigate(`/pais/${s}`)} selectedIso3={selected?.properties.iso3 ?? null} />
+      <Globe onSelect={(s) => navigate(`/pais/${s}`)} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug)} />
+      {slug && (
+        <CountryPanel
+          key={slug}
+          slug={slug}
+          fallbackName={selected?.properties.name_es}
+          onClose={() => navigate('/')}
+        />
+      )}
     </div>
   )
 }

@@ -29,9 +29,14 @@ function center(feature) {
   return { lat: (minLat + maxLat) / 2, lng: (minLng + maxLng) / 2 }
 }
 
-export default function Globe({ onSelect, selectedIso3 }) {
+const PANEL_SPACE = 470 // ancho del panel lateral + margen
+const MOBILE_LAT_SHIFT = 22
+
+export default function Globe({ onSelect, selectedIso3, panelOpen = false }) {
   const globeRef = useRef()
   const { w, h } = useWindowSize()
+  // en escritorio el globo se aparta para no quedar tapado por el panel
+  const width = panelOpen && w >= 768 ? w - PANEL_SPACE : w
   const [features, setFeatures] = useState([])
   const [counts, setCounts] = useState({})
   const [hovered, setHovered] = useState(null)
@@ -63,7 +68,10 @@ export default function Globe({ onSelect, selectedIso3 }) {
     const f = features.find((x) => x.properties.iso3 === selectedIso3)
     if (!f || !globeRef.current) return
     globeRef.current.controls().autoRotate = false
-    globeRef.current.pointOfView({ ...center(f), altitude: 1.9 }, 900)
+    const { lat, lng } = center(f)
+    // en móvil la hoja inferior tapa la mitad de abajo: se mira algo más al sur
+    const shift = window.innerWidth < 768 ? MOBILE_LAT_SHIFT : 0
+    globeRef.current.pointOfView({ lat: lat - shift, lng, altitude: 1.9 }, 900)
   }, [selectedIso3, features])
 
   const max = useMemo(() => Math.max(0, ...Object.values(counts)), [counts])
@@ -71,7 +79,7 @@ export default function Globe({ onSelect, selectedIso3 }) {
   return (
     <GlobeGL
       ref={globeRef}
-      width={w}
+      width={width}
       height={h}
       backgroundColor="rgba(0,0,0,0)"
       globeMaterial={material}
