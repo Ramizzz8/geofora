@@ -12,3 +12,4 @@ dist/
 *.db-wal
 *.db-shm
 .vite/
+docs/memoria/
