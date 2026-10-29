@@ -27,3 +27,34 @@ export function localTime(timezone, now = new Date()) {
   const t = new Date(now.getTime() + offsetMin * 60_000)
   return `${String(t.getUTCHours()).padStart(2, '0')}:${String(t.getUTCMinutes()).padStart(2, '0')}`
 }
+
+const languageNamesEs = new Intl.DisplayNames(['es'], { type: 'language' })
+const currencyNamesEs = new Intl.DisplayNames(['es'], { type: 'currency' })
+
+const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1)
+
+// Traduce con el navegador; si no conoce un código lo devuelve tal cual y entonces se
+// usa el nombre original (en inglés) que viene en los datos.
+export function languageNames(codes, names) {
+  if (!codes?.length) return names.join(', ')
+  return capitalize(codes.map((c, i) => {
+    const es = languageNamesEs.of(c)
+    return es && es !== c ? es : names[i] ?? c
+  }).join(', '))
+}
+
+export function currencyNames(codes) {
+  return capitalize(codes.map((c) => currencyNamesEs.of(c) ?? c).join(', '))
+}
+
+// Misma normalización que slugify en el backend
+export function canonicalSlug(slug) {
+  return slug.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+}
+
+const HTML_ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }
+
+export function escapeHtml(text) {
+  return String(text).replace(/[&<>"']/g, (ch) => HTML_ESCAPES[ch])
+}

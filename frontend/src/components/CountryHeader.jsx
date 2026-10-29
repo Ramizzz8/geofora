@@ -1,10 +1,10 @@
-import { localTime } from '../format'
+import { currencyNames, languageNames, localTime } from '../format'
 
 export default function CountryHeader({ country, cover }) {
   const facts = [
     ['Capital', country.capital],
-    ['Idiomas', country.languages.join(', ')],
-    ['Moneda', country.currencies.join(', ')],
+    ['Idiomas', languageNames(country.language_codes, country.languages)],
+    ['Moneda', currencyNames(country.currencies)],
     ['Población', country.population?.toLocaleString('es-ES')],
     ['Hora local', localTime(country.timezones[0])],
   ].filter(([, v]) => v)

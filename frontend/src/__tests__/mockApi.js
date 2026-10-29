@@ -15,7 +15,7 @@ export function mockApi(routes) {
 export const JAPON = {
   iso3: 'JPN', iso2: 'JP', slug: 'japon', name_es: 'Japón', name_en: 'Japan', capital: 'Tokyo',
   languages: ['Japanese'], currencies: ['JPY'], population: 125836021, timezones: ['UTC+09:00'],
-  flag_svg: 'https://flagcdn.com/jp.svg',
+  flag_svg: 'https://flagcdn.com/jp.svg', language_codes: ['jpn'],
 }
 
 export const NOW_S = Date.now() / 1000

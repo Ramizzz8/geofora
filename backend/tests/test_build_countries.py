@@ -47,6 +47,7 @@ def test_merge_builds_countries_from_rest():
     assert afg.slug == "afganistan"
     assert afg.name_es == "Afganistán"
     assert afg.languages == ["Dari", "Pashto"]
+    assert afg.language_codes == ["prs", "pus"]
     assert afg.currencies == ["AFN"]
 
 

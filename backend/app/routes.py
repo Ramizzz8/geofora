@@ -3,10 +3,11 @@ import time
 from dataclasses import asdict
 
 from fastapi import APIRouter, HTTPException, Request
+from fastapi.responses import RedirectResponse
 
 from app.countries import Country
 from app.culture import get_culture
-from app.music import get_music
+from app.music import fresh_preview, get_music
 from app.photos import get_photos
 from app.news.store import heatmap, last_seen, recent_articles
 from app.translate import translate_titles
@@ -65,7 +66,25 @@ async def get_country_music(request: Request, slug: str):
     except Exception:
         log.warning("music unavailable for %s", country.iso3, exc_info=True)
         raise unavailable("Música")
-    return result.to_response()
+    body = result.to_response()
+    body["items"] = [
+        {**item, "preview_url": f"/api/music/preview/{item['deezer_id']}" if item.get("deezer_id") else None}
+        for item in body["items"]
+    ]
+    return body
+
+
+@router.get("/music/preview/{deezer_id}")
+async def music_preview(request: Request, deezer_id: int):
+    try:
+        url = await fresh_preview(request.app.state.http, deezer_id)
+    except Exception:
+        log.warning("deezer preview unavailable for %s", deezer_id, exc_info=True)
+        raise unavailable("Música")
+    if not url:
+        raise HTTPException(status_code=404, detail="Esta canción no tiene fragmento")
+    # sin caché: el enlace de Deezer caduca y siempre hay que pedir uno nuevo
+    return RedirectResponse(url, status_code=302, headers={"Cache-Control": "no-store"})
 
 
 @router.get("/country/{slug}/culture")

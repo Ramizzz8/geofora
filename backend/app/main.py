@@ -1,6 +1,5 @@
 import asyncio
 import json
-import logging
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -11,11 +10,12 @@ from app.config import Settings, get_settings
 from app.countries import CountryIndex, load_countries
 from app.db import connect, init_db
 from app.http import get_client
+from app.logs import setup_logging
 from app.news.job import ingest, run_forever
 from app.routes import router
 from app.translate import DeepLTranslator
 
-logging.basicConfig(level=logging.INFO)
+setup_logging()
 
 
 def create_app(settings: Settings | None = None) -> FastAPI:

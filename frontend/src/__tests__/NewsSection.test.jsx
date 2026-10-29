@@ -63,3 +63,9 @@ test('si la foto falla, la tarjeta queda solo con texto', async () => {
   expect(card.querySelector('img')).toBeNull()
   expect(card).toHaveClass('news-card--text')
 })
+
+test('muestra cuándo se actualizaron las noticias', async () => {
+  mockApi({ '/api/country/japon/news': { range: '48h', updated_at: NOW_S - 20 * 60, articles: [withImage(1, null)] } })
+  render(<NewsSection slug="japon" />)
+  expect(await screen.findByText(/Actualizado hace 20 minutos/)).toBeInTheDocument()
+})

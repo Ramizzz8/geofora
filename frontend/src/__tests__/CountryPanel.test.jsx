@@ -17,7 +17,8 @@ test('muestra la ficha básica', async () => {
   render(<CountryPanel slug="japon" onClose={() => {}} />)
   expect(await screen.findByRole('heading', { name: 'Japón' })).toBeInTheDocument()
   expect(screen.getByText('Tokyo')).toBeInTheDocument()
-  expect(screen.getByText('JPY')).toBeInTheDocument()
+  expect(screen.getByText('Yen japonés')).toBeInTheDocument()
+  expect(screen.getByText('Japonés')).toBeInTheDocument()
 })
 
 test('país inexistente muestra "País no encontrado"', async () => {

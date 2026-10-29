@@ -49,6 +49,7 @@ def to_country(r: dict) -> Country:
         population=r.get("population"),
         timezones=r.get("timezones") or [],
         flag_svg=(r.get("flags") or {}).get("svg"),
+        language_codes=list((r.get("languages") or {}).keys()),
     )
 
 

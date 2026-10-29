@@ -6,24 +6,26 @@ export class ApiError extends Error {
   }
 }
 
+const SERVER_DOWN = 'El servidor no responde ahora mismo. Inténtalo de nuevo en unos minutos.'
+
 async function get(path) {
   const res = await fetch(`/api${path}`)
   if (!res.ok) {
-    let detail = res.statusText
+    let detail = null
     try {
-      detail = (await res.json()).detail ?? detail
+      detail = (await res.json()).detail
     } catch {
-      // cuerpo sin JSON: se queda el statusText
+      // cuerpo sin JSON (p. ej. una página de error de Caddy): se usa el mensaje genérico
     }
-    throw new ApiError(res.status, detail)
+    throw new ApiError(res.status, detail ?? SERVER_DOWN)
   }
   return res.json()
 }
 
 export const getCountries = () => get('/countries')
-export const getCountry = (slug) => get(`/country/${slug}`)
+export const getCountry = (slug) => get(`/country/${encodeURIComponent(slug)}`)
 export const getHeatmap = () => get('/heatmap')
-export const getNews = (slug) => get(`/country/${slug}/news`)
-export const getMusic = (slug) => get(`/country/${slug}/music`)
-export const getCulture = (slug) => get(`/country/${slug}/culture`)
-export const getPhotos = (slug) => get(`/country/${slug}/photos`)
+export const getNews = (slug) => get(`/country/${encodeURIComponent(slug)}/news`)
+export const getMusic = (slug) => get(`/country/${encodeURIComponent(slug)}/music`)
+export const getCulture = (slug) => get(`/country/${encodeURIComponent(slug)}/culture`)
+export const getPhotos = (slug) => get(`/country/${encodeURIComponent(slug)}/photos`)

@@ -59,6 +59,7 @@ export default function NewsSection({ slug }) {
         const rest = data.articles.filter((a) => a !== hero)
         return (
           <>
+            {data.updated_at && <p className="muted small">Actualizado {timeAgo(data.updated_at)}</p>}
             {data.range === '7d' && <p className="muted small">Mostrando noticias de los últimos 7 días</p>}
             {hero && <NewsCard a={hero} hero />}
             <div className="news-grid">{rest.map((a) => <NewsCard key={a.url} a={a} />)}</div>

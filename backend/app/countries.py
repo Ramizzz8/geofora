@@ -1,5 +1,5 @@
 import json
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
 from app.slug import slugify
@@ -18,6 +18,8 @@ class Country:
     population: int | None
     timezones: list[str]
     flag_svg: str | None
+    # ISO 639-3, en el mismo orden que languages: el frontend los traduce al español
+    language_codes: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)

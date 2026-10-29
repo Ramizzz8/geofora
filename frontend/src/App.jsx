@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { canonicalSlug } from './format'
 import { useNavigate, useParams, Routes, Route } from 'react-router-dom'
 import CountryPanel from './components/CountryPanel'
 import Globe from './components/Globe'
@@ -18,12 +19,17 @@ function Home() {
   const selected = features.find((f) => f.properties.slug === slug)
   const goTo = (s) => navigate(`/pais/${s}`)
 
+  // /pais/afganistán → /pais/afganistan, para que el globo encuentre el país
+  useEffect(() => {
+    if (slug && canonicalSlug(slug) !== slug) navigate(`/pais/${canonicalSlug(slug)}`, { replace: true })
+  }, [slug, navigate])
+
   return (
     <div className="app">
       <Starfield />
       <Brand />
       <SearchBox onSelect={goTo} />
-      <Globe onSelect={goTo} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug)} />
+      <Globe features={features} onSelect={goTo} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug)} />
       {slug && (
         <CountryPanel
           key={slug}

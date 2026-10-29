@@ -17,7 +17,11 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/aw.svg"
+  "flag_svg": "https://flagcdn.com/aw.svg",
+  "language_codes": [
+   "nld",
+   "pap"
+  ]
  },
  {
   "iso3": "AFG",
@@ -38,7 +42,12 @@
   "timezones": [
    "UTC+04:30"
   ],
-  "flag_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg"
+  "flag_svg": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+  "language_codes": [
+   "prs",
+   "pus",
+   "tuk"
+  ]
  },
  {
   "iso3": "AGO",
@@ -57,7 +66,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/ao.svg"
+  "flag_svg": "https://flagcdn.com/ao.svg",
+  "language_codes": [
+   "por"
+  ]
  },
  {
   "iso3": "AIA",
@@ -76,7 +88,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/ai.svg"
+  "flag_svg": "https://flagcdn.com/ai.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "ALA",
@@ -95,7 +110,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/ax.svg"
+  "flag_svg": "https://flagcdn.com/ax.svg",
+  "language_codes": [
+   "swe"
+  ]
  },
  {
   "iso3": "ALB",
@@ -114,7 +132,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/al.svg"
+  "flag_svg": "https://flagcdn.com/al.svg",
+  "language_codes": [
+   "sqi"
+  ]
  },
  {
   "iso3": "AND",
@@ -133,7 +154,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/ad.svg"
+  "flag_svg": "https://flagcdn.com/ad.svg",
+  "language_codes": [
+   "cat"
+  ]
  },
  {
   "iso3": "ARE",
@@ -152,7 +176,10 @@
   "timezones": [
    "UTC+04:00"
   ],
-  "flag_svg": "https://flagcdn.com/ae.svg"
+  "flag_svg": "https://flagcdn.com/ae.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "ARG",
@@ -172,7 +199,11 @@
   "timezones": [
    "UTC-03:00"
   ],
-  "flag_svg": "https://flagcdn.com/ar.svg"
+  "flag_svg": "https://flagcdn.com/ar.svg",
+  "language_codes": [
+   "grn",
+   "spa"
+  ]
  },
  {
   "iso3": "ARM",
@@ -191,7 +222,10 @@
   "timezones": [
    "UTC+04:00"
   ],
-  "flag_svg": "https://flagcdn.com/am.svg"
+  "flag_svg": "https://flagcdn.com/am.svg",
+  "language_codes": [
+   "hye"
+  ]
  },
  {
   "iso3": "ASM",
@@ -211,7 +245,11 @@
   "timezones": [
    "UTC-11:00"
   ],
-  "flag_svg": "https://flagcdn.com/as.svg"
+  "flag_svg": "https://flagcdn.com/as.svg",
+  "language_codes": [
+   "eng",
+   "smo"
+  ]
  },
  {
   "iso3": "ATA",
@@ -233,7 +271,8 @@
    "UTC+10:00",
    "UTC+12:00"
   ],
-  "flag_svg": "https://flagcdn.com/aq.svg"
+  "flag_svg": "https://flagcdn.com/aq.svg",
+  "language_codes": []
  },
  {
   "iso3": "ATF",
@@ -252,7 +291,10 @@
   "timezones": [
    "UTC+05:00"
   ],
-  "flag_svg": "https://flagcdn.com/tf.svg"
+  "flag_svg": "https://flagcdn.com/tf.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "ATG",
@@ -271,7 +313,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/ag.svg"
+  "flag_svg": "https://flagcdn.com/ag.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "AUS",
@@ -297,7 +342,10 @@
    "UTC+10:30",
    "UTC+11:30"
   ],
-  "flag_svg": "https://flagcdn.com/au.svg"
+  "flag_svg": "https://flagcdn.com/au.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "AUT",
@@ -316,7 +364,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/at.svg"
+  "flag_svg": "https://flagcdn.com/at.svg",
+  "language_codes": [
+   "deu"
+  ]
  },
  {
   "iso3": "AZE",
@@ -335,7 +386,10 @@
   "timezones": [
    "UTC+04:00"
   ],
-  "flag_svg": "https://flagcdn.com/az.svg"
+  "flag_svg": "https://flagcdn.com/az.svg",
+  "language_codes": [
+   "aze"
+  ]
  },
  {
   "iso3": "BDI",
@@ -355,7 +409,11 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/bi.svg"
+  "flag_svg": "https://flagcdn.com/bi.svg",
+  "language_codes": [
+   "fra",
+   "run"
+  ]
  },
  {
   "iso3": "BEL",
@@ -376,7 +434,12 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/be.svg"
+  "flag_svg": "https://flagcdn.com/be.svg",
+  "language_codes": [
+   "deu",
+   "fra",
+   "nld"
+  ]
  },
  {
   "iso3": "BEN",
@@ -395,7 +458,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/bj.svg"
+  "flag_svg": "https://flagcdn.com/bj.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "BES",
@@ -416,7 +482,12 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/bq.svg"
+  "flag_svg": "https://flagcdn.com/bq.svg",
+  "language_codes": [
+   "eng",
+   "nld",
+   "pap"
+  ]
  },
  {
   "iso3": "BFA",
@@ -435,7 +506,10 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/bf.svg"
+  "flag_svg": "https://flagcdn.com/bf.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "BGD",
@@ -454,7 +528,10 @@
   "timezones": [
    "UTC+06:00"
   ],
-  "flag_svg": "https://flagcdn.com/bd.svg"
+  "flag_svg": "https://flagcdn.com/bd.svg",
+  "language_codes": [
+   "ben"
+  ]
  },
  {
   "iso3": "BGR",
@@ -473,7 +550,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/bg.svg"
+  "flag_svg": "https://flagcdn.com/bg.svg",
+  "language_codes": [
+   "bul"
+  ]
  },
  {
   "iso3": "BHR",
@@ -492,7 +572,10 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/bh.svg"
+  "flag_svg": "https://flagcdn.com/bh.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "BHS",
@@ -512,7 +595,10 @@
   "timezones": [
    "UTC-05:00"
   ],
-  "flag_svg": "https://flagcdn.com/bs.svg"
+  "flag_svg": "https://flagcdn.com/bs.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "BIH",
@@ -533,7 +619,12 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/ba.svg"
+  "flag_svg": "https://flagcdn.com/ba.svg",
+  "language_codes": [
+   "bos",
+   "hrv",
+   "srp"
+  ]
  },
  {
   "iso3": "BLM",
@@ -552,7 +643,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/bl.svg"
+  "flag_svg": "https://flagcdn.com/bl.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "BLR",
@@ -572,7 +666,11 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/by.svg"
+  "flag_svg": "https://flagcdn.com/by.svg",
+  "language_codes": [
+   "bel",
+   "rus"
+  ]
  },
  {
   "iso3": "BLZ",
@@ -593,7 +691,12 @@
   "timezones": [
    "UTC-06:00"
   ],
-  "flag_svg": "https://flagcdn.com/bz.svg"
+  "flag_svg": "https://flagcdn.com/bz.svg",
+  "language_codes": [
+   "bjz",
+   "eng",
+   "spa"
+  ]
  },
  {
   "iso3": "BMU",
@@ -612,7 +715,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/bm.svg"
+  "flag_svg": "https://flagcdn.com/bm.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "BOL",
@@ -634,7 +740,13 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/bo.svg"
+  "flag_svg": "https://flagcdn.com/bo.svg",
+  "language_codes": [
+   "aym",
+   "grn",
+   "que",
+   "spa"
+  ]
  },
  {
   "iso3": "BRA",
@@ -656,7 +768,10 @@
    "UTC-03:00",
    "UTC-02:00"
   ],
-  "flag_svg": "https://flagcdn.com/br.svg"
+  "flag_svg": "https://flagcdn.com/br.svg",
+  "language_codes": [
+   "por"
+  ]
  },
  {
   "iso3": "BRB",
@@ -675,7 +790,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/bb.svg"
+  "flag_svg": "https://flagcdn.com/bb.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "BRN",
@@ -695,7 +813,10 @@
   "timezones": [
    "UTC+08:00"
   ],
-  "flag_svg": "https://flagcdn.com/bn.svg"
+  "flag_svg": "https://flagcdn.com/bn.svg",
+  "language_codes": [
+   "msa"
+  ]
  },
  {
   "iso3": "BTN",
@@ -715,7 +836,10 @@
   "timezones": [
    "UTC+06:00"
   ],
-  "flag_svg": "https://flagcdn.com/bt.svg"
+  "flag_svg": "https://flagcdn.com/bt.svg",
+  "language_codes": [
+   "dzo"
+  ]
  },
  {
   "iso3": "BVT",
@@ -732,7 +856,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/bv.svg"
+  "flag_svg": "https://flagcdn.com/bv.svg",
+  "language_codes": [
+   "nor"
+  ]
  },
  {
   "iso3": "BWA",
@@ -752,7 +879,11 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/bw.svg"
+  "flag_svg": "https://flagcdn.com/bw.svg",
+  "language_codes": [
+   "eng",
+   "tsn"
+  ]
  },
  {
   "iso3": "CAF",
@@ -772,7 +903,11 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/cf.svg"
+  "flag_svg": "https://flagcdn.com/cf.svg",
+  "language_codes": [
+   "fra",
+   "sag"
+  ]
  },
  {
   "iso3": "CAN",
@@ -797,7 +932,11 @@
    "UTC-04:00",
    "UTC-03:30"
   ],
-  "flag_svg": "https://flagcdn.com/ca.svg"
+  "flag_svg": "https://flagcdn.com/ca.svg",
+  "language_codes": [
+   "eng",
+   "fra"
+  ]
  },
  {
   "iso3": "CCK",
@@ -816,7 +955,10 @@
   "timezones": [
    "UTC+06:30"
   ],
-  "flag_svg": "https://flagcdn.com/cc.svg"
+  "flag_svg": "https://flagcdn.com/cc.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "CHE",
@@ -838,7 +980,13 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/ch.svg"
+  "flag_svg": "https://flagcdn.com/ch.svg",
+  "language_codes": [
+   "fra",
+   "gsw",
+   "ita",
+   "roh"
+  ]
  },
  {
   "iso3": "CHL",
@@ -858,7 +1006,10 @@
    "UTC-06:00",
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/cl.svg"
+  "flag_svg": "https://flagcdn.com/cl.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "CHN",
@@ -877,7 +1028,10 @@
   "timezones": [
    "UTC+08:00"
   ],
-  "flag_svg": "https://flagcdn.com/cn.svg"
+  "flag_svg": "https://flagcdn.com/cn.svg",
+  "language_codes": [
+   "zho"
+  ]
  },
  {
   "iso3": "CIV",
@@ -896,7 +1050,10 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/ci.svg"
+  "flag_svg": "https://flagcdn.com/ci.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "CMR",
@@ -916,7 +1073,11 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/cm.svg"
+  "flag_svg": "https://flagcdn.com/cm.svg",
+  "language_codes": [
+   "eng",
+   "fra"
+  ]
  },
  {
   "iso3": "COD",
@@ -940,7 +1101,14 @@
    "UTC+01:00",
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/cd.svg"
+  "flag_svg": "https://flagcdn.com/cd.svg",
+  "language_codes": [
+   "fra",
+   "kon",
+   "lin",
+   "lua",
+   "swa"
+  ]
  },
  {
   "iso3": "COG",
@@ -961,7 +1129,12 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/cg.svg"
+  "flag_svg": "https://flagcdn.com/cg.svg",
+  "language_codes": [
+   "fra",
+   "kon",
+   "lin"
+  ]
  },
  {
   "iso3": "COK",
@@ -982,7 +1155,11 @@
   "timezones": [
    "UTC-10:00"
   ],
-  "flag_svg": "https://flagcdn.com/ck.svg"
+  "flag_svg": "https://flagcdn.com/ck.svg",
+  "language_codes": [
+   "eng",
+   "rar"
+  ]
  },
  {
   "iso3": "COL",
@@ -1001,7 +1178,10 @@
   "timezones": [
    "UTC-05:00"
   ],
-  "flag_svg": "https://flagcdn.com/co.svg"
+  "flag_svg": "https://flagcdn.com/co.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "COM",
@@ -1022,7 +1202,12 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/km.svg"
+  "flag_svg": "https://flagcdn.com/km.svg",
+  "language_codes": [
+   "ara",
+   "fra",
+   "zdj"
+  ]
  },
  {
   "iso3": "CPV",
@@ -1041,7 +1226,10 @@
   "timezones": [
    "UTC-01:00"
   ],
-  "flag_svg": "https://flagcdn.com/cv.svg"
+  "flag_svg": "https://flagcdn.com/cv.svg",
+  "language_codes": [
+   "por"
+  ]
  },
  {
   "iso3": "CRI",
@@ -1060,7 +1248,10 @@
   "timezones": [
    "UTC-06:00"
   ],
-  "flag_svg": "https://flagcdn.com/cr.svg"
+  "flag_svg": "https://flagcdn.com/cr.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "CUB",
@@ -1080,7 +1271,10 @@
   "timezones": [
    "UTC-05:00"
   ],
-  "flag_svg": "https://flagcdn.com/cu.svg"
+  "flag_svg": "https://flagcdn.com/cu.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "CUW",
@@ -1101,7 +1295,12 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/cw.svg"
+  "flag_svg": "https://flagcdn.com/cw.svg",
+  "language_codes": [
+   "eng",
+   "nld",
+   "pap"
+  ]
  },
  {
   "iso3": "CXR",
@@ -1120,7 +1319,10 @@
   "timezones": [
    "UTC+07:00"
   ],
-  "flag_svg": "https://flagcdn.com/cx.svg"
+  "flag_svg": "https://flagcdn.com/cx.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "CYM",
@@ -1139,7 +1341,10 @@
   "timezones": [
    "UTC-05:00"
   ],
-  "flag_svg": "https://flagcdn.com/ky.svg"
+  "flag_svg": "https://flagcdn.com/ky.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "CYP",
@@ -1159,7 +1364,11 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/cy.svg"
+  "flag_svg": "https://flagcdn.com/cy.svg",
+  "language_codes": [
+   "ell",
+   "tur"
+  ]
  },
  {
   "iso3": "CZE",
@@ -1179,7 +1388,11 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/cz.svg"
+  "flag_svg": "https://flagcdn.com/cz.svg",
+  "language_codes": [
+   "ces",
+   "slk"
+  ]
  },
  {
   "iso3": "DEU",
@@ -1198,7 +1411,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/de.svg"
+  "flag_svg": "https://flagcdn.com/de.svg",
+  "language_codes": [
+   "deu"
+  ]
  },
  {
   "iso3": "DJI",
@@ -1218,7 +1434,11 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/dj.svg"
+  "flag_svg": "https://flagcdn.com/dj.svg",
+  "language_codes": [
+   "ara",
+   "fra"
+  ]
  },
  {
   "iso3": "DMA",
@@ -1237,7 +1457,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/dm.svg"
+  "flag_svg": "https://flagcdn.com/dm.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "DNK",
@@ -1260,7 +1483,10 @@
    "UTC",
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/dk.svg"
+  "flag_svg": "https://flagcdn.com/dk.svg",
+  "language_codes": [
+   "dan"
+  ]
  },
  {
   "iso3": "DOM",
@@ -1279,7 +1505,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/do.svg"
+  "flag_svg": "https://flagcdn.com/do.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "DZA",
@@ -1298,7 +1527,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/dz.svg"
+  "flag_svg": "https://flagcdn.com/dz.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "ECU",
@@ -1318,7 +1550,10 @@
    "UTC-06:00",
    "UTC-05:00"
   ],
-  "flag_svg": "https://flagcdn.com/ec.svg"
+  "flag_svg": "https://flagcdn.com/ec.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "EGY",
@@ -1337,7 +1572,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/eg.svg"
+  "flag_svg": "https://flagcdn.com/eg.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "ERI",
@@ -1358,7 +1596,12 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/er.svg"
+  "flag_svg": "https://flagcdn.com/er.svg",
+  "language_codes": [
+   "ara",
+   "eng",
+   "tir"
+  ]
  },
  {
   "iso3": "ESH",
@@ -1381,7 +1624,12 @@
   "timezones": [
    "UTC+00:00"
   ],
-  "flag_svg": "https://flagcdn.com/eh.svg"
+  "flag_svg": "https://flagcdn.com/eh.svg",
+  "language_codes": [
+   "ber",
+   "mey",
+   "spa"
+  ]
  },
  {
   "iso3": "ESP",
@@ -1404,7 +1652,13 @@
    "UTC",
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/es.svg"
+  "flag_svg": "https://flagcdn.com/es.svg",
+  "language_codes": [
+   "spa",
+   "cat",
+   "eus",
+   "glc"
+  ]
  },
  {
   "iso3": "EST",
@@ -1423,7 +1677,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/ee.svg"
+  "flag_svg": "https://flagcdn.com/ee.svg",
+  "language_codes": [
+   "est"
+  ]
  },
  {
   "iso3": "ETH",
@@ -1442,7 +1699,10 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/et.svg"
+  "flag_svg": "https://flagcdn.com/et.svg",
+  "language_codes": [
+   "amh"
+  ]
  },
  {
   "iso3": "FIN",
@@ -1462,7 +1722,11 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/fi.svg"
+  "flag_svg": "https://flagcdn.com/fi.svg",
+  "language_codes": [
+   "fin",
+   "swe"
+  ]
  },
  {
   "iso3": "FJI",
@@ -1483,7 +1747,12 @@
   "timezones": [
    "UTC+12:00"
   ],
-  "flag_svg": "https://flagcdn.com/fj.svg"
+  "flag_svg": "https://flagcdn.com/fj.svg",
+  "language_codes": [
+   "eng",
+   "fij",
+   "hif"
+  ]
  },
  {
   "iso3": "FLK",
@@ -1502,7 +1771,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/fk.svg"
+  "flag_svg": "https://flagcdn.com/fk.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "FRA",
@@ -1534,7 +1806,10 @@
    "UTC+11:00",
    "UTC+12:00"
   ],
-  "flag_svg": "https://flagcdn.com/fr.svg"
+  "flag_svg": "https://flagcdn.com/fr.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "FRO",
@@ -1555,7 +1830,11 @@
   "timezones": [
    "UTC+00:00"
   ],
-  "flag_svg": "https://flagcdn.com/fo.svg"
+  "flag_svg": "https://flagcdn.com/fo.svg",
+  "language_codes": [
+   "dan",
+   "fao"
+  ]
  },
  {
   "iso3": "FSM",
@@ -1575,7 +1854,10 @@
    "UTC+10:00",
    "UTC+11:00"
   ],
-  "flag_svg": "https://flagcdn.com/fm.svg"
+  "flag_svg": "https://flagcdn.com/fm.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "GAB",
@@ -1594,7 +1876,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/ga.svg"
+  "flag_svg": "https://flagcdn.com/ga.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "GBR",
@@ -1621,7 +1906,10 @@
    "UTC+02:00",
    "UTC+06:00"
   ],
-  "flag_svg": "https://flagcdn.com/gb.svg"
+  "flag_svg": "https://flagcdn.com/gb.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "GEO",
@@ -1640,7 +1928,10 @@
   "timezones": [
    "UTC+04:00"
   ],
-  "flag_svg": "https://flagcdn.com/ge.svg"
+  "flag_svg": "https://flagcdn.com/ge.svg",
+  "language_codes": [
+   "kat"
+  ]
  },
  {
   "iso3": "GGY",
@@ -1662,7 +1953,12 @@
   "timezones": [
    "UTC+00:00"
   ],
-  "flag_svg": "https://flagcdn.com/gg.svg"
+  "flag_svg": "https://flagcdn.com/gg.svg",
+  "language_codes": [
+   "eng",
+   "fra",
+   "nfr"
+  ]
  },
  {
   "iso3": "GHA",
@@ -1681,7 +1977,10 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/gh.svg"
+  "flag_svg": "https://flagcdn.com/gh.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "GIB",
@@ -1700,7 +1999,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/gi.svg"
+  "flag_svg": "https://flagcdn.com/gi.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "GIN",
@@ -1719,7 +2021,10 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/gn.svg"
+  "flag_svg": "https://flagcdn.com/gn.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "GLP",
@@ -1738,7 +2043,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/gp.svg"
+  "flag_svg": "https://flagcdn.com/gp.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "GMB",
@@ -1757,7 +2065,10 @@
   "timezones": [
    "UTC+00:00"
   ],
-  "flag_svg": "https://flagcdn.com/gm.svg"
+  "flag_svg": "https://flagcdn.com/gm.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "GNB",
@@ -1777,7 +2088,11 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/gw.svg"
+  "flag_svg": "https://flagcdn.com/gw.svg",
+  "language_codes": [
+   "por",
+   "pov"
+  ]
  },
  {
   "iso3": "GNQ",
@@ -1798,7 +2113,12 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/gq.svg"
+  "flag_svg": "https://flagcdn.com/gq.svg",
+  "language_codes": [
+   "fra",
+   "por",
+   "spa"
+  ]
  },
  {
   "iso3": "GRC",
@@ -1817,7 +2137,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/gr.svg"
+  "flag_svg": "https://flagcdn.com/gr.svg",
+  "language_codes": [
+   "ell"
+  ]
  },
  {
   "iso3": "GRD",
@@ -1836,7 +2159,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/gd.svg"
+  "flag_svg": "https://flagcdn.com/gd.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "GRL",
@@ -1858,7 +2184,10 @@
    "UTC-01:00",
    "UTC+00:00"
   ],
-  "flag_svg": "https://flagcdn.com/gl.svg"
+  "flag_svg": "https://flagcdn.com/gl.svg",
+  "language_codes": [
+   "kal"
+  ]
  },
  {
   "iso3": "GTM",
@@ -1877,7 +2206,10 @@
   "timezones": [
    "UTC-06:00"
   ],
-  "flag_svg": "https://flagcdn.com/gt.svg"
+  "flag_svg": "https://flagcdn.com/gt.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "GUF",
@@ -1896,7 +2228,10 @@
   "timezones": [
    "UTC-03:00"
   ],
-  "flag_svg": "https://flagcdn.com/gf.svg"
+  "flag_svg": "https://flagcdn.com/gf.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "GUM",
@@ -1917,7 +2252,12 @@
   "timezones": [
    "UTC+10:00"
   ],
-  "flag_svg": "https://flagcdn.com/gu.svg"
+  "flag_svg": "https://flagcdn.com/gu.svg",
+  "language_codes": [
+   "cha",
+   "eng",
+   "spa"
+  ]
  },
  {
   "iso3": "GUY",
@@ -1936,7 +2276,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/gy.svg"
+  "flag_svg": "https://flagcdn.com/gy.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "HKG",
@@ -1956,7 +2299,11 @@
   "timezones": [
    "UTC+08:00"
   ],
-  "flag_svg": "https://flagcdn.com/hk.svg"
+  "flag_svg": "https://flagcdn.com/hk.svg",
+  "language_codes": [
+   "eng",
+   "zho"
+  ]
  },
  {
   "iso3": "HMD",
@@ -1973,7 +2320,10 @@
   "timezones": [
    "UTC+05:00"
   ],
-  "flag_svg": "https://flagcdn.com/hm.svg"
+  "flag_svg": "https://flagcdn.com/hm.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "HND",
@@ -1992,7 +2342,10 @@
   "timezones": [
    "UTC-06:00"
   ],
-  "flag_svg": "https://flagcdn.com/hn.svg"
+  "flag_svg": "https://flagcdn.com/hn.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "HRV",
@@ -2011,7 +2364,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/hr.svg"
+  "flag_svg": "https://flagcdn.com/hr.svg",
+  "language_codes": [
+   "hrv"
+  ]
  },
  {
   "iso3": "HTI",
@@ -2031,7 +2387,11 @@
   "timezones": [
    "UTC-05:00"
   ],
-  "flag_svg": "https://flagcdn.com/ht.svg"
+  "flag_svg": "https://flagcdn.com/ht.svg",
+  "language_codes": [
+   "fra",
+   "hat"
+  ]
  },
  {
   "iso3": "HUN",
@@ -2050,7 +2410,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/hu.svg"
+  "flag_svg": "https://flagcdn.com/hu.svg",
+  "language_codes": [
+   "hun"
+  ]
  },
  {
   "iso3": "IDN",
@@ -2071,7 +2434,10 @@
    "UTC+08:00",
    "UTC+09:00"
   ],
-  "flag_svg": "https://flagcdn.com/id.svg"
+  "flag_svg": "https://flagcdn.com/id.svg",
+  "language_codes": [
+   "ind"
+  ]
  },
  {
   "iso3": "IMN",
@@ -2092,7 +2458,11 @@
   "timezones": [
    "UTC+00:00"
   ],
-  "flag_svg": "https://flagcdn.com/im.svg"
+  "flag_svg": "https://flagcdn.com/im.svg",
+  "language_codes": [
+   "eng",
+   "glv"
+  ]
  },
  {
   "iso3": "IND",
@@ -2113,7 +2483,12 @@
   "timezones": [
    "UTC+05:30"
   ],
-  "flag_svg": "https://flagcdn.com/in.svg"
+  "flag_svg": "https://flagcdn.com/in.svg",
+  "language_codes": [
+   "eng",
+   "hin",
+   "tam"
+  ]
  },
  {
   "iso3": "IOT",
@@ -2132,7 +2507,10 @@
   "timezones": [
    "UTC+06:00"
   ],
-  "flag_svg": "https://flagcdn.com/io.svg"
+  "flag_svg": "https://flagcdn.com/io.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "IRL",
@@ -2152,7 +2530,11 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/ie.svg"
+  "flag_svg": "https://flagcdn.com/ie.svg",
+  "language_codes": [
+   "eng",
+   "gle"
+  ]
  },
  {
   "iso3": "IRN",
@@ -2171,7 +2553,10 @@
   "timezones": [
    "UTC+03:30"
   ],
-  "flag_svg": "https://flagcdn.com/ir.svg"
+  "flag_svg": "https://flagcdn.com/ir.svg",
+  "language_codes": [
+   "fas"
+  ]
  },
  {
   "iso3": "IRQ",
@@ -2192,7 +2577,12 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/iq.svg"
+  "flag_svg": "https://flagcdn.com/iq.svg",
+  "language_codes": [
+   "ara",
+   "arc",
+   "ckb"
+  ]
  },
  {
   "iso3": "ISL",
@@ -2211,7 +2601,10 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/is.svg"
+  "flag_svg": "https://flagcdn.com/is.svg",
+  "language_codes": [
+   "isl"
+  ]
  },
  {
   "iso3": "ISR",
@@ -2231,7 +2624,11 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/il.svg"
+  "flag_svg": "https://flagcdn.com/il.svg",
+  "language_codes": [
+   "ara",
+   "heb"
+  ]
  },
  {
   "iso3": "ITA",
@@ -2251,7 +2648,11 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/it.svg"
+  "flag_svg": "https://flagcdn.com/it.svg",
+  "language_codes": [
+   "ita",
+   "cat"
+  ]
  },
  {
   "iso3": "JAM",
@@ -2271,7 +2672,11 @@
   "timezones": [
    "UTC-05:00"
   ],
-  "flag_svg": "https://flagcdn.com/jm.svg"
+  "flag_svg": "https://flagcdn.com/jm.svg",
+  "language_codes": [
+   "eng",
+   "jam"
+  ]
  },
  {
   "iso3": "JEY",
@@ -2293,7 +2698,12 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/je.svg"
+  "flag_svg": "https://flagcdn.com/je.svg",
+  "language_codes": [
+   "eng",
+   "fra",
+   "nrf"
+  ]
  },
  {
   "iso3": "JOR",
@@ -2312,7 +2722,10 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/jo.svg"
+  "flag_svg": "https://flagcdn.com/jo.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "JPN",
@@ -2331,7 +2744,10 @@
   "timezones": [
    "UTC+09:00"
   ],
-  "flag_svg": "https://flagcdn.com/jp.svg"
+  "flag_svg": "https://flagcdn.com/jp.svg",
+  "language_codes": [
+   "jpn"
+  ]
  },
  {
   "iso3": "KAZ",
@@ -2352,7 +2768,11 @@
    "UTC+05:00",
    "UTC+06:00"
   ],
-  "flag_svg": "https://flagcdn.com/kz.svg"
+  "flag_svg": "https://flagcdn.com/kz.svg",
+  "language_codes": [
+   "kaz",
+   "rus"
+  ]
  },
  {
   "iso3": "KEN",
@@ -2372,7 +2792,11 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/ke.svg"
+  "flag_svg": "https://flagcdn.com/ke.svg",
+  "language_codes": [
+   "eng",
+   "swa"
+  ]
  },
  {
   "iso3": "KGZ",
@@ -2392,7 +2816,11 @@
   "timezones": [
    "UTC+06:00"
   ],
-  "flag_svg": "https://flagcdn.com/kg.svg"
+  "flag_svg": "https://flagcdn.com/kg.svg",
+  "language_codes": [
+   "kir",
+   "rus"
+  ]
  },
  {
   "iso3": "KHM",
@@ -2412,7 +2840,10 @@
   "timezones": [
    "UTC+07:00"
   ],
-  "flag_svg": "https://flagcdn.com/kh.svg"
+  "flag_svg": "https://flagcdn.com/kh.svg",
+  "language_codes": [
+   "khm"
+  ]
  },
  {
   "iso3": "KIR",
@@ -2435,7 +2866,11 @@
    "UTC+13:00",
    "UTC+14:00"
   ],
-  "flag_svg": "https://flagcdn.com/ki.svg"
+  "flag_svg": "https://flagcdn.com/ki.svg",
+  "language_codes": [
+   "eng",
+   "gil"
+  ]
  },
  {
   "iso3": "KNA",
@@ -2454,7 +2889,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/kn.svg"
+  "flag_svg": "https://flagcdn.com/kn.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "KOR",
@@ -2473,7 +2911,10 @@
   "timezones": [
    "UTC+09:00"
   ],
-  "flag_svg": "https://flagcdn.com/kr.svg"
+  "flag_svg": "https://flagcdn.com/kr.svg",
+  "language_codes": [
+   "kor"
+  ]
  },
  {
   "iso3": "KWT",
@@ -2492,7 +2933,10 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/kw.svg"
+  "flag_svg": "https://flagcdn.com/kw.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "LAO",
@@ -2511,7 +2955,10 @@
   "timezones": [
    "UTC+07:00"
   ],
-  "flag_svg": "https://flagcdn.com/la.svg"
+  "flag_svg": "https://flagcdn.com/la.svg",
+  "language_codes": [
+   "lao"
+  ]
  },
  {
   "iso3": "LBN",
@@ -2531,7 +2978,11 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/lb.svg"
+  "flag_svg": "https://flagcdn.com/lb.svg",
+  "language_codes": [
+   "ara",
+   "fra"
+  ]
  },
  {
   "iso3": "LBR",
@@ -2550,7 +3001,10 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/lr.svg"
+  "flag_svg": "https://flagcdn.com/lr.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "LBY",
@@ -2569,7 +3023,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/ly.svg"
+  "flag_svg": "https://flagcdn.com/ly.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "LCA",
@@ -2588,7 +3045,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/lc.svg"
+  "flag_svg": "https://flagcdn.com/lc.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "LIE",
@@ -2607,7 +3067,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/li.svg"
+  "flag_svg": "https://flagcdn.com/li.svg",
+  "language_codes": [
+   "deu"
+  ]
  },
  {
   "iso3": "LKA",
@@ -2627,7 +3090,11 @@
   "timezones": [
    "UTC+05:30"
   ],
-  "flag_svg": "https://flagcdn.com/lk.svg"
+  "flag_svg": "https://flagcdn.com/lk.svg",
+  "language_codes": [
+   "sin",
+   "tam"
+  ]
  },
  {
   "iso3": "LSO",
@@ -2648,7 +3115,11 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/ls.svg"
+  "flag_svg": "https://flagcdn.com/ls.svg",
+  "language_codes": [
+   "eng",
+   "sot"
+  ]
  },
  {
   "iso3": "LTU",
@@ -2667,7 +3138,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/lt.svg"
+  "flag_svg": "https://flagcdn.com/lt.svg",
+  "language_codes": [
+   "lit"
+  ]
  },
  {
   "iso3": "LUX",
@@ -2688,7 +3162,12 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/lu.svg"
+  "flag_svg": "https://flagcdn.com/lu.svg",
+  "language_codes": [
+   "deu",
+   "fra",
+   "ltz"
+  ]
  },
  {
   "iso3": "LVA",
@@ -2707,7 +3186,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/lv.svg"
+  "flag_svg": "https://flagcdn.com/lv.svg",
+  "language_codes": [
+   "lav"
+  ]
  },
  {
   "iso3": "MAC",
@@ -2727,7 +3209,11 @@
   "timezones": [
    "UTC+08:00"
   ],
-  "flag_svg": "https://flagcdn.com/mo.svg"
+  "flag_svg": "https://flagcdn.com/mo.svg",
+  "language_codes": [
+   "por",
+   "zho"
+  ]
  },
  {
   "iso3": "MAF",
@@ -2746,7 +3232,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/mf.svg"
+  "flag_svg": "https://flagcdn.com/mf.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "MAR",
@@ -2766,7 +3255,11 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/ma.svg"
+  "flag_svg": "https://flagcdn.com/ma.svg",
+  "language_codes": [
+   "ara",
+   "ber"
+  ]
  },
  {
   "iso3": "MCO",
@@ -2785,7 +3278,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/mc.svg"
+  "flag_svg": "https://flagcdn.com/mc.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "MDA",
@@ -2804,7 +3300,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/md.svg"
+  "flag_svg": "https://flagcdn.com/md.svg",
+  "language_codes": [
+   "ron"
+  ]
  },
  {
   "iso3": "MDG",
@@ -2824,7 +3323,11 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/mg.svg"
+  "flag_svg": "https://flagcdn.com/mg.svg",
+  "language_codes": [
+   "fra",
+   "mlg"
+  ]
  },
  {
   "iso3": "MDV",
@@ -2843,7 +3346,10 @@
   "timezones": [
    "UTC+05:00"
   ],
-  "flag_svg": "https://flagcdn.com/mv.svg"
+  "flag_svg": "https://flagcdn.com/mv.svg",
+  "language_codes": [
+   "div"
+  ]
  },
  {
   "iso3": "MEX",
@@ -2864,7 +3370,10 @@
    "UTC-07:00",
    "UTC-06:00"
   ],
-  "flag_svg": "https://flagcdn.com/mx.svg"
+  "flag_svg": "https://flagcdn.com/mx.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "MHL",
@@ -2884,7 +3393,11 @@
   "timezones": [
    "UTC+12:00"
   ],
-  "flag_svg": "https://flagcdn.com/mh.svg"
+  "flag_svg": "https://flagcdn.com/mh.svg",
+  "language_codes": [
+   "eng",
+   "mah"
+  ]
  },
  {
   "iso3": "MKD",
@@ -2903,7 +3416,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/mk.svg"
+  "flag_svg": "https://flagcdn.com/mk.svg",
+  "language_codes": [
+   "mkd"
+  ]
  },
  {
   "iso3": "MLI",
@@ -2922,7 +3438,10 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/ml.svg"
+  "flag_svg": "https://flagcdn.com/ml.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "MLT",
@@ -2942,7 +3461,11 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/mt.svg"
+  "flag_svg": "https://flagcdn.com/mt.svg",
+  "language_codes": [
+   "eng",
+   "mlt"
+  ]
  },
  {
   "iso3": "MMR",
@@ -2961,7 +3484,10 @@
   "timezones": [
    "UTC+06:30"
   ],
-  "flag_svg": "https://flagcdn.com/mm.svg"
+  "flag_svg": "https://flagcdn.com/mm.svg",
+  "language_codes": [
+   "mya"
+  ]
  },
  {
   "iso3": "MNE",
@@ -2980,7 +3506,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/me.svg"
+  "flag_svg": "https://flagcdn.com/me.svg",
+  "language_codes": [
+   "cnr"
+  ]
  },
  {
   "iso3": "MNG",
@@ -3000,7 +3529,10 @@
    "UTC+07:00",
    "UTC+08:00"
   ],
-  "flag_svg": "https://flagcdn.com/mn.svg"
+  "flag_svg": "https://flagcdn.com/mn.svg",
+  "language_codes": [
+   "mon"
+  ]
  },
  {
   "iso3": "MNP",
@@ -3021,7 +3553,12 @@
   "timezones": [
    "UTC+10:00"
   ],
-  "flag_svg": "https://flagcdn.com/mp.svg"
+  "flag_svg": "https://flagcdn.com/mp.svg",
+  "language_codes": [
+   "cal",
+   "cha",
+   "eng"
+  ]
  },
  {
   "iso3": "MOZ",
@@ -3040,7 +3577,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/mz.svg"
+  "flag_svg": "https://flagcdn.com/mz.svg",
+  "language_codes": [
+   "por"
+  ]
  },
  {
   "iso3": "MRT",
@@ -3059,7 +3599,10 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/mr.svg"
+  "flag_svg": "https://flagcdn.com/mr.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "MSR",
@@ -3078,7 +3621,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/ms.svg"
+  "flag_svg": "https://flagcdn.com/ms.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "MTQ",
@@ -3097,7 +3643,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/mq.svg"
+  "flag_svg": "https://flagcdn.com/mq.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "MUS",
@@ -3118,7 +3667,12 @@
   "timezones": [
    "UTC+04:00"
   ],
-  "flag_svg": "https://flagcdn.com/mu.svg"
+  "flag_svg": "https://flagcdn.com/mu.svg",
+  "language_codes": [
+   "eng",
+   "fra",
+   "mfe"
+  ]
  },
  {
   "iso3": "MWI",
@@ -3138,7 +3692,11 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/mw.svg"
+  "flag_svg": "https://flagcdn.com/mw.svg",
+  "language_codes": [
+   "eng",
+   "nya"
+  ]
  },
  {
   "iso3": "MYS",
@@ -3158,7 +3716,11 @@
   "timezones": [
    "UTC+08:00"
   ],
-  "flag_svg": "https://flagcdn.com/my.svg"
+  "flag_svg": "https://flagcdn.com/my.svg",
+  "language_codes": [
+   "eng",
+   "msa"
+  ]
  },
  {
   "iso3": "MYT",
@@ -3177,7 +3739,10 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/yt.svg"
+  "flag_svg": "https://flagcdn.com/yt.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "NAM",
@@ -3205,7 +3770,18 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/na.svg"
+  "flag_svg": "https://flagcdn.com/na.svg",
+  "language_codes": [
+   "afr",
+   "deu",
+   "eng",
+   "her",
+   "hgm",
+   "kwn",
+   "loz",
+   "ndo",
+   "tsn"
+  ]
  },
  {
   "iso3": "NCL",
@@ -3224,7 +3800,10 @@
   "timezones": [
    "UTC+11:00"
   ],
-  "flag_svg": "https://flagcdn.com/nc.svg"
+  "flag_svg": "https://flagcdn.com/nc.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "NER",
@@ -3243,7 +3822,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/ne.svg"
+  "flag_svg": "https://flagcdn.com/ne.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "NFK",
@@ -3263,7 +3845,11 @@
   "timezones": [
    "UTC+11:30"
   ],
-  "flag_svg": "https://flagcdn.com/nf.svg"
+  "flag_svg": "https://flagcdn.com/nf.svg",
+  "language_codes": [
+   "eng",
+   "pih"
+  ]
  },
  {
   "iso3": "NGA",
@@ -3282,7 +3868,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/ng.svg"
+  "flag_svg": "https://flagcdn.com/ng.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "NIC",
@@ -3301,7 +3890,10 @@
   "timezones": [
    "UTC-06:00"
   ],
-  "flag_svg": "https://flagcdn.com/ni.svg"
+  "flag_svg": "https://flagcdn.com/ni.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "NIU",
@@ -3321,7 +3913,11 @@
   "timezones": [
    "UTC-11:00"
   ],
-  "flag_svg": "https://flagcdn.com/nu.svg"
+  "flag_svg": "https://flagcdn.com/nu.svg",
+  "language_codes": [
+   "eng",
+   "niu"
+  ]
  },
  {
   "iso3": "NLD",
@@ -3340,7 +3936,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/nl.svg"
+  "flag_svg": "https://flagcdn.com/nl.svg",
+  "language_codes": [
+   "nld"
+  ]
  },
  {
   "iso3": "NOR",
@@ -3361,7 +3960,12 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/no.svg"
+  "flag_svg": "https://flagcdn.com/no.svg",
+  "language_codes": [
+   "nno",
+   "nob",
+   "smi"
+  ]
  },
  {
   "iso3": "NPL",
@@ -3380,7 +3984,10 @@
   "timezones": [
    "UTC+05:45"
   ],
-  "flag_svg": "https://flagcdn.com/np.svg"
+  "flag_svg": "https://flagcdn.com/np.svg",
+  "language_codes": [
+   "nep"
+  ]
  },
  {
   "iso3": "NRU",
@@ -3400,7 +4007,11 @@
   "timezones": [
    "UTC+12:00"
   ],
-  "flag_svg": "https://flagcdn.com/nr.svg"
+  "flag_svg": "https://flagcdn.com/nr.svg",
+  "language_codes": [
+   "eng",
+   "nau"
+  ]
  },
  {
   "iso3": "NZL",
@@ -3425,7 +4036,12 @@
    "UTC+12:45",
    "UTC+13:00"
   ],
-  "flag_svg": "https://flagcdn.com/nz.svg"
+  "flag_svg": "https://flagcdn.com/nz.svg",
+  "language_codes": [
+   "eng",
+   "mri",
+   "nzs"
+  ]
  },
  {
   "iso3": "OMN",
@@ -3444,7 +4060,10 @@
   "timezones": [
    "UTC+04:00"
   ],
-  "flag_svg": "https://flagcdn.com/om.svg"
+  "flag_svg": "https://flagcdn.com/om.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "PAK",
@@ -3464,7 +4083,11 @@
   "timezones": [
    "UTC+05:00"
   ],
-  "flag_svg": "https://flagcdn.com/pk.svg"
+  "flag_svg": "https://flagcdn.com/pk.svg",
+  "language_codes": [
+   "eng",
+   "urd"
+  ]
  },
  {
   "iso3": "PAN",
@@ -3484,7 +4107,10 @@
   "timezones": [
    "UTC-05:00"
   ],
-  "flag_svg": "https://flagcdn.com/pa.svg"
+  "flag_svg": "https://flagcdn.com/pa.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "PCN",
@@ -3503,7 +4129,10 @@
   "timezones": [
    "UTC-08:00"
   ],
-  "flag_svg": "https://flagcdn.com/pn.svg"
+  "flag_svg": "https://flagcdn.com/pn.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "PER",
@@ -3524,7 +4153,12 @@
   "timezones": [
    "UTC-05:00"
   ],
-  "flag_svg": "https://flagcdn.com/pe.svg"
+  "flag_svg": "https://flagcdn.com/pe.svg",
+  "language_codes": [
+   "aym",
+   "que",
+   "spa"
+  ]
  },
  {
   "iso3": "PHL",
@@ -3544,7 +4178,11 @@
   "timezones": [
    "UTC+08:00"
   ],
-  "flag_svg": "https://flagcdn.com/ph.svg"
+  "flag_svg": "https://flagcdn.com/ph.svg",
+  "language_codes": [
+   "eng",
+   "fil"
+  ]
  },
  {
   "iso3": "PLW",
@@ -3564,7 +4202,11 @@
   "timezones": [
    "UTC+09:00"
   ],
-  "flag_svg": "https://flagcdn.com/pw.svg"
+  "flag_svg": "https://flagcdn.com/pw.svg",
+  "language_codes": [
+   "eng",
+   "pau"
+  ]
  },
  {
   "iso3": "PNG",
@@ -3585,7 +4227,12 @@
   "timezones": [
    "UTC+10:00"
   ],
-  "flag_svg": "https://flagcdn.com/pg.svg"
+  "flag_svg": "https://flagcdn.com/pg.svg",
+  "language_codes": [
+   "eng",
+   "hmo",
+   "tpi"
+  ]
  },
  {
   "iso3": "POL",
@@ -3604,7 +4251,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/pl.svg"
+  "flag_svg": "https://flagcdn.com/pl.svg",
+  "language_codes": [
+   "pol"
+  ]
  },
  {
   "iso3": "PRI",
@@ -3624,7 +4274,11 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/pr.svg"
+  "flag_svg": "https://flagcdn.com/pr.svg",
+  "language_codes": [
+   "eng",
+   "spa"
+  ]
  },
  {
   "iso3": "PRK",
@@ -3643,7 +4297,10 @@
   "timezones": [
    "UTC+09:00"
   ],
-  "flag_svg": "https://flagcdn.com/kp.svg"
+  "flag_svg": "https://flagcdn.com/kp.svg",
+  "language_codes": [
+   "kor"
+  ]
  },
  {
   "iso3": "PRT",
@@ -3663,7 +4320,10 @@
    "UTC-01:00",
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/pt.svg"
+  "flag_svg": "https://flagcdn.com/pt.svg",
+  "language_codes": [
+   "por"
+  ]
  },
  {
   "iso3": "PRY",
@@ -3683,7 +4343,11 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/py.svg"
+  "flag_svg": "https://flagcdn.com/py.svg",
+  "language_codes": [
+   "grn",
+   "spa"
+  ]
  },
  {
   "iso3": "PSE",
@@ -3704,7 +4368,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/ps.svg"
+  "flag_svg": "https://flagcdn.com/ps.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "PYF",
@@ -3725,7 +4392,10 @@
    "UTC-09:30",
    "UTC-09:00"
   ],
-  "flag_svg": "https://flagcdn.com/pf.svg"
+  "flag_svg": "https://flagcdn.com/pf.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "QAT",
@@ -3744,7 +4414,10 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/qa.svg"
+  "flag_svg": "https://flagcdn.com/qa.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "REU",
@@ -3763,7 +4436,10 @@
   "timezones": [
    "UTC+04:00"
   ],
-  "flag_svg": "https://flagcdn.com/re.svg"
+  "flag_svg": "https://flagcdn.com/re.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "ROU",
@@ -3782,7 +4458,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/ro.svg"
+  "flag_svg": "https://flagcdn.com/ro.svg",
+  "language_codes": [
+   "ron"
+  ]
  },
  {
   "iso3": "RUS",
@@ -3809,7 +4488,10 @@
    "UTC+11:00",
    "UTC+12:00"
   ],
-  "flag_svg": "https://flagcdn.com/ru.svg"
+  "flag_svg": "https://flagcdn.com/ru.svg",
+  "language_codes": [
+   "rus"
+  ]
  },
  {
   "iso3": "RWA",
@@ -3830,7 +4512,12 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/rw.svg"
+  "flag_svg": "https://flagcdn.com/rw.svg",
+  "language_codes": [
+   "eng",
+   "fra",
+   "kin"
+  ]
  },
  {
   "iso3": "SAU",
@@ -3849,7 +4536,10 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/sa.svg"
+  "flag_svg": "https://flagcdn.com/sa.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "SDN",
@@ -3869,7 +4559,11 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/sd.svg"
+  "flag_svg": "https://flagcdn.com/sd.svg",
+  "language_codes": [
+   "ara",
+   "eng"
+  ]
  },
  {
   "iso3": "SEN",
@@ -3888,7 +4582,10 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/sn.svg"
+  "flag_svg": "https://flagcdn.com/sn.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "SGP",
@@ -3910,7 +4607,13 @@
   "timezones": [
    "UTC+08:00"
   ],
-  "flag_svg": "https://flagcdn.com/sg.svg"
+  "flag_svg": "https://flagcdn.com/sg.svg",
+  "language_codes": [
+   "eng",
+   "zho",
+   "msa",
+   "tam"
+  ]
  },
  {
   "iso3": "SGS",
@@ -3929,7 +4632,10 @@
   "timezones": [
    "UTC-02:00"
   ],
-  "flag_svg": "https://flagcdn.com/gs.svg"
+  "flag_svg": "https://flagcdn.com/gs.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "SHN",
@@ -3949,7 +4655,10 @@
   "timezones": [
    "UTC+00:00"
   ],
-  "flag_svg": "https://flagcdn.com/sh.svg"
+  "flag_svg": "https://flagcdn.com/sh.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "SJM",
@@ -3968,7 +4677,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/sj.svg"
+  "flag_svg": "https://flagcdn.com/sj.svg",
+  "language_codes": [
+   "nor"
+  ]
  },
  {
   "iso3": "SLB",
@@ -3987,7 +4699,10 @@
   "timezones": [
    "UTC+11:00"
   ],
-  "flag_svg": "https://flagcdn.com/sb.svg"
+  "flag_svg": "https://flagcdn.com/sb.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "SLE",
@@ -4006,7 +4721,10 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/sl.svg"
+  "flag_svg": "https://flagcdn.com/sl.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "SLV",
@@ -4025,7 +4743,10 @@
   "timezones": [
    "UTC-06:00"
   ],
-  "flag_svg": "https://flagcdn.com/sv.svg"
+  "flag_svg": "https://flagcdn.com/sv.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "SMR",
@@ -4044,7 +4765,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/sm.svg"
+  "flag_svg": "https://flagcdn.com/sm.svg",
+  "language_codes": [
+   "ita"
+  ]
  },
  {
   "iso3": "SOM",
@@ -4064,7 +4788,11 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/so.svg"
+  "flag_svg": "https://flagcdn.com/so.svg",
+  "language_codes": [
+   "ara",
+   "som"
+  ]
  },
  {
   "iso3": "SPM",
@@ -4083,7 +4811,10 @@
   "timezones": [
    "UTC-03:00"
   ],
-  "flag_svg": "https://flagcdn.com/pm.svg"
+  "flag_svg": "https://flagcdn.com/pm.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "SRB",
@@ -4102,7 +4833,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/rs.svg"
+  "flag_svg": "https://flagcdn.com/rs.svg",
+  "language_codes": [
+   "srp"
+  ]
  },
  {
   "iso3": "SSD",
@@ -4121,7 +4855,10 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/ss.svg"
+  "flag_svg": "https://flagcdn.com/ss.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "STP",
@@ -4140,7 +4877,10 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/st.svg"
+  "flag_svg": "https://flagcdn.com/st.svg",
+  "language_codes": [
+   "por"
+  ]
  },
  {
   "iso3": "SUR",
@@ -4159,7 +4899,10 @@
   "timezones": [
    "UTC-03:00"
   ],
-  "flag_svg": "https://flagcdn.com/sr.svg"
+  "flag_svg": "https://flagcdn.com/sr.svg",
+  "language_codes": [
+   "nld"
+  ]
  },
  {
   "iso3": "SVK",
@@ -4178,7 +4921,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/sk.svg"
+  "flag_svg": "https://flagcdn.com/sk.svg",
+  "language_codes": [
+   "slk"
+  ]
  },
  {
   "iso3": "SVN",
@@ -4197,7 +4943,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/si.svg"
+  "flag_svg": "https://flagcdn.com/si.svg",
+  "language_codes": [
+   "slv"
+  ]
  },
  {
   "iso3": "SWE",
@@ -4216,7 +4965,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/se.svg"
+  "flag_svg": "https://flagcdn.com/se.svg",
+  "language_codes": [
+   "swe"
+  ]
  },
  {
   "iso3": "SWZ",
@@ -4237,7 +4989,11 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/sz.svg"
+  "flag_svg": "https://flagcdn.com/sz.svg",
+  "language_codes": [
+   "eng",
+   "ssw"
+  ]
  },
  {
   "iso3": "SXM",
@@ -4258,7 +5014,12 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/sx.svg"
+  "flag_svg": "https://flagcdn.com/sx.svg",
+  "language_codes": [
+   "eng",
+   "fra",
+   "nld"
+  ]
  },
  {
   "iso3": "SYC",
@@ -4279,7 +5040,12 @@
   "timezones": [
    "UTC+04:00"
   ],
-  "flag_svg": "https://flagcdn.com/sc.svg"
+  "flag_svg": "https://flagcdn.com/sc.svg",
+  "language_codes": [
+   "crs",
+   "eng",
+   "fra"
+  ]
  },
  {
   "iso3": "SYR",
@@ -4298,7 +5064,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/sy.svg"
+  "flag_svg": "https://flagcdn.com/sy.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "TCA",
@@ -4317,7 +5086,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/tc.svg"
+  "flag_svg": "https://flagcdn.com/tc.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "TCD",
@@ -4337,7 +5109,11 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/td.svg"
+  "flag_svg": "https://flagcdn.com/td.svg",
+  "language_codes": [
+   "ara",
+   "fra"
+  ]
  },
  {
   "iso3": "TGO",
@@ -4356,7 +5132,10 @@
   "timezones": [
    "UTC"
   ],
-  "flag_svg": "https://flagcdn.com/tg.svg"
+  "flag_svg": "https://flagcdn.com/tg.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "THA",
@@ -4375,7 +5154,10 @@
   "timezones": [
    "UTC+07:00"
   ],
-  "flag_svg": "https://flagcdn.com/th.svg"
+  "flag_svg": "https://flagcdn.com/th.svg",
+  "language_codes": [
+   "tha"
+  ]
  },
  {
   "iso3": "TJK",
@@ -4395,7 +5177,11 @@
   "timezones": [
    "UTC+05:00"
   ],
-  "flag_svg": "https://flagcdn.com/tj.svg"
+  "flag_svg": "https://flagcdn.com/tj.svg",
+  "language_codes": [
+   "rus",
+   "tgk"
+  ]
  },
  {
   "iso3": "TKL",
@@ -4416,7 +5202,12 @@
   "timezones": [
    "UTC+13:00"
   ],
-  "flag_svg": "https://flagcdn.com/tk.svg"
+  "flag_svg": "https://flagcdn.com/tk.svg",
+  "language_codes": [
+   "eng",
+   "smo",
+   "tkl"
+  ]
  },
  {
   "iso3": "TKM",
@@ -4436,7 +5227,11 @@
   "timezones": [
    "UTC+05:00"
   ],
-  "flag_svg": "https://flagcdn.com/tm.svg"
+  "flag_svg": "https://flagcdn.com/tm.svg",
+  "language_codes": [
+   "rus",
+   "tuk"
+  ]
  },
  {
   "iso3": "TLS",
@@ -4456,7 +5251,11 @@
   "timezones": [
    "UTC+09:00"
   ],
-  "flag_svg": "https://flagcdn.com/tl.svg"
+  "flag_svg": "https://flagcdn.com/tl.svg",
+  "language_codes": [
+   "por",
+   "tet"
+  ]
  },
  {
   "iso3": "TON",
@@ -4476,7 +5275,11 @@
   "timezones": [
    "UTC+13:00"
   ],
-  "flag_svg": "https://flagcdn.com/to.svg"
+  "flag_svg": "https://flagcdn.com/to.svg",
+  "language_codes": [
+   "eng",
+   "ton"
+  ]
  },
  {
   "iso3": "TTO",
@@ -4495,7 +5298,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/tt.svg"
+  "flag_svg": "https://flagcdn.com/tt.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "TUN",
@@ -4514,7 +5320,10 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/tn.svg"
+  "flag_svg": "https://flagcdn.com/tn.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "TUR",
@@ -4533,7 +5342,10 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/tr.svg"
+  "flag_svg": "https://flagcdn.com/tr.svg",
+  "language_codes": [
+   "tur"
+  ]
  },
  {
   "iso3": "TUV",
@@ -4554,7 +5366,11 @@
   "timezones": [
    "UTC+12:00"
   ],
-  "flag_svg": "https://flagcdn.com/tv.svg"
+  "flag_svg": "https://flagcdn.com/tv.svg",
+  "language_codes": [
+   "eng",
+   "tvl"
+  ]
  },
  {
   "iso3": "TWN",
@@ -4573,7 +5389,10 @@
   "timezones": [
    "UTC+08:00"
   ],
-  "flag_svg": "https://flagcdn.com/tw.svg"
+  "flag_svg": "https://flagcdn.com/tw.svg",
+  "language_codes": [
+   "zho"
+  ]
  },
  {
   "iso3": "TZA",
@@ -4593,7 +5412,11 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/tz.svg"
+  "flag_svg": "https://flagcdn.com/tz.svg",
+  "language_codes": [
+   "eng",
+   "swa"
+  ]
  },
  {
   "iso3": "UGA",
@@ -4613,7 +5436,11 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/ug.svg"
+  "flag_svg": "https://flagcdn.com/ug.svg",
+  "language_codes": [
+   "eng",
+   "swa"
+  ]
  },
  {
   "iso3": "UKR",
@@ -4632,7 +5459,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/ua.svg"
+  "flag_svg": "https://flagcdn.com/ua.svg",
+  "language_codes": [
+   "ukr"
+  ]
  },
  {
   "iso3": "UMI",
@@ -4653,7 +5483,10 @@
    "UTC-10:00",
    "UTC+12:00"
   ],
-  "flag_svg": "https://flagcdn.com/um.svg"
+  "flag_svg": "https://flagcdn.com/um.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "UNK",
@@ -4673,7 +5506,11 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/xk.svg"
+  "flag_svg": "https://flagcdn.com/xk.svg",
+  "language_codes": [
+   "sqi",
+   "srp"
+  ]
  },
  {
   "iso3": "URY",
@@ -4692,7 +5529,10 @@
   "timezones": [
    "UTC-03:00"
   ],
-  "flag_svg": "https://flagcdn.com/uy.svg"
+  "flag_svg": "https://flagcdn.com/uy.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "USA",
@@ -4721,7 +5561,10 @@
    "UTC+10:00",
    "UTC+12:00"
   ],
-  "flag_svg": "https://flagcdn.com/us.svg"
+  "flag_svg": "https://flagcdn.com/us.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "UZB",
@@ -4741,7 +5584,11 @@
   "timezones": [
    "UTC+05:00"
   ],
-  "flag_svg": "https://flagcdn.com/uz.svg"
+  "flag_svg": "https://flagcdn.com/uz.svg",
+  "language_codes": [
+   "rus",
+   "uzb"
+  ]
  },
  {
   "iso3": "VAT",
@@ -4761,7 +5608,11 @@
   "timezones": [
    "UTC+01:00"
   ],
-  "flag_svg": "https://flagcdn.com/va.svg"
+  "flag_svg": "https://flagcdn.com/va.svg",
+  "language_codes": [
+   "ita",
+   "lat"
+  ]
  },
  {
   "iso3": "VCT",
@@ -4780,7 +5631,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/vc.svg"
+  "flag_svg": "https://flagcdn.com/vc.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "VEN",
@@ -4799,7 +5653,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/ve.svg"
+  "flag_svg": "https://flagcdn.com/ve.svg",
+  "language_codes": [
+   "spa"
+  ]
  },
  {
   "iso3": "VGB",
@@ -4818,7 +5675,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/vg.svg"
+  "flag_svg": "https://flagcdn.com/vg.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "VIR",
@@ -4837,7 +5697,10 @@
   "timezones": [
    "UTC-04:00"
   ],
-  "flag_svg": "https://flagcdn.com/vi.svg"
+  "flag_svg": "https://flagcdn.com/vi.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "VNM",
@@ -4856,7 +5719,10 @@
   "timezones": [
    "UTC+07:00"
   ],
-  "flag_svg": "https://flagcdn.com/vn.svg"
+  "flag_svg": "https://flagcdn.com/vn.svg",
+  "language_codes": [
+   "vie"
+  ]
  },
  {
   "iso3": "VUT",
@@ -4877,7 +5743,12 @@
   "timezones": [
    "UTC+11:00"
   ],
-  "flag_svg": "https://flagcdn.com/vu.svg"
+  "flag_svg": "https://flagcdn.com/vu.svg",
+  "language_codes": [
+   "bis",
+   "eng",
+   "fra"
+  ]
  },
  {
   "iso3": "WLF",
@@ -4896,7 +5767,10 @@
   "timezones": [
    "UTC+12:00"
   ],
-  "flag_svg": "https://flagcdn.com/wf.svg"
+  "flag_svg": "https://flagcdn.com/wf.svg",
+  "language_codes": [
+   "fra"
+  ]
  },
  {
   "iso3": "WSM",
@@ -4916,7 +5790,11 @@
   "timezones": [
    "UTC+13:00"
   ],
-  "flag_svg": "https://flagcdn.com/ws.svg"
+  "flag_svg": "https://flagcdn.com/ws.svg",
+  "language_codes": [
+   "eng",
+   "smo"
+  ]
  },
  {
   "iso3": "YEM",
@@ -4935,7 +5813,10 @@
   "timezones": [
    "UTC+03:00"
   ],
-  "flag_svg": "https://flagcdn.com/ye.svg"
+  "flag_svg": "https://flagcdn.com/ye.svg",
+  "language_codes": [
+   "ara"
+  ]
  },
  {
   "iso3": "ZAF",
@@ -4964,7 +5845,20 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/za.svg"
+  "flag_svg": "https://flagcdn.com/za.svg",
+  "language_codes": [
+   "afr",
+   "eng",
+   "nbl",
+   "nso",
+   "sot",
+   "ssw",
+   "tsn",
+   "tso",
+   "ven",
+   "xho",
+   "zul"
+  ]
  },
  {
   "iso3": "ZMB",
@@ -4983,7 +5877,10 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/zm.svg"
+  "flag_svg": "https://flagcdn.com/zm.svg",
+  "language_codes": [
+   "eng"
+  ]
  },
  {
   "iso3": "ZWE",
@@ -5016,6 +5913,23 @@
   "timezones": [
    "UTC+02:00"
   ],
-  "flag_svg": "https://flagcdn.com/zw.svg"
+  "flag_svg": "https://flagcdn.com/zw.svg",
+  "language_codes": [
+   "bwg",
+   "eng",
+   "kck",
+   "khi",
+   "ndc",
+   "nde",
+   "nya",
+   "sna",
+   "sot",
+   "toi",
+   "tsn",
+   "tso",
+   "ven",
+   "xho",
+   "zib"
+  ]
  }
 ]

@@ -14,7 +14,7 @@ LASTFM_CHART = {"tracks": {"track": [
 ]}}
 LASTFM_EMPTY = {"tracks": {"track": []}}
 MB_ARTISTS = {"artists": [{"id": "mb1", "name": "Ahmad Zahir"}]}
-DEEZER_HIT = {"data": [{"preview": "https://cdn.deezer/p.mp3", "link": "https://deezer.com/track/1"}]}
+DEEZER_HIT = {"data": [{"id": 3135556, "preview": "https://cdn.deezer/p.mp3?hdnea=exp=1", "link": "https://deezer.com/track/1"}]}
 
 
 @pytest.fixture
@@ -32,7 +32,8 @@ async def test_chart_with_previews(conn):
         r = await get_music(conn, client, AFG, "key")
     assert r.value["source"] == "chart"
     first = r.value["items"][0]
-    assert first == {"title": "Song A", "artist": "Artist A", "preview_url": "https://cdn.deezer/p.mp3",
+    # se guarda el id de Deezer, no el enlace del fragmento, que caduca en ~1 h
+    assert first == {"title": "Song A", "artist": "Artist A", "deezer_id": 3135556,
                      "link": "https://deezer.com/track/1"}
 
 
@@ -45,7 +46,7 @@ async def test_falls_back_to_artists(conn):
         r = await get_music(conn, client, AFG, "key")
     assert mb.calls.last.request.url.params["query"] == 'area:"Afghanistan"'
     assert r.value["source"] == "artists"
-    assert r.value["items"] == [{"title": None, "artist": "Ahmad Zahir", "preview_url": None,
+    assert r.value["items"] == [{"title": None, "artist": "Ahmad Zahir", "deezer_id": None,
                                  "link": "https://musicbrainz.org/artist/mb1"}]
 
 
@@ -75,7 +76,7 @@ async def test_deezer_error_keeps_item_without_preview(conn):
     respx.get(DEEZER_URL).mock(return_value=httpx.Response(500))
     async with httpx.AsyncClient() as client:
         r = await get_music(conn, client, AFG, "key")
-    assert r.value["items"][0]["preview_url"] is None
+    assert r.value["items"][0]["deezer_id"] is None
     assert r.value["items"][0]["link"] == "https://last.fm/a"
 
 
@@ -90,3 +91,15 @@ async def test_timeout_serves_stale(conn):
         r = await get_music(conn, client, AFG, "key", now=lambda: 1000.0 + 6 * 86400)
     assert r.stale is True
     assert r.value["source"] == "chart"
+
+
+@respx.mock
+async def test_lastfm_error_does_not_expose_key(conn):
+    respx.get(LASTFM_URL).mock(return_value=httpx.Response(500, json={}))
+    async with httpx.AsyncClient() as client:
+        with pytest.raises(Exception) as exc:
+            await get_music(conn, client, AFG, "SECRETKEY123")
+    assert "SECRETKEY123" not in str(exc.value)
+    assert "SECRETKEY123" not in repr(exc.value)
+    # la excepción original (con la URL completa) no se encadena en el traceback
+    assert exc.value.__cause__ is None and exc.value.__suppress_context__

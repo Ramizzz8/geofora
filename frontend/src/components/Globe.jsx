@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import GlobeGL from 'react-globe.gl'
 import { getHeatmap } from '../api'
 import { center } from '../geo'
+import { escapeHtml } from '../format'
 import { heatColor } from '../heatColor'
 
 const HEATMAP_REFRESH_MS = 10 * 60 * 1000
@@ -19,18 +20,14 @@ function useWindowSize() {
 const PANEL_SPACE = 570 // ancho del panel lateral + margen
 const MOBILE_LAT_SHIFT = 22
 
-export default function Globe({ onSelect, selectedIso3, panelOpen = false }) {
+export default function Globe({ features = [], onSelect, selectedIso3, panelOpen = false }) {
   const globeRef = useRef()
   const { w, h } = useWindowSize()
   // en escritorio el globo se aparta para no quedar tapado por el panel
   const width = panelOpen && w >= 768 ? w - PANEL_SPACE : w
-  const [features, setFeatures] = useState([])
   const [counts, setCounts] = useState({})
   const [hovered, setHovered] = useState(null)
 
-  useEffect(() => {
-    fetch('/data/countries.geojson').then((r) => r.json()).then((g) => setFeatures(g.features))
-  }, [])
 
   useEffect(() => {
     const load = () => getHeatmap().then((d) => setCounts(d.counts)).catch(() => {})
@@ -84,7 +81,7 @@ export default function Globe({ onSelect, selectedIso3, panelOpen = false }) {
       polygonsTransitionDuration={250}
       polygonLabel={(f) => {
         const n = counts[f.properties.iso3] ?? 0
-        return `<div class="globe-label"><b>${f.properties.name_es}</b><br>${n} noticias en 24 h</div>`
+        return `<div class="globe-label"><b>${escapeHtml(f.properties.name_es)}</b><br>${n} noticias en 24 h</div>`
       }}
       onPolygonHover={setHovered}
       onPolygonClick={(f) => onSelect(f.properties.slug)}
