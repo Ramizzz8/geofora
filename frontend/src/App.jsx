@@ -10,7 +10,6 @@ function Home() {
   const { slug } = useParams()
   const navigate = useNavigate()
   const [features, setFeatures] = useState([])
-  const [view, setView] = useState(null)
 
   useEffect(() => {
     fetch('/data/countries.geojson').then((r) => r.json()).then((g) => setFeatures(g.features))
@@ -22,9 +21,9 @@ function Home() {
   return (
     <div className="app">
       <Starfield />
-      <Brand view={view} />
+      <Brand />
       <SearchBox onSelect={goTo} />
-      <Globe onSelect={goTo} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug)} onViewChange={setView} />
+      <Globe onSelect={goTo} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug)} />
       {slug && (
         <CountryPanel
           key={slug}

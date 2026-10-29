@@ -40,51 +40,25 @@ a { color: var(--link); }
   left: 24px;
   z-index: 3;
 }
-.brand h1 { margin: 0; line-height: 1; white-space: nowrap; }
 .brand .tagline { margin: 6px 0 0; color: var(--muted); font-size: 0.85rem; min-height: 1.2em; }
 
-/* A · Órbita: fuente geométrica ancha y la O como planeta con satélite */
-.brand[data-variant='orbita'] h1 {
+/* Título: fuente geométrica ancha y la O como planeta con satélite */
+.brand h1 {
   display: flex;
   align-items: center;
   font-family: Unbounded, 'Space Grotesk', sans-serif;
   font-weight: 800;
   font-size: 1.75rem;
   letter-spacing: 0.06em;
+  margin: 0;
+  line-height: 1;
+  white-space: nowrap;
   background: linear-gradient(180deg, #ffffff 30%, #9fc4ff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 .orbit-o { width: 1.5em; height: 1.5em; margin: 0 -0.12em; overflow: visible; filter: drop-shadow(0 0 6px rgba(80, 150, 255, 0.55)); }
-
-/* C · Coordenadas: letras que se descifran y coordenadas en vivo */
-.brand[data-variant='coordenadas'] h1 {
-  font-family: 'Space Mono', monospace;
-  font-weight: 700;
-  font-size: 1.7rem;
-  letter-spacing: 0.32em;
-  color: #e8eefc;
-  text-shadow: 0 0 12px rgba(124, 196, 255, 0.45);
-}
-.brand[data-variant='coordenadas'] .tagline {
-  font-family: 'Space Mono', monospace;
-  color: var(--accent);
-  letter-spacing: 0.08em;
-  font-size: 0.78rem;
-}
-
-.brand-switch {
-  margin-top: 8px;
-  padding: 4px 10px;
-  border: 1px solid var(--panel-border);
-  border-radius: 999px;
-  background: rgba(9, 16, 34, 0.6);
-  color: var(--muted);
-  font: 500 0.72rem Inter, sans-serif;
-  cursor: pointer;
-}
-.brand-switch:hover { color: var(--text); border-color: var(--link); }
 
 @media (prefers-reduced-motion: reduce) {
   .orbit-o animateMotion { display: none; }
@@ -207,7 +181,7 @@ a { color: var(--link); }
 .culture-img { float: right; width: 96px; margin: 0 0 8px 12px; border-radius: 8px; }
 .links { font-size: 0.88rem; }
 
-.search { position: absolute; z-index: 4; top: 128px; left: 24px; width: min(280px, calc(100vw - 32px)); }
+.search { position: absolute; z-index: 4; top: 96px; left: 24px; width: min(280px, calc(100vw - 32px)); }
 .panel .search { position: relative; top: 0; left: 0; margin-top: 16px; width: 100%; }
 .search input {
   width: 100%;
@@ -232,7 +206,7 @@ a { color: var(--link); }
 .search-results li[aria-selected='true'] { background: rgba(124, 196, 255, 0.14); }
 
 @media (max-width: 767px) {
-  .search { top: 118px; left: 16px; }
+  .search { top: 88px; left: 16px; }
 }
 
 /* Portada del país */

@@ -19,9 +19,7 @@ function useWindowSize() {
 const PANEL_SPACE = 570 // ancho del panel lateral + margen
 const MOBILE_LAT_SHIFT = 22
 
-const VIEW_THROTTLE_MS = 150
-
-export default function Globe({ onSelect, selectedIso3, panelOpen = false, onViewChange }) {
+export default function Globe({ onSelect, selectedIso3, panelOpen = false }) {
   const globeRef = useRef()
   const { w, h } = useWindowSize()
   // en escritorio el globo se aparta para no quedar tapado por el panel
@@ -29,7 +27,6 @@ export default function Globe({ onSelect, selectedIso3, panelOpen = false, onVie
   const [features, setFeatures] = useState([])
   const [counts, setCounts] = useState({})
   const [hovered, setHovered] = useState(null)
-  const lastView = useRef(0)
 
   useEffect(() => {
     fetch('/data/countries.geojson').then((r) => r.json()).then((g) => setFeatures(g.features))
@@ -83,13 +80,6 @@ export default function Globe({ onSelect, selectedIso3, panelOpen = false, onVie
             : heatColor(counts[f.properties.iso3] ?? 0, max)}
       polygonSideColor={() => 'rgba(124, 196, 255, 0.15)'}
       polygonStrokeColor={() => 'rgba(255, 255, 255, 0.28)'}
-      onZoom={(pov) => {
-        const now = Date.now()
-        if (onViewChange && now - lastView.current > VIEW_THROTTLE_MS) {
-          lastView.current = now
-          onViewChange(pov)
-        }
-      }}
       polygonAltitude={(f) => (f === hovered || f.properties.iso3 === selectedIso3 ? 0.03 : 0.008)}
       polygonsTransitionDuration={250}
       polygonLabel={(f) => {
