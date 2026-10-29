@@ -6,8 +6,10 @@ import Globe from './components/Globe'
 import SearchBox from './components/SearchBox'
 import Brand from './components/Brand'
 import Starfield from './components/Starfield'
+import LegalPage from './components/LegalPage'
+import SiteFooter from './components/SiteFooter'
 
-function Home() {
+function Home({ legal = false }) {
   const { slug } = useParams()
   const navigate = useNavigate()
   const [features, setFeatures] = useState([])
@@ -29,7 +31,9 @@ function Home() {
       <Starfield />
       <Brand />
       <SearchBox onSelect={goTo} />
-      <Globe features={features} onSelect={goTo} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug)} />
+      <Globe features={features} onSelect={goTo} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug) || legal} />
+      {legal && <LegalPage onClose={() => navigate('/')} />}
+      <SiteFooter />
       {slug && (
         <CountryPanel
           key={slug}
@@ -49,6 +53,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/pais/:slug" element={<Home />} />
+      <Route path="/legal" element={<Home legal />} />
     </Routes>
   )
 }
