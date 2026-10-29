@@ -14,7 +14,8 @@ LASTFM_CHART = {"tracks": {"track": [
 ]}}
 LASTFM_EMPTY = {"tracks": {"track": []}}
 MB_ARTISTS = {"artists": [{"id": "mb1", "name": "Ahmad Zahir"}]}
-DEEZER_HIT = {"data": [{"id": 3135556, "preview": "https://cdn.deezer/p.mp3?hdnea=exp=1", "link": "https://deezer.com/track/1"}]}
+DEEZER_HIT = {"data": [{"id": 3135556, "preview": "https://cdn.deezer/p.mp3?hdnea=exp=1", "link": "https://deezer.com/track/1",
+                         "artist": {"name": "Artist A"}}]}
 
 
 @pytest.fixture
@@ -103,3 +104,26 @@ async def test_lastfm_error_does_not_expose_key(conn):
     assert "SECRETKEY123" not in repr(exc.value)
     # la excepción original (con la URL completa) no se encadena en el traceback
     assert exc.value.__cause__ is None and exc.value.__suppress_context__
+
+
+@respx.mock
+async def test_track_search_uses_plain_query_and_checks_artist(conn):
+    respx.get(LASTFM_URL).mock(return_value=httpx.Response(200, json={"tracks": {"track": [
+        {"name": "Housewife", "artist": {"name": "Tate McRae"}, "url": "https://last.fm/h"},
+        {"name": "Otra", "artist": {"name": "Nadie Conocido"}, "url": "https://last.fm/o"},
+    ]}}))
+
+    def deezer(request):
+        q = request.url.params["q"]
+        if q == "Tate McRae Housewife":
+            return httpx.Response(200, json={"data": [{"id": 7, "preview": "https://p/7.mp3", "link": "https://deezer.com/track/7",
+                                                       "artist": {"name": "Tate McRae"}}]})
+        # para la otra canción Deezer devuelve una de otro artista: no se debe aceptar
+        return httpx.Response(200, json={"data": [{"id": 9, "preview": "https://p/9.mp3", "link": "https://deezer.com/track/9",
+                                                   "artist": {"name": "Alguien Distinto"}}]})
+
+    route = respx.get(DEEZER_URL).mock(side_effect=deezer)
+    async with httpx.AsyncClient() as client:
+        r = await get_music(conn, client, AFG, "key")
+    assert "Tate McRae Housewife" in [c.request.url.params["q"] for c in route.calls]
+    assert [i["deezer_id"] for i in r.value["items"]] == [7, None]

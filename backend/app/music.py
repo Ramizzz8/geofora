@@ -7,6 +7,7 @@ import httpx
 
 from app.cache import CacheResult, cached
 from app.countries import Country
+from app.slug import slugify
 
 log = logging.getLogger(__name__)
 
@@ -47,8 +48,15 @@ async def _artists(client: httpx.AsyncClient, country: Country) -> list[dict]:
     ]
 
 
+def _same_artist(a: str, b: str) -> bool:
+    a, b = slugify(a), slugify(b)
+    return bool(a and b) and (a in b or b in a)
+
+
 async def _add_preview(client: httpx.AsyncClient, item: dict) -> None:
-    q = f'artist:"{item["artist"]}"' + (f' track:"{item["title"]}"' if item["title"] else "")
+    # La búsqueda estricta artist:"…" track:"…" de Deezer ya no encuentra canciones: para una
+    # canción se busca en texto libre y se comprueba que el artista coincide.
+    q = f'{item["artist"]} {item["title"]}' if item["title"] else f'artist:"{item["artist"]}"'
     try:
         r = await client.get(DEEZER_URL, params={"q": q, "limit": 1})
         r.raise_for_status()
@@ -56,6 +64,8 @@ async def _add_preview(client: httpx.AsyncClient, item: dict) -> None:
     except (httpx.HTTPError, ValueError):
         return  # sin preview la canción sigue apareciendo con su enlace
     # el enlace del fragmento caduca en ~1 h: se guarda el id y el enlace se pide al reproducir
+    if hits and item["title"] and not _same_artist(hits[0].get("artist", {}).get("name", ""), item["artist"]):
+        return
     if hits and hits[0].get("preview"):
         item["deezer_id"] = hits[0].get("id")
         item["link"] = hits[0].get("link") or item["link"]
