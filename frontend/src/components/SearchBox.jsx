@@ -1,14 +1,16 @@
 import { useEffect, useId, useMemo, useState } from 'react'
 import { getCountries } from '../api'
+import { countryName, suggestionsFor, useLang } from '../i18n'
 
 const MAX_RESULTS = 8
-const SUGGESTIONS = ['Japón', 'Sudán', 'Perú', 'Mongolia', 'Islandia', 'Kenia', 'Vietnam', 'Marruecos']
 const SUGGESTION_MS = 2600
 
 // misma normalización que el slug del backend: sin tildes ni mayúsculas
 const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim()
 
 export default function SearchBox({ onSelect, hero = false }) {
+  const { lang, t } = useLang()
+  const suggestions = suggestionsFor(lang)
   const [countries, setCountries] = useState([])
   const [query, setQuery] = useState('')
   const [active, setActive] = useState(0)
@@ -18,9 +20,9 @@ export default function SearchBox({ onSelect, hero = false }) {
   // en modo portada el texto de ayuda va proponiendo países para invitar a buscar
   useEffect(() => {
     if (!hero) return
-    const id = setInterval(() => setSuggestion((i) => (i + 1) % SUGGESTIONS.length), SUGGESTION_MS)
+    const id = setInterval(() => setSuggestion((i) => (i + 1) % suggestions.length), SUGGESTION_MS)
     return () => clearInterval(id)
-  }, [hero])
+  }, [hero, suggestions])
 
   useEffect(() => {
     getCountries().then(setCountries).catch(() => {})
@@ -30,11 +32,17 @@ export default function SearchBox({ onSelect, hero = false }) {
     const q = norm(query)
     if (!q) return []
     return countries
-      .map((c) => ({ ...c, key: norm(c.name_es) }))
-      .filter((c) => c.key.includes(q))
+      // se encuentra por el nombre en cualquier idioma y se ordena por el del idioma activo
+      .map((c) => ({
+        ...c,
+        name: countryName(c, lang),
+        key: norm(countryName(c, lang)),
+        anyName: norm(`${c.name_es} ${c.name_en ?? ''}`),
+      }))
+      .filter((c) => c.anyName.includes(q))
       .sort((a, b) => Number(!a.key.startsWith(q)) - Number(!b.key.startsWith(q)) || a.key.localeCompare(b.key))
       .slice(0, MAX_RESULTS)
-  }, [countries, query])
+  }, [countries, query, lang])
 
   const choose = (c) => {
     onSelect(c.slug)
@@ -62,8 +70,8 @@ export default function SearchBox({ onSelect, hero = false }) {
         role="combobox"
         aria-expanded={results.length > 0}
         aria-controls={listId}
-        aria-label="Buscar país"
-        placeholder={hero ? `Prueba con ${SUGGESTIONS[suggestion]}…` : 'Buscar país…'}
+        aria-label={t('searchLabel')}
+        placeholder={hero ? t('searchTry', { name: suggestions[suggestion] }) : t('searchPlaceholder')}
         value={query}
         onChange={(e) => { setQuery(e.target.value); setActive(0) }}
         onKeyDown={onKeyDown}
@@ -78,7 +86,7 @@ export default function SearchBox({ onSelect, hero = false }) {
               onMouseDown={(e) => { e.preventDefault(); choose(c) }}
               onMouseEnter={() => setActive(i)}
             >
-              {c.name_es}
+              {c.name}
             </li>
           ))}
         </ul>

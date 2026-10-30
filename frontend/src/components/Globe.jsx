@@ -4,6 +4,7 @@ import { getHeatmap } from '../api'
 import { center, isZoomedIn } from '../geo'
 import { escapeHtml } from '../format'
 import { heatColor } from '../heatColor'
+import { countryName, useLang } from '../i18n'
 
 const HEATMAP_REFRESH_MS = 10 * 60 * 1000
 
@@ -21,6 +22,7 @@ const PANEL_SPACE = 570 // ancho del panel lateral + margen
 const MOBILE_LAT_SHIFT = 22
 
 export default function Globe({ features = [], onSelect, selectedIso3, panelOpen = false, onZoomedChange, highlight }) {
+  const { lang, t } = useLang()
   const globeRef = useRef()
   const { w, h } = useWindowSize()
   // en escritorio el globo se aparta para no quedar tapado por el panel
@@ -87,7 +89,7 @@ export default function Globe({ features = [], onSelect, selectedIso3, panelOpen
       polygonsTransitionDuration={250}
       polygonLabel={(f) => {
         const n = counts[f.properties.iso3] ?? 0
-        return `<div class="globe-label"><b>${escapeHtml(f.properties.name_es)}</b><br>${n} noticias en 24 h</div>`
+        return `<div class="globe-label"><b>${escapeHtml(countryName(f.properties, lang))}</b><br>${t('globeNews', { n })}</div>`
       }}
       onZoom={({ altitude }) => {
         initialAltitude.current ??= altitude

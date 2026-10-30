@@ -1,8 +1,11 @@
+import { useLang } from '../../i18n'
+
 export default function PhotoGallery({ photos }) {
+  const { t } = useLang()
   if (!photos?.length) return null
   return (
     <section className="section">
-      <h3>Fotos</h3>
+      <h3>{t('photos')}</h3>
       <div className="gallery">
         {photos.map((p) => (
           <figure key={p.thumb}>
@@ -13,7 +16,7 @@ export default function PhotoGallery({ photos }) {
           </figure>
         ))}
       </div>
-      <p className="source">Fuente: Wikivoyage y Wikimedia Commons</p>
+      <p className="source">{t('photosSource')}</p>
     </section>
   )
 }

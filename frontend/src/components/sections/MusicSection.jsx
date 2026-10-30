@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import { getMusic } from '../../api'
+import { useLang } from '../../i18n'
 import { useFetch } from '../../useFetch'
 import Section from './Section'
 
-const SOURCES = { chart: 'Apple Music · fragmentos: Deezer', artists: 'MusicBrainz · Deezer' }
 
 function Track({ t, rank, playing, progress, onToggle }) {
+  const { t: tr } = useLang()
   const name = t.title ?? t.artist
   return (
     <li className={`track ${playing ? 'track--playing' : ''}`}>
@@ -14,7 +15,7 @@ function Track({ t, rank, playing, progress, onToggle }) {
         {t.image ? <img src={t.image} alt="" loading="lazy" /> : <span className="track-cover-empty">♪</span>}
         {t.preview_url && (
           <button type="button" className="track-play" onClick={onToggle}
-            aria-label={`${playing ? 'Pausar' : 'Reproducir'} ${name}`} aria-pressed={playing}>
+            aria-label={tr(playing ? 'pause' : 'play', { name })} aria-pressed={playing}>
             {playing ? <span className="eq" aria-hidden="true"><i /><i /><i /></span> : <span aria-hidden="true">▶</span>}
           </button>
         )}
@@ -65,15 +66,16 @@ function TrackList({ items }) {
 
 export default function MusicSection({ slug }) {
   const state = useFetch(getMusic, slug)
+  const { t } = useLang()
   return (
-    <Section title="Música" state={state}>
+    <Section title={t('music')} state={state}>
       {(data) => data.source === 'none' ? (
-        <p className="muted">Aún no tenemos música de aquí</p>
+        <p className="muted">{t('noMusic')}</p>
       ) : (
         <>
-          <p className="muted small">{data.source === 'chart' ? 'Lo más escuchado en Apple Music en este país' : 'Artistas de este país'}</p>
+          <p className="muted small">{t(data.source === 'chart' ? 'musicChart' : 'musicArtists')}</p>
           <TrackList items={data.items} />
-          <p className="source">Fuente: {SOURCES[data.source]}</p>
+          <p className="source">{t(data.source === 'chart' ? 'musicSourceChart' : 'musicSourceArtists')}</p>
         </>
       )}
     </Section>

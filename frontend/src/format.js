@@ -1,23 +1,26 @@
-const relative = new Intl.RelativeTimeFormat('es', { numeric: 'auto' })
-const languages = new Intl.DisplayNames(['es'], { type: 'language' })
+const LOCALES = { es: 'es-ES', en: 'en-GB' }
+const relative = (lang) => new Intl.RelativeTimeFormat(lang, { numeric: 'auto' })
+const displayLanguages = (lang) => new Intl.DisplayNames([lang], { type: 'language' })
+const displayCurrencies = (lang) => new Intl.DisplayNames([lang], { type: 'currency' })
 
-export function timeAgo(epochSeconds, now = Date.now()) {
+export function timeAgo(epochSeconds, lang = 'es', now = Date.now()) {
   const diff = epochSeconds * 1000 - now
   const hours = Math.round(diff / 3_600_000)
-  if (Math.abs(hours) < 1) return relative.format(Math.round(diff / 60_000), 'minute')
-  if (Math.abs(hours) < 48) return relative.format(hours, 'hour')
-  return relative.format(Math.round(hours / 24), 'day')
+  if (Math.abs(hours) < 1) return relative(lang).format(Math.round(diff / 60_000), 'minute')
+  if (Math.abs(hours) < 48) return relative(lang).format(hours, 'hour')
+  return relative(lang).format(Math.round(hours / 24), 'day')
 }
 
-export function languageName(code) {
+export function languageName(code, lang = 'es') {
   try {
-    return languages.of(code)
+    return displayLanguages(lang).of(code)
   } catch {
     return code
   }
 }
 
-export const formatDate = (epochSeconds) => new Date(epochSeconds * 1000).toLocaleDateString('es-ES')
+export const formatDate = (epochSeconds, lang = 'es') =>
+  new Date(epochSeconds * 1000).toLocaleDateString(LOCALES[lang])
 
 // REST Countries da husos como "UTC+05:30"; se calcula la hora sin depender de IANA
 export function localTime(timezone, now = new Date()) {
@@ -28,24 +31,23 @@ export function localTime(timezone, now = new Date()) {
   return `${String(t.getUTCHours()).padStart(2, '0')}:${String(t.getUTCMinutes()).padStart(2, '0')}`
 }
 
-const languageNamesEs = new Intl.DisplayNames(['es'], { type: 'language' })
-const currencyNamesEs = new Intl.DisplayNames(['es'], { type: 'currency' })
-
 const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1)
 
 // Traduce con el navegador; si no conoce un código lo devuelve tal cual y entonces se
 // usa el nombre original (en inglés) que viene en los datos.
-export function languageNames(codes, names) {
+export function languageNames(codes, names, lang = 'es') {
   if (!codes?.length) return names.join(', ')
+  const display = displayLanguages(lang)
   return capitalize(codes.map((c, i) => {
-    const es = languageNamesEs.of(c)
-    return es && es !== c ? es : names[i] ?? c
+    const name = display.of(c)
+    return name && name !== c ? name : names[i] ?? c
   }).join(', '))
 }
 
-export function currencyNames(codes, symbols = []) {
+export function currencyNames(codes, symbols = [], lang = 'es') {
+  const display = displayCurrencies(lang)
   return capitalize(codes.map((c, i) => {
-    const name = currencyNamesEs.of(c) ?? c
+    const name = display.of(c) ?? c
     const symbol = symbols[i]
     return symbol && symbol !== c ? `${name} (${symbol})` : name
   }).join(', '))
@@ -63,18 +65,25 @@ export function escapeHtml(text) {
   return String(text).replace(/[&<>"']/g, (ch) => HTML_ESCAPES[ch])
 }
 
-const oneDecimal = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 })
-const noDecimals = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0 })
+const decimals = (lang, digits) =>
+  new Intl.NumberFormat(LOCALES[lang], { minimumFractionDigits: digits, maximumFractionDigits: digits })
 
-// Escalas en español: un billón es un millón de millones (10^12)
-const MONEY_SCALES = [[1e12, 'billones'], [1e9, 'mil millones'], [1e6, 'millones']]
+// En español un billón es un millón de millones; en inglés, «trillion»
+const MONEY_SCALES = {
+  es: [[1e12, 'billones'], [1e9, 'mil millones'], [1e6, 'millones']],
+  en: [[1e12, 'trillion'], [1e9, 'billion'], [1e6, 'million']],
+}
 
-export function economyValue({ id, unit, value }) {
-  if (unit === 'pct') return `${oneDecimal.format(value)} %`
-  if (unit === 'pct_gdp') return `${oneDecimal.format(value)} % del PIB`
-  if (id === 'gdp') {
-    const [div, word] = MONEY_SCALES.find(([d]) => Math.abs(value) >= d) ?? [1, '']
-    return word ? `${oneDecimal.format(value / div)} ${word} de US$` : `${noDecimals.format(value)} US$`
+export function economyValue({ id, unit, value }, lang = 'es') {
+  const one = decimals(lang, 1)
+  const none = decimals(lang, 0)
+  const en = lang === 'en'
+  if (unit === 'pct') return en ? `${one.format(value)}%` : `${one.format(value)} %`
+  if (unit === 'pct_gdp') return en ? `${one.format(value)}% of GDP` : `${one.format(value)} % del PIB`
+  const scale = id === 'gdp' && MONEY_SCALES[lang].find(([d]) => Math.abs(value) >= d)
+  if (scale) {
+    const amount = one.format(value / scale[0])
+    return en ? `US$${amount} ${scale[1]}` : `${amount} ${scale[1]} de US$`
   }
-  return `${noDecimals.format(value)} US$`
+  return en ? `US$${none.format(value)}` : `${none.format(value)} US$`
 }

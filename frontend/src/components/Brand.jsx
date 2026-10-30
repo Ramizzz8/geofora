@@ -1,3 +1,5 @@
+import { useLang } from '../i18n'
+
 const ORBIT_TILT = 'rotate(-20 50 50)'
 
 function Satellite() {
@@ -43,6 +45,7 @@ function OrbitO() {
 }
 
 export default function Brand() {
+  const { t } = useLang()
   return (
     <header className="brand">
       <h1 aria-label="GEOFORA">
@@ -50,7 +53,7 @@ export default function Brand() {
         <OrbitO />
         <span aria-hidden="true">FORA</span>
       </h1>
-      <p className="tagline">El mundo, país a país</p>
+      <p className="tagline">{t('tagline')}</p>
     </header>
   )
 }

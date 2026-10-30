@@ -1,12 +1,15 @@
 import { currencyNames, languageNames, localTime } from '../format'
+import { countryName, useLang } from '../i18n'
 
 export default function CountryHeader({ country, cover }) {
+  const { lang, t } = useLang()
+  const name = countryName(country, lang)
   const facts = [
-    ['Capital', country.capital],
-    ['Idiomas', languageNames(country.language_codes, country.languages)],
-    ['Moneda', currencyNames(country.currencies, country.currency_symbols)],
-    ['Población', country.population?.toLocaleString('es-ES')],
-    ['Hora local', localTime(country.timezones[0])],
+    [t('capital'), country.capital],
+    [t('languages'), languageNames(country.language_codes, country.languages, lang)],
+    [t('currency'), currencyNames(country.currencies, country.currency_symbols, lang)],
+    [t('population'), country.population?.toLocaleString(lang === 'en' ? 'en-GB' : 'es-ES')],
+    [t('localTime'), localTime(country.timezones[0])],
   ].filter(([, v]) => v)
 
   return (
@@ -15,8 +18,8 @@ export default function CountryHeader({ country, cover }) {
         {cover && <img src={cover.thumb} alt="" />}
       </div>
       <div className="title-row">
-        {country.flag_svg && <img className="flag" src={country.flag_svg} alt={`Bandera de ${country.name_es}`} />}
-        <h2>{country.name_es}</h2>
+        {country.flag_svg && <img className="flag" src={country.flag_svg} alt={t('flagOf', { name })} />}
+        <h2>{name}</h2>
       </div>
       <dl className="facts">
         {facts.map(([k, v]) => (
