@@ -1,5 +1,5 @@
 const CONTACT = 'ajulianrague@gmail.com'
-const UPDATED = '30 de octubre de 2026'
+const UPDATED = '31 de octubre de 2026'
 
 export default function LegalPage({ onClose }) {
   return (
@@ -23,7 +23,7 @@ export default function LegalPage({ onClose }) {
           el titular, la imagen de previsualización y un enlace al artículo original, que pertenecen a cada medio.
           Las fotos de los países proceden de Wikimedia Commons y se muestran con su autor y licencia; los textos
           de cultura, de Wikipedia (CC BY-SA); la textura de la Tierra es de la NASA (dominio público). Otras
-          fuentes: GDELT, REST Countries, Natural Earth, MusicBrainz, Last.fm y Deezer.
+          fuentes: GDELT, REST Countries, Natural Earth, MusicBrainz, Apple Music, Deezer, Banco Mundial, FMI y Wikidata.
         </p>
         <h3>Responsabilidad</h3>
         <p>
@@ -44,8 +44,8 @@ export default function LegalPage({ onClose }) {
           <li>
             Al mostrar ciertos contenidos, tu navegador los descarga directamente de otros servicios, que reciben tu
             IP según sus propias políticas: las banderas, de <b>flagcdn.com</b>; las fotos de los países, de
-            <b> Wikimedia</b>; las imágenes de las noticias, de la web de cada medio; y los fragmentos de música, de
-            <b> Deezer</b>, solo cuando pulsas reproducir.
+            <b> Wikimedia</b>; las imágenes de las noticias, de la web de cada medio; las portadas de música, de <b>Apple</b> y
+            <b> Deezer</b>; y los fragmentos de música, de <b>Deezer</b>, solo cuando pulsas reproducir.
           </li>
           <li>
             Para traducir titulares, el servidor envía el texto del titular a DeepL. No se envía ningún dato tuyo.

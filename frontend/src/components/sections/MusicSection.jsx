@@ -3,8 +3,7 @@ import { getMusic } from '../../api'
 import { useFetch } from '../../useFetch'
 import Section from './Section'
 
-const SOURCES = { chart: 'Last.fm · Deezer', artists: 'MusicBrainz · Deezer' }
-const listeners = new Intl.NumberFormat('es-ES')
+const SOURCES = { chart: 'Apple Music · fragmentos: Deezer', artists: 'MusicBrainz · Deezer' }
 
 function Track({ t, rank, playing, progress, onToggle }) {
   const name = t.title ?? t.artist
@@ -22,10 +21,7 @@ function Track({ t, rank, playing, progress, onToggle }) {
       </div>
       <div className="track-info">
         <a href={t.link} target="_blank" rel="noopener noreferrer" className="track-title">{name}</a>
-        <span className="track-meta">
-          {t.listeners != null && <span className="track-listeners">{`${listeners.format(t.listeners)} oyentes`}</span>}
-          {t.title && <span>{t.artist}</span>}
-        </span>
+        {t.title && <span className="track-meta">{t.artist}</span>}
         {playing && <span className="track-progress" style={{ '--p': progress }} aria-hidden="true" />}
       </div>
     </li>
@@ -75,7 +71,7 @@ export default function MusicSection({ slug }) {
         <p className="muted">Aún no tenemos música de aquí</p>
       ) : (
         <>
-          {data.source === 'artists' && <p className="muted small">Artistas de este país</p>}
+          <p className="muted small">{data.source === 'chart' ? 'Lo más escuchado en Apple Music en este país' : 'Artistas de este país'}</p>
           <TrackList items={data.items} />
           <p className="source">Fuente: {SOURCES[data.source]}</p>
         </>

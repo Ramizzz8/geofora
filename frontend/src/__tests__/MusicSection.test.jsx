@@ -32,17 +32,19 @@ test('datos caducados muestran su fecha', async () => {
 const CHART = {
   source: 'chart', fetched_at: NOW_S, stale: false,
   items: [
-    { title: 'Nutshell', artist: 'Alice In Chains', listeners: 58213, image: 'https://img/1.jpg', preview_url: '/api/music/preview/1', link: 'https://d/1' },
-    { title: 'B.Y.O.B.', artist: 'System Of A Down', listeners: 57000, image: 'https://img/2.jpg', preview_url: '/api/music/preview/2', link: 'https://d/2' },
-    { title: 'Sin fragmento', artist: 'Alguien', listeners: null, image: null, preview_url: null, link: 'https://d/3' },
+    { title: 'Nutshell', artist: 'Alice In Chains', image: 'https://img/1.jpg', preview_url: '/api/music/preview/1', link: 'https://d/1' },
+    { title: 'B.Y.O.B.', artist: 'System Of A Down', image: 'https://img/2.jpg', preview_url: '/api/music/preview/2', link: 'https://d/2' },
+    { title: 'Sin fragmento', artist: 'Alguien', image: null, preview_url: null, link: 'https://d/3' },
   ],
 }
 
-test('ranking con número, portada y oyentes', async () => {
+test('ranking con número, portada y artista', async () => {
   mockApi({ '/api/country/japon/music': CHART })
   const { container } = render(<MusicSection slug="japon" />)
   expect(await screen.findByText('Nutshell')).toBeInTheDocument()
-  expect(screen.getByText('58.213 oyentes')).toBeInTheDocument()
+  expect(screen.getByText('Alice In Chains')).toBeInTheDocument()
+  expect(screen.getByText('Lo más escuchado en Apple Music en este país')).toBeInTheDocument()
+  expect(screen.queryByText(/oyentes/)).toBeNull()
   expect(container.querySelectorAll('.track img')[0]).toHaveAttribute('src', 'https://img/1.jpg')
   expect([...container.querySelectorAll('.track-rank')].map((n) => n.textContent)).toEqual(['1', '2', '3'])
 })

@@ -11,7 +11,6 @@ Variables en `/opt/portafolio/.env`, todas opcionales salvo el host:
 
 ```
 GEOFORA_HOST=geofora.andresrami.com
-GEOFORA_LASTFM_API_KEY=
 GEOFORA_DEEPL_API_KEY=
 ```
 

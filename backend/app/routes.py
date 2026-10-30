@@ -68,7 +68,7 @@ async def get_country_music(request: Request, slug: str):
     country = get_country_or_404(request, slug)
     state = request.app.state
     try:
-        result = await get_music(state.db, state.http, country, state.settings.lastfm_api_key)
+        result = await get_music(state.db, state.http, country)
     except Exception:
         log.warning("music unavailable for %s", country.iso3, exc_info=True)
         raise unavailable("Música")

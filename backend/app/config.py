@@ -11,7 +11,6 @@ class Settings(BaseSettings):
 
     db_path: str = "geofora.db"
     countries_path: str = str(DATA_DIR / "countries.json")
-    lastfm_api_key: str = ""
     deepl_api_key: str = ""
     news_interval_min: int = 15  # GDELT publica una tanda cada 15 min
     enable_scheduler: bool = True

@@ -1,19 +1,19 @@
 import httpx
 import respx
 
-from app.music import DEEZER_TRACK_URL, DEEZER_URL, LASTFM_URL, MB_URL
+from app.music import APPLE_URL, DEEZER_TRACK_URL, DEEZER_URL, MB_URL
 
 
 @respx.mock
 def test_music_route_returns_503_when_unavailable(client):
-    respx.get(LASTFM_URL).mock(side_effect=httpx.ConnectError("down"))
+    respx.get(url__startswith=APPLE_URL).mock(side_effect=httpx.ConnectError("down"))
     respx.get(MB_URL).mock(side_effect=httpx.ConnectError("down"))
-    r = client.get("/api/country/japon/music")
-    assert r.status_code == 503
+    assert client.get("/api/country/japon/music").status_code == 503
 
 
 @respx.mock
 def test_music_route_shape(client):
+    respx.get(url__startswith=APPLE_URL).mock(return_value=httpx.Response(500))
     respx.get(MB_URL).mock(return_value=httpx.Response(200, json={"artists": []}))
     body = client.get("/api/country/japon/music").json()
     assert body["source"] == "none"
@@ -23,6 +23,7 @@ def test_music_route_shape(client):
 
 @respx.mock
 def test_music_route_points_preview_to_our_server(client):
+    respx.get(url__startswith=APPLE_URL).mock(return_value=httpx.Response(500))
     respx.get(MB_URL).mock(return_value=httpx.Response(200, json={"artists": [{"id": "mb1", "name": "Hikaru Utada"}]}))
     respx.get(DEEZER_URL).mock(return_value=httpx.Response(200, json={"data": [
         {"id": 3135556, "preview": "https://cdnt-preview.dzcdn.net/a.mp3?hdnea=exp=1", "link": "https://deezer.com/track/3135556",
