@@ -13,6 +13,7 @@ from app.news.store import ArticleOut
 log = logging.getLogger(__name__)
 
 DEEPL_URL = "https://api-free.deepl.com/v2/translate"
+DEEPL_TARGETS = {"en": "EN-US"}
 TRANSLATE_TIMEOUT_S = 3  # nginx corta a los 30 s: un DeepL lento no puede bloquear las noticias
 
 
@@ -26,7 +27,8 @@ class DeepLTranslator:
         self.client = client
 
     async def translate(self, texts: list[str], source: str, target: str) -> list[str]:
-        body = {"text": texts, "target_lang": target.upper()}
+        # DeepL exige variante regional para traducir al inglés
+        body = {"text": texts, "target_lang": DEEPL_TARGETS.get(target, target.upper())}
         if source != "und":
             body["source_lang"] = source.upper()
         r = await self.client.post(DEEPL_URL, json=body, headers={"Authorization": f"DeepL-Auth-Key {self.api_key}"})

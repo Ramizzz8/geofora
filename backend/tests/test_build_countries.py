@@ -55,13 +55,13 @@ def test_merge_builds_countries_from_rest():
 def test_merge_uses_adm0_when_iso_missing():
     _, geo = merge(REST, GEO)
     props = [f["properties"] for f in geo["features"]]
-    assert {"iso3": "UNK", "name_es": "Kosovo", "slug": "kosovo"} in props
+    assert {"iso3": "UNK", "name_es": "Kosovo", "name_en": "Kosovo", "slug": "kosovo"} in props
 
 
 def test_merge_keeps_feature_without_rest_data():
     countries, geo = merge(REST, GEO)
     props = [f["properties"] for f in geo["features"]]
-    assert {"iso3": "SOL", "name_es": "Somaliland", "slug": "somaliland"} in props
+    assert {"iso3": "SOL", "name_es": "Somaliland", "name_en": "Somaliland", "slug": "somaliland"} in props
     assert "SOL" not in {c.iso3 for c in countries}
 
 

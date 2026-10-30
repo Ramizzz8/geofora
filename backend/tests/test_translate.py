@@ -90,3 +90,25 @@ async def test_slow_language_does_not_block_others(conn):
     assert time.monotonic() - start < 1
     assert out[0].translated is True
     assert out[1].translated is False
+
+
+async def test_english_target_skips_english_and_has_its_own_cache(conn):
+    t = FakeTranslator()
+    out = await translate_titles(conn, t, [art("Hello", "en"), art("Hola", "es")], target="en")
+    assert out[0].translated is False and out[0].title == "Hello"
+    assert out[1].translated is True
+    assert t.calls == [(("Hola",), "es", "en")]
+    # la traducción al inglés no sirve para el español
+    t2 = FakeTranslator()
+    out2 = await translate_titles(conn, t2, [art("Hola", "es"), art("Bonjour", "fr")], target="es")
+    assert out2[0].translated is False
+    assert t2.calls == [(("Bonjour",), "fr", "es")]
+
+
+@respx.mock
+async def test_deepl_uses_regional_code_for_english():
+    import json
+    route = respx.post(DEEPL_URL).mock(return_value=httpx.Response(200, json={"translations": [{"text": "Hello"}]}))
+    async with httpx.AsyncClient() as client:
+        await DeepLTranslator("k", client).translate(["Hola"], "es", "en")
+    assert json.loads(route.calls.last.request.content)["target_lang"] == "EN-US"

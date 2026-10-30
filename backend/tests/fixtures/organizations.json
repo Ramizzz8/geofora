@@ -15,6 +15,9 @@
    "short": "ONU",
    "name": "Organización de las Naciones Unidas",
    "description": "Organización mundial de Estados para la paz, la seguridad y la cooperación internacional.",
+   "short_en": "UN",
+   "name_en": "United Nations",
+   "description_en": "Global organization of states for peace, security and international cooperation.",
    "members": [
     "AFG",
     "AGO",
@@ -216,6 +219,9 @@
    "short": "UE",
    "name": "Unión Europea",
    "description": "Unión política y económica de Estados europeos con mercado único y, en la mayoría, moneda común.",
+   "short_en": "EU",
+   "name_en": "European Union",
+   "description_en": "Political and economic union of European states with a single market and, for most members, a common currency.",
    "members": [
     "AUT",
     "BEL",
@@ -251,6 +257,9 @@
    "short": "OTAN",
    "name": "Organización del Tratado del Atlántico Norte",
    "description": "Alianza militar de defensa colectiva entre países de Europa y América del Norte.",
+   "short_en": "NATO",
+   "name_en": "North Atlantic Treaty Organization",
+   "description_en": "Collective defence alliance between countries of Europe and North America.",
    "members": [
     "ALB",
     "BEL",
@@ -291,6 +300,9 @@
    "short": "G7",
    "name": "Grupo de los Siete",
    "description": "Foro de siete grandes economías industrializadas.",
+   "short_en": "G7",
+   "name_en": "Group of Seven",
+   "description_en": "Forum of seven major industrialised economies.",
    "members": [
     "CAN",
     "DEU",
@@ -306,6 +318,9 @@
    "short": "G20",
    "name": "Grupo de los Veinte",
    "description": "Foro de las principales economías desarrolladas y emergentes del mundo.",
+   "short_en": "G20",
+   "name_en": "Group of Twenty",
+   "description_en": "Forum of the world's main developed and emerging economies.",
    "members": [
     "ARG",
     "AUS",
@@ -333,6 +348,9 @@
    "short": "BRICS",
    "name": "BRICS",
    "description": "Agrupación de grandes economías emergentes, iniciada por Brasil, Rusia, India, China y Sudáfrica.",
+   "short_en": "BRICS",
+   "name_en": "BRICS",
+   "description_en": "Group of major emerging economies, started by Brazil, Russia, India, China and South Africa.",
    "members": [
     "ARE",
     "BRA",
@@ -351,6 +369,9 @@
    "short": "OPEP",
    "name": "Organización de Países Exportadores de Petróleo",
    "description": "Coordina la política petrolera de grandes países productores.",
+   "short_en": "OPEC",
+   "name_en": "Organization of the Petroleum Exporting Countries",
+   "description_en": "Coordinates the oil policy of major producing countries.",
    "members": [
     "ARE",
     "COG",
@@ -371,6 +392,9 @@
    "short": "OCDE",
    "name": "Organización para la Cooperación y el Desarrollo Económicos",
    "description": "Organización de economías desarrolladas que coordina políticas económicas y sociales.",
+   "short_en": "OECD",
+   "name_en": "Organisation for Economic Co-operation and Development",
+   "description_en": "Organization of developed economies that coordinates economic and social policy.",
    "members": [
     "AUS",
     "AUT",
@@ -417,6 +441,9 @@
    "short": "Mercosur",
    "name": "Mercado Común del Sur",
    "description": "Bloque comercial de América del Sur.",
+   "short_en": "Mercosur",
+   "name_en": "Southern Common Market",
+   "description_en": "Trade bloc of South America.",
    "members": [
     "ARG",
     "BOL",
@@ -430,6 +457,9 @@
    "short": "ASEAN",
    "name": "Asociación de Naciones de Asia Sudoriental",
    "description": "Organización regional de cooperación política y económica del Sudeste Asiático.",
+   "short_en": "ASEAN",
+   "name_en": "Association of Southeast Asian Nations",
+   "description_en": "Regional organization for political and economic cooperation in Southeast Asia.",
    "members": [
     "BRN",
     "IDN",
@@ -449,6 +479,9 @@
    "short": "UA",
    "name": "Unión Africana",
    "description": "Organización continental de los Estados de África.",
+   "short_en": "AU",
+   "name_en": "African Union",
+   "description_en": "Continental organization of the states of Africa.",
    "members": [
     "AGO",
     "BDI",
@@ -511,6 +544,9 @@
    "short": "Liga Árabe",
    "name": "Liga de los Estados Árabes",
    "description": "Organización regional de Estados árabes de Oriente Medio y el norte de África.",
+   "short_en": "Arab League",
+   "name_en": "League of Arab States",
+   "description_en": "Regional organization of Arab states of the Middle East and North Africa.",
    "members": [
     "ARE",
     "BHR",
@@ -541,6 +577,9 @@
    "short": "Commonwealth",
    "name": "Mancomunidad de Naciones",
    "description": "Asociación de Estados, en su mayoría antiguos territorios del Imperio británico.",
+   "short_en": "Commonwealth",
+   "name_en": "Commonwealth of Nations",
+   "description_en": "Association of states, most of them former territories of the British Empire.",
    "members": [
     "ATG",
     "AUS",
@@ -605,6 +644,9 @@
    "short": "APEC",
    "name": "Foro de Cooperación Económica Asia-Pacífico",
    "description": "Foro de economías de la cuenca del Pacífico para el comercio y la inversión.",
+   "short_en": "APEC",
+   "name_en": "Asia-Pacific Economic Cooperation",
+   "description_en": "Forum of Pacific Rim economies for trade and investment.",
    "members": [
     "AUS",
     "BRN",

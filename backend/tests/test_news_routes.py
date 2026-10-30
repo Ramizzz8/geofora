@@ -38,3 +38,27 @@ def test_news_includes_image(client):
     save_articles(client.app.state.db, "JPN", [Article("https://x/9", "Foto", "en", "x.com", "", now - 60, image="https://img/9.jpg")])
     a = client.get("/api/country/japon/news").json()["articles"][0]
     assert a["image"] == "https://img/9.jpg"
+
+
+def _spanish_article(client):
+    save_articles(client.app.state.db, "JPN", [Article("https://x/5", "Hola", "es", "x.com", "", time.time() - 60)])
+
+
+class _Upper:
+    async def translate(self, texts, source, target):
+        return [f"{target}:{t}" for t in texts]
+
+
+def test_news_lang_param_selects_target(client):
+    _spanish_article(client)
+    client.app.state.translator = _Upper()
+    assert client.get("/api/country/japon/news?lang=en").json()["articles"][0]["title"] == "en:Hola"
+    assert client.get("/api/country/japon/news").json()["articles"][0]["title"] == "Hola"
+
+
+def test_news_unknown_lang_falls_back_to_spanish(client):
+    _spanish_article(client)
+    client.app.state.translator = _Upper()
+    r = client.get("/api/country/japon/news?lang=xx")
+    assert r.status_code == 200
+    assert r.json()["articles"][0]["title"] == "Hola"

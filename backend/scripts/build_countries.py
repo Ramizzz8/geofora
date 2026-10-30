@@ -65,9 +65,10 @@ def merge(rest: list[dict], geo: dict) -> tuple[list[Country], dict]:
         code = ALIASES.get(code, code)
         country = countries.get(code)
         name_es = country.name_es if country else p["NAME"]
+        name_en = country.name_en if country else p["NAME"]
         features.append({
             "type": "Feature",
-            "properties": {"iso3": code, "name_es": name_es, "slug": slugify(name_es)},
+            "properties": {"iso3": code, "name_es": name_es, "name_en": name_en, "slug": slugify(name_es)},
             "geometry": f["geometry"],
         })
     return list(countries.values()), {"type": "FeatureCollection", "features": features}

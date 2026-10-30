@@ -15,8 +15,14 @@ from app.translate import translate_titles
 
 log = logging.getLogger(__name__)
 
+LANGUAGES = {"es", "en"}
+
 # todos los endpoints son async: la conexión SQLite se usa solo desde el event loop
 router = APIRouter(prefix="/api")
+
+
+def _lang(lang: str) -> str:
+    return lang if lang in LANGUAGES else "es"
 
 
 def get_country_or_404(request: Request, slug: str) -> Country:
@@ -29,7 +35,7 @@ def get_country_or_404(request: Request, slug: str) -> Country:
 @router.get("/countries")
 async def list_countries(request: Request):
     return [
-        {"iso3": c.iso3, "slug": c.slug, "name_es": c.name_es}
+        {"iso3": c.iso3, "slug": c.slug, "name_es": c.name_es, "name_en": c.name_en}
         for c in request.app.state.countries.all_sorted()
     ]
 
@@ -51,11 +57,11 @@ async def get_heatmap(request: Request):
 
 
 @router.get("/country/{slug}/news")
-async def get_news(request: Request, slug: str):
+async def get_news(request: Request, slug: str, lang: str = "es"):
     country = get_country_or_404(request, slug)
     db = request.app.state.db
     articles, rng = recent_articles(db, country.iso3, time.time())
-    out = await translate_titles(db, request.app.state.translator, articles)
+    out = await translate_titles(db, request.app.state.translator, articles, target=_lang(lang))
     return {"range": rng, "articles": [asdict(a) for a in out], "updated_at": last_seen(db)}
 
 
@@ -94,11 +100,11 @@ async def music_preview(request: Request, deezer_id: int):
 
 
 @router.get("/country/{slug}/culture")
-async def get_country_culture(request: Request, slug: str):
+async def get_country_culture(request: Request, slug: str, lang: str = "es"):
     country = get_country_or_404(request, slug)
     state = request.app.state
     try:
-        result = await get_culture(state.db, state.http, country)
+        result = await get_culture(state.db, state.http, country, lang=_lang(lang))
     except Exception:
         log.warning("culture unavailable for %s", country.iso3, exc_info=True)
         raise unavailable("Cultura")

@@ -10,9 +10,15 @@ from app.countries import Country
 SUMMARY_URL = "https://es.wikipedia.org/api/rest_v1/page/summary"
 TTL_S = 21 * 86400
 
+# por idioma: URL de Wikipedia, título de respaldo si hay desambiguación y artículo de cultura
+WIKIS = {
+    "es": (SUMMARY_URL, "{} (país)", "Cultura de {}"),
+    "en": ("https://en.wikipedia.org/api/rest_v1/page/summary", "{} (country)", "Culture of {}"),
+}
 
-async def _summary(client: httpx.AsyncClient, title: str) -> dict | None:
-    r = await client.get(f"{SUMMARY_URL}/{quote(title.replace(' ', '_'), safe='()_')}")
+
+async def _summary(client: httpx.AsyncClient, base: str, title: str) -> dict | None:
+    r = await client.get(f"{base}/{quote(title.replace(' ', '_'), safe='()_')}")
     if r.status_code == 404:
         return None
     r.raise_for_status()
@@ -20,16 +26,19 @@ async def _summary(client: httpx.AsyncClient, title: str) -> dict | None:
 
 
 async def get_culture(
-    conn: sqlite3.Connection, client: httpx.AsyncClient, country: Country, now=time.time
+    conn: sqlite3.Connection, client: httpx.AsyncClient, country: Country, now=time.time, lang: str = "es"
 ) -> CacheResult:
+    base, fallback, culture_title = WIKIS[lang]
+    name = country.name_en if lang == "en" else country.name_es
+
     async def fetch() -> dict:
-        page = await _summary(client, country.name_es)
+        page = await _summary(client, base, name)
         # nombres como "Georgia" llevan a una página de desambiguación
         if page is None or page.get("type") == "disambiguation":
-            page = await _summary(client, f"{country.name_es} (país)")
+            page = await _summary(client, base, fallback.format(name))
         if page is None:
-            raise LookupError(f"no Wikipedia page for {country.name_es}")
-        culture = await _summary(client, f"Cultura de {country.name_es}")
+            raise LookupError(f"no Wikipedia page for {name}")
+        culture = await _summary(client, base, culture_title.format(name))
         return {
             "extract": page.get("extract", ""),
             "thumbnail": (page.get("thumbnail") or {}).get("source"),
@@ -37,4 +46,4 @@ async def get_culture(
             "culture_url": culture["content_urls"]["desktop"]["page"] if culture else None,
         }
 
-    return await cached(conn, f"culture:{country.iso3}", TTL_S, fetch, now=now)
+    return await cached(conn, f"culture:{lang}:{country.iso3}", TTL_S, fetch, now=now)

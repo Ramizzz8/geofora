@@ -34,3 +34,8 @@ def test_corrections_are_applied_and_recorded():
     }
     fixed = apply_corrections(members, corrections)
     assert fixed == {"brics": ["BRA", "CHN"], "commonwealth": ["AUS", "GBR"]}
+
+
+def test_every_organization_also_has_english_texts():
+    for org in ORGANIZATIONS:
+        assert org["short_en"] and org["name_en"] and org["description_en"]
