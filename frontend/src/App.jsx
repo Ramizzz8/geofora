@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { useParallax } from './useParallax'
 import { canonicalSlug } from './format'
 import { useNavigate, useParams, Routes, Route } from 'react-router-dom'
 import CountryPanel from './components/CountryPanel'
@@ -13,6 +14,11 @@ function Home({ legal = false }) {
   const { slug } = useParams()
   const navigate = useNavigate()
   const [features, setFeatures] = useState([])
+  const [zoomed, setZoomed] = useState(false)
+  // modo portada: globo a su tamaño inicial o más lejos y ningún panel abierto
+  const hero = !slug && !legal && !zoomed
+  const appRef = useRef(null)
+  useParallax(appRef, hero)
 
   useEffect(() => {
     fetch('/data/countries.geojson').then((r) => r.json()).then((g) => setFeatures(g.features))
@@ -27,11 +33,11 @@ function Home({ legal = false }) {
   }, [slug, navigate])
 
   return (
-    <div className="app">
+    <div className={`app ${hero ? 'app--hero' : ''}`} ref={appRef}>
       <Starfield />
       <Brand />
-      <SearchBox onSelect={goTo} />
-      <Globe features={features} onSelect={goTo} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug) || legal} />
+      <SearchBox onSelect={goTo} hero={hero} />
+      <Globe features={features} onSelect={goTo} selectedIso3={selected?.properties.iso3 ?? null} panelOpen={Boolean(slug) || legal} onZoomedChange={setZoomed} />
       {legal && <LegalPage onClose={() => navigate('/')} />}
       <SiteFooter />
       {slug && (

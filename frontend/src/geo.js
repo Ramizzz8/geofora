@@ -22,3 +22,10 @@ export function center(feature) {
   const wrapped = box((lng) => (lng < 0 ? lng + 360 : lng))
   return { lat: wrapped.lat, lng: wrapped.lng > 180 ? wrapped.lng - 360 : wrapped.lng }
 }
+
+// Margen para que los pequeños cambios de distancia al girar no cuenten como zoom
+const ZOOM_TOLERANCE = 0.97
+
+export function isZoomedIn(altitude, initialAltitude) {
+  return altitude < initialAltitude * ZOOM_TOLERANCE
+}

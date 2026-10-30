@@ -21,3 +21,11 @@ test('país que cruza el antimeridiano (Fiyi) se centra cerca de 180°, no en 0�
   expect(Math.abs(Math.abs(c.lng) - 179)).toBeLessThan(1)
   expect(c.lat).toBe(-17)
 })
+
+test('se considera ampliado solo al acercarse por debajo de la distancia inicial', async () => {
+  const { isZoomedIn } = await import('../geo')
+  expect(isZoomedIn(2.5, 2.5)).toBe(false)
+  expect(isZoomedIn(3.2, 2.5)).toBe(false) // más pequeño que al inicio: sigue el modo portada
+  expect(isZoomedIn(2.47, 2.5)).toBe(false) // pequeñas variaciones al girar no cuentan
+  expect(isZoomedIn(2.2, 2.5)).toBe(true)
+})

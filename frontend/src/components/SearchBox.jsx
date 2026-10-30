@@ -2,15 +2,25 @@ import { useEffect, useId, useMemo, useState } from 'react'
 import { getCountries } from '../api'
 
 const MAX_RESULTS = 8
+const SUGGESTIONS = ['Japón', 'Sudán', 'Perú', 'Mongolia', 'Islandia', 'Kenia', 'Vietnam', 'Marruecos']
+const SUGGESTION_MS = 2600
 
 // misma normalización que el slug del backend: sin tildes ni mayúsculas
 const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim()
 
-export default function SearchBox({ onSelect }) {
+export default function SearchBox({ onSelect, hero = false }) {
   const [countries, setCountries] = useState([])
   const [query, setQuery] = useState('')
   const [active, setActive] = useState(0)
   const listId = useId()
+  const [suggestion, setSuggestion] = useState(0)
+
+  // en modo portada el texto de ayuda va proponiendo países para invitar a buscar
+  useEffect(() => {
+    if (!hero) return
+    const id = setInterval(() => setSuggestion((i) => (i + 1) % SUGGESTIONS.length), SUGGESTION_MS)
+    return () => clearInterval(id)
+  }, [hero])
 
   useEffect(() => {
     getCountries().then(setCountries).catch(() => {})
@@ -53,7 +63,7 @@ export default function SearchBox({ onSelect }) {
         aria-expanded={results.length > 0}
         aria-controls={listId}
         aria-label="Buscar país"
-        placeholder="Buscar país…"
+        placeholder={hero ? `Prueba con ${SUGGESTIONS[suggestion]}…` : 'Buscar país…'}
         value={query}
         onChange={(e) => { setQuery(e.target.value); setActive(0) }}
         onKeyDown={onKeyDown}

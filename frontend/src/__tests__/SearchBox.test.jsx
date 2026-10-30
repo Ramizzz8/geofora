@@ -48,3 +48,22 @@ test('muestra como mucho 8 resultados', async () => {
   await screen.findAllByRole('option')
   expect(screen.getAllByRole('option')).toHaveLength(8)
 })
+
+test('en modo portada el buscador va sugiriendo países', async () => {
+  const { act } = await import('@testing-library/react')
+  vi.useFakeTimers()
+  mockApi({ '/api/countries': COUNTRIES })
+  render(<SearchBox onSelect={() => {}} hero />)
+  const input = screen.getByRole('combobox')
+  const first = input.getAttribute('placeholder')
+  expect(first).toMatch(/^Prueba con /)
+  act(() => { vi.advanceTimersByTime(3000) })
+  expect(input.getAttribute('placeholder')).not.toBe(first)
+  vi.useRealTimers()
+})
+
+test('fuera del modo portada el texto de ayuda es el de siempre', () => {
+  mockApi({ '/api/countries': COUNTRIES })
+  render(<SearchBox onSelect={() => {}} />)
+  expect(screen.getByRole('combobox')).toHaveAttribute('placeholder', 'Buscar país…')
+})

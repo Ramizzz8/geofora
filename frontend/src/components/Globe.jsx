@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import GlobeGL from 'react-globe.gl'
 import { getHeatmap } from '../api'
-import { center } from '../geo'
+import { center, isZoomedIn } from '../geo'
 import { escapeHtml } from '../format'
 import { heatColor } from '../heatColor'
 
@@ -20,14 +20,16 @@ function useWindowSize() {
 const PANEL_SPACE = 570 // ancho del panel lateral + margen
 const MOBILE_LAT_SHIFT = 22
 
-export default function Globe({ features = [], onSelect, selectedIso3, panelOpen = false }) {
+export default function Globe({ features = [], onSelect, selectedIso3, panelOpen = false, onZoomedChange }) {
   const globeRef = useRef()
   const { w, h } = useWindowSize()
   // en escritorio el globo se aparta para no quedar tapado por el panel
   const width = panelOpen && w >= 768 ? w - PANEL_SPACE : w
   const [counts, setCounts] = useState({})
   const [hovered, setHovered] = useState(null)
-
+  // distancia inicial de la cámara: por encima de ella (o igual) la web está en modo portada
+  const initialAltitude = useRef(null)
+  const zoomed = useRef(false)
 
   useEffect(() => {
     const load = () => getHeatmap().then((d) => setCounts(d.counts)).catch(() => {})
@@ -60,6 +62,7 @@ export default function Globe({ features = [], onSelect, selectedIso3, panelOpen
   const max = useMemo(() => Math.max(0, ...Object.values(counts)), [counts])
 
   return (
+    <div className="globe-wrap">
     <GlobeGL
       ref={globeRef}
       width={width}
@@ -83,8 +86,17 @@ export default function Globe({ features = [], onSelect, selectedIso3, panelOpen
         const n = counts[f.properties.iso3] ?? 0
         return `<div class="globe-label"><b>${escapeHtml(f.properties.name_es)}</b><br>${n} noticias en 24 h</div>`
       }}
+      onZoom={({ altitude }) => {
+        initialAltitude.current ??= altitude
+        const now = isZoomedIn(altitude, initialAltitude.current)
+        if (now !== zoomed.current) {
+          zoomed.current = now
+          onZoomedChange?.(now)
+        }
+      }}
       onPolygonHover={setHovered}
       onPolygonClick={(f) => onSelect(f.properties.slug)}
     />
+    </div>
   )
 }
