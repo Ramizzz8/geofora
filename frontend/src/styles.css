@@ -407,7 +407,15 @@ a { color: var(--link); }
 }
 @keyframes hero-in { from { opacity: 0; translate: 0 14px; } }
 
-/* al pulsar el buscador se ilumina con fuerza (en cualquier modo) */
+/* al pasar el ratón el buscador se ilumina; al pulsarlo, con más fuerza (en cualquier modo) */
+.search input:hover:not(:focus) {
+  border-color: rgba(159, 212, 255, 0.8);
+  box-shadow: 0 0 0 2px rgba(124, 196, 255, 0.3), 0 0 26px 4px rgba(124, 196, 255, 0.35);
+}
+.app--hero .search input:hover:not(:focus) {
+  animation: none;
+  box-shadow: 0 0 0 3px rgba(124, 196, 255, 0.4), 0 0 40px 10px rgba(124, 196, 255, 0.45);
+}
 .search input { transition: font-size 0.5s ease, padding 0.5s ease, box-shadow 0.25s ease, border-color 0.25s ease, transform 0.25s ease; }
 .search input:focus {
   border-color: #9fd4ff;
