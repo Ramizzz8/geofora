@@ -12,9 +12,12 @@ import { OrgBanner } from './components/sections/OrganizationsSection'
 import { getOrganizations } from './api'
 import { useFetch } from './useFetch'
 import { useContarVisitas } from './useContarVisitas'
+import { useLang } from './i18n'
+import { pageTitle } from './pageTitle'
 
 function Home({ legal = false }) {
   const { slug } = useParams()
+  const { lang } = useLang()
   const navigate = useNavigate()
   const [features, setFeatures] = useState([])
   const [zoomed, setZoomed] = useState(false)
@@ -31,6 +34,12 @@ function Home({ legal = false }) {
 
   const selected = features.find((f) => f.properties.slug === slug)
   const goTo = (s) => navigate(`/pais/${s}`)
+
+  // en un país se espera a tener el mapa: mientras, vale el título que ya envió el servidor
+  useEffect(() => {
+    if (slug && !features.length) return
+    document.title = pageTitle({ lang, slug, country: selected?.properties, legal })
+  }, [lang, slug, legal, selected, features.length])
 
   // /pais/afganistán → /pais/afganistan, para que el globo encuentre el país
   useEffect(() => {

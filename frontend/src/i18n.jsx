@@ -5,6 +5,7 @@ const STORAGE_KEY = 'geofora:lang'
 const MESSAGES = {
   es: {
     tagline: 'El mundo, país a país',
+    titleCountry: '{name}: noticias, música y economía · GEOFORA',
     legalLink: 'Aviso legal y privacidad',
     searchLabel: 'Buscar país',
     searchPlaceholder: 'Buscar país…',
@@ -66,6 +67,7 @@ const MESSAGES = {
   },
   en: {
     tagline: 'The world, country by country',
+    titleCountry: '{name}: news, music and economy · GEOFORA',
     legalLink: 'Legal notice and privacy',
     searchLabel: 'Search country',
     searchPlaceholder: 'Search country…',
@@ -127,7 +129,7 @@ const MESSAGES = {
   },
 }
 
-function translator(lang) {
+export function translator(lang) {
   return (key, params = {}) =>
     String(MESSAGES[lang][key]).replace(/\{(\w+)\}/g, (_, name) => params[name] ?? '')
 }
