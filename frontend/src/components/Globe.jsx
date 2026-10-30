@@ -20,7 +20,7 @@ function useWindowSize() {
 const PANEL_SPACE = 570 // ancho del panel lateral + margen
 const MOBILE_LAT_SHIFT = 22
 
-export default function Globe({ features = [], onSelect, selectedIso3, panelOpen = false, onZoomedChange }) {
+export default function Globe({ features = [], onSelect, selectedIso3, panelOpen = false, onZoomedChange, highlight }) {
   const globeRef = useRef()
   const { w, h } = useWindowSize()
   // en escritorio el globo se aparta para no quedar tapado por el panel
@@ -60,6 +60,7 @@ export default function Globe({ features = [], onSelect, selectedIso3, panelOpen
   }, [selectedIso3, features])
 
   const max = useMemo(() => Math.max(0, ...Object.values(counts)), [counts])
+  const members = useMemo(() => new Set(highlight ?? []), [highlight])
 
   return (
     <div className="globe-wrap">
@@ -77,6 +78,8 @@ export default function Globe({ features = [], onSelect, selectedIso3, panelOpen
       polygonCapColor={(f) =>
         f.properties.iso3 === selectedIso3 ? 'rgba(124, 196, 255, 0.45)'
           : f === hovered ? 'rgba(169, 214, 255, 0.3)'
+            // miembros de la organización seleccionada: tienen prioridad sobre el mapa de calor
+            : members.size ? (members.has(f.properties.iso3) ? 'rgba(186, 150, 255, 0.62)' : 'rgba(0, 0, 0, 0)')
             : heatColor(counts[f.properties.iso3] ?? 0, max)}
       polygonSideColor={() => 'rgba(124, 196, 255, 0.15)'}
       polygonStrokeColor={() => 'rgba(255, 255, 255, 0.28)'}

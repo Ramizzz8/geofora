@@ -433,3 +433,58 @@ a { color: var(--link); }
   .app--hero .search input, .app--hero .brand h1, .app--hero .brand .tagline, .app--hero .search { animation: none; }
   .search input:focus { transform: none; }
 }
+
+/* Economía */
+.economy { margin: 0; padding: 0; list-style: none; }
+.economy li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: 'label spark' 'value spark';
+  align-items: center;
+  column-gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.eco-label { grid-area: label; font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.eco-value { grid-area: value; font-weight: 600; }
+.eco-year { font-weight: 400; font-size: 0.78rem; color: var(--muted); }
+.eco-year.old { color: var(--accent); }
+.sparkline { grid-area: spark; color: var(--link); }
+
+/* Organizaciones */
+.org-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.org-chip {
+  padding: 6px 12px;
+  border: 1px solid rgba(186, 150, 255, 0.4);
+  border-radius: 999px;
+  background: rgba(186, 150, 255, 0.08);
+  color: #e3d8ff;
+  font: 600 0.8rem Inter, sans-serif;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+.org-chip:hover { background: rgba(186, 150, 255, 0.18); }
+.org-chip[aria-pressed='true'] {
+  background: rgba(186, 150, 255, 0.35);
+  border-color: #c9b2ff;
+  box-shadow: 0 0 16px rgba(186, 150, 255, 0.45);
+}
+.org-banner {
+  position: fixed;
+  z-index: 4;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px 8px 16px;
+  border: 1px solid rgba(186, 150, 255, 0.5);
+  border-radius: 999px;
+  background: rgba(20, 14, 44, 0.9);
+  color: #e3d8ff;
+  font: 600 0.85rem Inter, sans-serif;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+}
+.org-banner button { width: 26px; height: 26px; border: 0; border-radius: 50%; background: rgba(255, 255, 255, 0.1); color: inherit; cursor: pointer; }
+.org-banner button:hover { background: rgba(255, 255, 255, 0.2); }

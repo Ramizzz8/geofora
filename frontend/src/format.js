@@ -62,3 +62,19 @@ const HTML_ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'
 export function escapeHtml(text) {
   return String(text).replace(/[&<>"']/g, (ch) => HTML_ESCAPES[ch])
 }
+
+const oneDecimal = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+const noDecimals = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0 })
+
+// Escalas en español: un billón es un millón de millones (10^12)
+const MONEY_SCALES = [[1e12, 'billones'], [1e9, 'mil millones'], [1e6, 'millones']]
+
+export function economyValue({ id, unit, value }) {
+  if (unit === 'pct') return `${oneDecimal.format(value)} %`
+  if (unit === 'pct_gdp') return `${oneDecimal.format(value)} % del PIB`
+  if (id === 'gdp') {
+    const [div, word] = MONEY_SCALES.find(([d]) => Math.abs(value) >= d) ?? [1, '']
+    return word ? `${oneDecimal.format(value / div)} ${word} de US$` : `${noDecimals.format(value)} US$`
+  }
+  return `${noDecimals.format(value)} US$`
+}

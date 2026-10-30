@@ -29,3 +29,5 @@ export const getNews = (slug) => get(`/country/${encodeURIComponent(slug)}/news`
 export const getMusic = (slug) => get(`/country/${encodeURIComponent(slug)}/music`)
 export const getCulture = (slug) => get(`/country/${encodeURIComponent(slug)}/culture`)
 export const getPhotos = (slug) => get(`/country/${encodeURIComponent(slug)}/photos`)
+export const getEconomy = (slug) => get(`/country/${encodeURIComponent(slug)}/economy`)
+export const getOrganizations = () => get('/organizations')
