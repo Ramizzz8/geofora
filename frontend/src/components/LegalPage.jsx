@@ -34,14 +34,23 @@ function Spanish() {
       </p>
 
       <h2>Política de privacidad</h2>
-      <p><b>GEOFORA no usa cookies</b> ni herramientas de analítica o publicidad y no tiene registro de usuarios ni
-        formularios. Lo único que guarda en tu navegador es el idioma que eliges, y no sale de él.</p>
+      <p><b>GEOFORA no usa cookies</b> ni publicidad y no tiene registro de usuarios ni formularios. Lo único que
+        guarda en tu navegador es el idioma que eliges, y no sale de él. Para saber cuántas visitas recibe usa una
+        estadística anónima, instalada en su propio servidor.</p>
       <h3>Qué datos se tratan</h3>
       <ul>
         <li>
           El servidor está alojado en Hetzner (Alemania, Unión Europea). Como en cualquier web, tu navegador envía
           tu dirección IP al conectarse, pero GEOFORA no la guarda: los registros técnicos de la aplicación no
           contienen la IP de quien visita y se sobrescriben por tamaño.
+        </li>
+        <li>
+          Las estadísticas de visitas se hacen con <Out href="https://www.goatcounter.com">GoatCounter</Out>, instalado
+          en ese mismo servidor, y los datos no se comparten con nadie. Se mide la página que visitas, la web desde la
+          que llegas, el nombre y la versión de tu navegador y sistema, el tamaño de tu pantalla y tu país. Se guardan
+          como totales por página y día, sin ningún identificador tuyo y sin un plazo de borrado automático. Tu IP se
+          recorta antes de llegar al contador, que usa esa versión recortada solo para deducir el país y para no contar
+          dos veces la misma visita durante un máximo de 8 horas.
         </li>
         <li>
           Al mostrar ciertos contenidos, tu navegador los descarga directamente de otros servicios, que reciben tu
@@ -93,14 +102,23 @@ function English() {
       </p>
 
       <h2>Privacy policy</h2>
-      <p><b>GEOFORA does not use cookies</b> or analytics or advertising tools, and has no user accounts or forms.
-        The only thing it stores in your browser is the language you choose, and it never leaves your browser.</p>
+      <p><b>GEOFORA does not use cookies</b> or advertising, and has no user accounts or forms. The only thing it
+        stores in your browser is the language you choose, and it never leaves your browser. To know how many visits
+        it receives, it uses anonymous statistics installed on its own server.</p>
       <h3>What data is processed</h3>
       <ul>
         <li>
           The server is hosted by Hetzner (Germany, European Union). As with any website, your browser sends your IP
           address when connecting, but GEOFORA does not store it: the application&apos;s technical logs do not contain
           visitors&apos; IP addresses and are overwritten by size.
+        </li>
+        <li>
+          Visit statistics are handled by <Out href="https://www.goatcounter.com">GoatCounter</Out>, installed on that
+          same server, and the data is not shared with anyone. It measures the page you visit, the website you came
+          from, the name and version of your browser and operating system, your screen size and your country. These are
+          stored as totals per page and day, with no identifier of yours and no automatic deletion period. Your IP
+          address is shortened before it reaches the counter, which uses the shortened version only to work out your
+          country and to avoid counting the same visit twice for up to 8 hours.
         </li>
         <li>
           To show some content, your browser downloads it directly from other services, which receive your IP under

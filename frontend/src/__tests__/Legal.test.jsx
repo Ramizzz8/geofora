@@ -19,6 +19,7 @@ test('la política de privacidad explica que no hay cookies y qué terceros reci
   for (const tercero of ['flagcdn.com', 'Wikimedia', 'Deezer']) {
     expect(screen.getAllByText(new RegExp(tercero)).length).toBeGreaterThan(0)
   }
+  expect(screen.getByRole('link', { name: 'GoatCounter' })).toHaveAttribute('href', 'https://www.goatcounter.com')
   expect(screen.getByRole('link', { name: /Agencia Española de Protección de Datos/ })).toHaveAttribute('href', 'https://www.aepd.es')
 })
 

@@ -11,6 +11,7 @@ import SiteFooter from './components/SiteFooter'
 import { OrgBanner } from './components/sections/OrganizationsSection'
 import { getOrganizations } from './api'
 import { useFetch } from './useFetch'
+import { useContarVisitas } from './useContarVisitas'
 
 function Home({ legal = false }) {
   const { slug } = useParams()
@@ -64,6 +65,7 @@ function Home({ legal = false }) {
 }
 
 export default function App() {
+  useContarVisitas()
   return (
     <Routes>
       <Route path="/" element={<Home />} />
