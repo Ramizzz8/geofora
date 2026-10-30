@@ -1,5 +1,5 @@
 const CONTACT = 'ajulianrague@gmail.com'
-const UPDATED = '31 de octubre de 2026'
+const UPDATED = '30 de octubre de 2026'
 
 export default function LegalPage({ onClose }) {
   return (
