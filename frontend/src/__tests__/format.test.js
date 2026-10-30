@@ -28,3 +28,10 @@ test('slug canónico sin tildes, mayúsculas ni espacios', () => {
 test('escapa HTML para la etiqueta del globo', () => {
   expect(escapeHtml('<img src=x onerror=alert(1)> & "a"')).toBe('&lt;img src=x onerror=alert(1)&gt; &amp; &quot;a&quot;')
 })
+
+test('la moneda lleva su símbolo cuando lo hay y no repite el código', () => {
+  expect(currencyNames(['JPY'], ['¥'])).toBe('Yen japonés (¥)')
+  expect(currencyNames(['MAD'], ['د.م.'])).toBe('Dírham marroquí (د.م.)')
+  expect(currencyNames(['XYZ'], ['XYZ'])).toBe('XYZ')
+  expect(currencyNames(['EUR'], [])).toBe('Euro')
+})

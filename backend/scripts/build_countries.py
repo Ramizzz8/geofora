@@ -50,6 +50,7 @@ def to_country(r: dict) -> Country:
         timezones=r.get("timezones") or [],
         flag_svg=(r.get("flags") or {}).get("svg"),
         language_codes=list((r.get("languages") or {}).keys()),
+        currency_symbols=[c.get("symbol", "") for c in (r.get("currencies") or {}).values()],
     )
 
 

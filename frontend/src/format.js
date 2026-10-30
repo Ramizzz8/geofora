@@ -43,8 +43,12 @@ export function languageNames(codes, names) {
   }).join(', '))
 }
 
-export function currencyNames(codes) {
-  return capitalize(codes.map((c) => currencyNamesEs.of(c) ?? c).join(', '))
+export function currencyNames(codes, symbols = []) {
+  return capitalize(codes.map((c, i) => {
+    const name = currencyNamesEs.of(c) ?? c
+    const symbol = symbols[i]
+    return symbol && symbol !== c ? `${name} (${symbol})` : name
+  }).join(', '))
 }
 
 // Misma normalización que slugify en el backend

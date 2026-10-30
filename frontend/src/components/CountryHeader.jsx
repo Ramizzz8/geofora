@@ -4,7 +4,7 @@ export default function CountryHeader({ country, cover }) {
   const facts = [
     ['Capital', country.capital],
     ['Idiomas', languageNames(country.language_codes, country.languages)],
-    ['Moneda', currencyNames(country.currencies)],
+    ['Moneda', currencyNames(country.currencies, country.currency_symbols)],
     ['Población', country.population?.toLocaleString('es-ES')],
     ['Hora local', localTime(country.timezones[0])],
   ].filter(([, v]) => v)

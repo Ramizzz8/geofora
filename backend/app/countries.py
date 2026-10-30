@@ -20,6 +20,8 @@ class Country:
     flag_svg: str | None
     # ISO 639-3, en el mismo orden que languages: el frontend los traduce al español
     language_codes: list[str] = field(default_factory=list)
+    # en el mismo orden que currencies
+    currency_symbols: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)

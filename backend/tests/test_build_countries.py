@@ -7,7 +7,7 @@ REST = [
         "translations": {"spa": {"common": "Afganistán"}},
         "capital": ["Kabul"],
         "languages": {"prs": "Dari", "pus": "Pashto"},
-        "currencies": {"AFN": {"name": "Afghan afghani"}},
+        "currencies": {"AFN": {"name": "Afghan afghani", "symbol": "؋"}},
         "population": 40218234,
         "timezones": ["UTC+04:30"],
         "flags": {"svg": "https://flagcdn.com/af.svg"},
@@ -49,6 +49,7 @@ def test_merge_builds_countries_from_rest():
     assert afg.languages == ["Dari", "Pashto"]
     assert afg.language_codes == ["prs", "pus"]
     assert afg.currencies == ["AFN"]
+    assert afg.currency_symbols == ["؋"]
 
 
 def test_merge_uses_adm0_when_iso_missing():
