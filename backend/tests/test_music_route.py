@@ -25,7 +25,8 @@ def test_music_route_shape(client):
 def test_music_route_points_preview_to_our_server(client):
     respx.get(MB_URL).mock(return_value=httpx.Response(200, json={"artists": [{"id": "mb1", "name": "Hikaru Utada"}]}))
     respx.get(DEEZER_URL).mock(return_value=httpx.Response(200, json={"data": [
-        {"id": 3135556, "preview": "https://cdnt-preview.dzcdn.net/a.mp3?hdnea=exp=1", "link": "https://deezer.com/track/3135556"}]}))
+        {"id": 3135556, "preview": "https://cdnt-preview.dzcdn.net/a.mp3?hdnea=exp=1", "link": "https://deezer.com/track/3135556",
+         "artist": {"name": "Hikaru Utada"}}]}))
     item = client.get("/api/country/japon/music").json()["items"][0]
     assert item["preview_url"] == "/api/music/preview/3135556"
 

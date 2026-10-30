@@ -1,8 +1,71 @@
+import { useEffect, useRef, useState } from 'react'
 import { getMusic } from '../../api'
 import { useFetch } from '../../useFetch'
 import Section from './Section'
 
 const SOURCES = { chart: 'Last.fm · Deezer', artists: 'MusicBrainz · Deezer' }
+const listeners = new Intl.NumberFormat('es-ES')
+
+function Track({ t, rank, playing, progress, onToggle }) {
+  const name = t.title ?? t.artist
+  return (
+    <li className={`track ${playing ? 'track--playing' : ''}`}>
+      <span className="track-rank">{rank}</span>
+      <div className="track-cover">
+        {t.image ? <img src={t.image} alt="" loading="lazy" /> : <span className="track-cover-empty">♪</span>}
+        {t.preview_url && (
+          <button type="button" className="track-play" onClick={onToggle}
+            aria-label={`${playing ? 'Pausar' : 'Reproducir'} ${name}`} aria-pressed={playing}>
+            {playing ? <span className="eq" aria-hidden="true"><i /><i /><i /></span> : <span aria-hidden="true">▶</span>}
+          </button>
+        )}
+      </div>
+      <div className="track-info">
+        <a href={t.link} target="_blank" rel="noopener noreferrer" className="track-title">{name}</a>
+        <span className="track-meta">
+          {t.listeners != null && <span className="track-listeners">{`${listeners.format(t.listeners)} oyentes`}</span>}
+          {t.title && <span>{t.artist}</span>}
+        </span>
+        {playing && <span className="track-progress" style={{ '--p': progress }} aria-hidden="true" />}
+      </div>
+    </li>
+  )
+}
+
+function TrackList({ items }) {
+  const audio = useRef(null)
+  const [playing, setPlaying] = useState(null)
+  const [progress, setProgress] = useState(0)
+
+  useEffect(() => () => audio.current?.pause(), [])
+
+  const toggle = (i) => {
+    const el = audio.current
+    if (playing === i) {
+      el.pause()
+      setPlaying(null)
+      return
+    }
+    el.src = items[i].preview_url
+    setProgress(0)
+    setPlaying(i)
+    el.play().catch(() => setPlaying(null))
+  }
+
+  return (
+    <>
+      {/* un solo reproductor para toda la lista: al pulsar otra canción, la anterior se para */}
+      <audio ref={audio} preload="none" onEnded={() => setPlaying(null)}
+        onTimeUpdate={(e) => setProgress(e.currentTarget.currentTime / (e.currentTarget.duration || 30))} />
+      <ol className="tracks">
+        {items.map((t, i) => (
+          <Track key={`${t.artist}-${t.title}-${i}`} t={t} rank={i + 1} playing={playing === i}
+            progress={progress} onToggle={() => toggle(i)} />
+        ))}
+      </ol>
+    </>
+  )
+}
 
 export default function MusicSection({ slug }) {
   const state = useFetch(getMusic, slug)
@@ -13,16 +76,7 @@ export default function MusicSection({ slug }) {
       ) : (
         <>
           {data.source === 'artists' && <p className="muted small">Artistas de este país</p>}
-          <ol className="tracks">
-            {data.items.map((t, i) => (
-              <li key={`${t.artist}-${t.title}-${i}`}>
-                <a href={t.link} target="_blank" rel="noopener noreferrer">
-                  {t.title ? <><b>{t.title}</b> · {t.artist}</> : <b>{t.artist}</b>}
-                </a>
-                {t.preview_url && <audio controls preload="none" src={t.preview_url} />}
-              </li>
-            ))}
-          </ol>
+          <TrackList items={data.items} />
           <p className="source">Fuente: {SOURCES[data.source]}</p>
         </>
       )}

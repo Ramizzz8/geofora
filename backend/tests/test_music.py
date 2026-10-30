@@ -9,13 +9,14 @@ from app.music import DEEZER_URL, LASTFM_URL, MB_URL, get_music
 AFG = Country("AFG", "AF", "afganistan", "Afganistán", "Afghanistan", "Kabul", [], [], None, [], None)
 
 LASTFM_CHART = {"tracks": {"track": [
-    {"name": "Song A", "artist": {"name": "Artist A"}, "url": "https://last.fm/a"},
+    {"name": "Song A", "artist": {"name": "Artist A"}, "url": "https://last.fm/a", "listeners": "58213"},
     {"name": "Song B", "artist": {"name": "Artist B"}, "url": "https://last.fm/b"},
 ]}}
 LASTFM_EMPTY = {"tracks": {"track": []}}
 MB_ARTISTS = {"artists": [{"id": "mb1", "name": "Ahmad Zahir"}]}
 DEEZER_HIT = {"data": [{"id": 3135556, "preview": "https://cdn.deezer/p.mp3?hdnea=exp=1", "link": "https://deezer.com/track/1",
-                         "artist": {"name": "Artist A"}}]}
+                         "artist": {"name": "Artist A", "picture_medium": "https://img/artist.jpg"},
+                         "album": {"cover_medium": "https://img/cover.jpg"}}]}
 
 
 @pytest.fixture
@@ -35,7 +36,7 @@ async def test_chart_with_previews(conn):
     first = r.value["items"][0]
     # se guarda el id de Deezer, no el enlace del fragmento, que caduca en ~1 h
     assert first == {"title": "Song A", "artist": "Artist A", "deezer_id": 3135556,
-                     "link": "https://deezer.com/track/1"}
+                     "link": "https://deezer.com/track/1", "listeners": 58213, "image": "https://img/cover.jpg"}
 
 
 @respx.mock
@@ -47,7 +48,7 @@ async def test_falls_back_to_artists(conn):
         r = await get_music(conn, client, AFG, "key")
     assert mb.calls.last.request.url.params["query"] == 'area:"Afghanistan"'
     assert r.value["source"] == "artists"
-    assert r.value["items"] == [{"title": None, "artist": "Ahmad Zahir", "deezer_id": None,
+    assert r.value["items"] == [{"title": None, "artist": "Ahmad Zahir", "deezer_id": None, "listeners": None, "image": None,
                                  "link": "https://musicbrainz.org/artist/mb1"}]
 
 
@@ -127,3 +128,35 @@ async def test_track_search_uses_plain_query_and_checks_artist(conn):
         r = await get_music(conn, client, AFG, "key")
     assert "Tate McRae Housewife" in [c.request.url.params["q"] for c in route.calls]
     assert [i["deezer_id"] for i in r.value["items"]] == [7, None]
+
+
+@respx.mock
+async def test_artist_mode_uses_artist_picture(conn):
+    respx.get(LASTFM_URL).mock(return_value=httpx.Response(200, json=LASTFM_EMPTY))
+    respx.get(MB_URL).mock(return_value=httpx.Response(200, json=MB_ARTISTS))
+    respx.get(DEEZER_URL).mock(return_value=httpx.Response(200, json={"data": [{
+        "id": 5, "preview": "https://p/5.mp3", "link": "https://deezer.com/track/5",
+        "artist": {"name": "Ahmad Zahir", "picture_medium": "https://img/zahir.jpg"},
+        "album": {"cover_medium": "https://img/album.jpg"}}]}))
+    async with httpx.AsyncClient() as client:
+        r = await get_music(conn, client, AFG, "key")
+    assert r.value["items"][0]["image"] == "https://img/zahir.jpg"
+
+
+@respx.mock
+async def test_artist_mode_uses_plain_query_and_checks_artist(conn):
+    respx.get(LASTFM_URL).mock(return_value=httpx.Response(200, json=LASTFM_EMPTY))
+    respx.get(MB_URL).mock(return_value=httpx.Response(200, json={"artists": [
+        {"id": "a", "name": "Vicente Fernández"}, {"id": "b", "name": "Nadie"}]}))
+
+    def deezer(request):
+        q = request.url.params["q"]
+        name = "Vicente Fernández" if q == "Vicente Fernández" else "Otro Artista"
+        return httpx.Response(200, json={"data": [{"id": 1 if name.startswith("V") else 2, "preview": "https://p.mp3",
+                                                   "link": "https://d", "artist": {"name": name, "picture_medium": "https://img"}}]})
+
+    route = respx.get(DEEZER_URL).mock(side_effect=deezer)
+    async with httpx.AsyncClient() as client:
+        r = await get_music(conn, client, AFG, "")
+    assert "Vicente Fernández" in [c.request.url.params["q"] for c in route.calls]
+    assert [i["deezer_id"] for i in r.value["items"]] == [1, None]
