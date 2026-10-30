@@ -7,6 +7,7 @@ from fastapi.responses import RedirectResponse
 
 from app.countries import Country
 from app.culture import get_culture
+from app.economy import get_economy
 from app.music import fresh_preview, get_music
 from app.photos import get_photos
 from app.news.store import heatmap, last_seen, recent_articles
@@ -108,4 +109,16 @@ async def get_country_photos(request: Request, slug: str):
     except Exception:
         log.warning("photos unavailable for %s", country.iso3, exc_info=True)
         raise unavailable("Fotos")
+    return result.to_response()
+
+
+@router.get("/country/{slug}/economy")
+async def get_country_economy(request: Request, slug: str):
+    country = get_country_or_404(request, slug)
+    state = request.app.state
+    try:
+        result = await get_economy(state.db, state.http, country)
+    except Exception:
+        log.warning("economy unavailable for %s", country.iso3, exc_info=True)
+        raise unavailable("Economía")
     return result.to_response()
