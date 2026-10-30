@@ -69,3 +69,23 @@ test('muestra cuándo se actualizaron las noticias', async () => {
   render(<NewsSection slug="japon" />)
   expect(await screen.findByText(/Actualizado hace 20 minutos/)).toBeInTheDocument()
 })
+
+test('con muchas noticias muestra unas pocas y un botón para ver el resto', async () => {
+  const { default: userEvent } = await import('@testing-library/user-event')
+  const muchas = Array.from({ length: 20 }, (_, i) => withImage(i + 1, i === 0 ? 'https://img/1.jpg' : null))
+  mockApi({ '/api/country/japon/news': { range: '48h', updated_at: NOW_S, articles: muchas } })
+  const { container } = render(<NewsSection slug="japon" />)
+  await screen.findByText('Titular 1')
+  // la destacada + 6 tarjetas
+  expect(container.querySelectorAll('.news-card')).toHaveLength(6)
+  await userEvent.click(screen.getByRole('button', { name: 'Ver más noticias (13)' }))
+  expect(container.querySelectorAll('.news-card')).toHaveLength(19)
+  expect(screen.getByRole('button', { name: 'Ver menos' })).toBeInTheDocument()
+})
+
+test('con pocas noticias no aparece el botón', async () => {
+  mockApi({ '/api/country/japon/news': { range: '48h', updated_at: NOW_S, articles: [withImage(1, null), withImage(2, null)] } })
+  render(<NewsSection slug="japon" />)
+  await screen.findByText('Titular 1')
+  expect(screen.queryByRole('button', { name: /Ver más/ })).toBeNull()
+})

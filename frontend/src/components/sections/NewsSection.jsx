@@ -7,6 +7,8 @@ import Section from './Section'
 // tonos para las tarjetas sin foto: cada medio conserva siempre el mismo
 const TEXT_CARD_HUES = [210, 265, 330, 20, 160, 45]
 
+const VISIBLE_CARDS = 6 // además de la destacada; el resto, al pulsar «Ver más»
+
 function hueFor(domain) {
   let h = 0
   for (const ch of domain) h = (h * 31 + ch.charCodeAt(0)) >>> 0
@@ -49,6 +51,22 @@ function NewsCard({ a, hero = false }) {
   )
 }
 
+function NewsGrid({ articles }) {
+  const [expanded, setExpanded] = useState(false)
+  const hidden = articles.length - VISIBLE_CARDS
+  const shown = expanded ? articles : articles.slice(0, VISIBLE_CARDS)
+  return (
+    <>
+      <div className="news-grid">{shown.map((a) => <NewsCard key={a.url} a={a} />)}</div>
+      {hidden > 0 && (
+        <button type="button" className="more-button" onClick={() => setExpanded(!expanded)}>
+          {expanded ? 'Ver menos' : `Ver más noticias (${hidden})`}
+        </button>
+      )}
+    </>
+  )
+}
+
 export default function NewsSection({ slug }) {
   const state = useFetch(getNews, slug)
   return (
@@ -62,7 +80,7 @@ export default function NewsSection({ slug }) {
             {data.updated_at && <p className="muted small">Actualizado {timeAgo(data.updated_at)}</p>}
             {data.range === '7d' && <p className="muted small">Mostrando noticias de los últimos 7 días</p>}
             {hero && <NewsCard a={hero} hero />}
-            <div className="news-grid">{rest.map((a) => <NewsCard key={a.url} a={a} />)}</div>
+            <NewsGrid articles={rest} />
             <p className="source">Fuente: GDELT Project · las fotos pertenecen a cada medio</p>
           </>
         )
