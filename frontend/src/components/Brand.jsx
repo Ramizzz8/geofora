@@ -54,6 +54,7 @@ export default function Brand() {
         <span aria-hidden="true">FORA</span>
       </h1>
       <p className="tagline">{t('tagline')}</p>
+      <p className="promise">{t('promise')}</p>
     </header>
   )
 }

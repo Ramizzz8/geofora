@@ -4,7 +4,8 @@ const STORAGE_KEY = 'geofora:lang'
 
 const MESSAGES = {
   es: {
-    tagline: 'El mundo, país a país',
+    tagline: 'El monitor de actualidad internacional',
+    promise: 'Noticias de todo el mundo, país a país y traducidas al español.',
     titleCountry: '{name}: noticias, música y economía · GEOFORA',
     legalLink: 'Aviso legal y privacidad',
     searchLabel: 'Buscar país',
@@ -66,7 +67,8 @@ const MESSAGES = {
     suggestions: ['Japón', 'Sudán', 'Perú', 'Mongolia', 'Islandia', 'Kenia', 'Vietnam', 'Marruecos'],
   },
   en: {
-    tagline: 'The world, country by country',
+    tagline: 'The international news monitor',
+    promise: 'News from around the world, country by country, translated into English.',
     titleCountry: '{name}: news, music and economy · GEOFORA',
     legalLink: 'Legal notice and privacy',
     searchLabel: 'Search country',

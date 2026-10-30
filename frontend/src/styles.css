@@ -41,6 +41,7 @@ a { color: var(--link); }
   z-index: 3;
 }
 .brand .tagline { margin: 6px 0 0; color: var(--muted); font-size: 0.85rem; min-height: 1.2em; }
+.brand .promise { display: none; } /* solo en la portada */
 
 /* Título: fuente geométrica ancha y la O como planeta con satélite */
 .brand h1 {
@@ -386,6 +387,7 @@ a { color: var(--link); }
   .app--hero .brand h1 { font-size: 4.2rem; }
   .app--hero .orbit-o { filter: drop-shadow(0 0 14px rgba(80, 150, 255, 0.8)); }
   .app--hero .brand .tagline { margin-top: 16px; font-size: 1.25rem; letter-spacing: 0.02em; color: #b9c6e4; }
+  .app--hero .brand .promise { display: block; max-width: 460px; margin: 8px 0 0; color: var(--muted); font-size: 1rem; line-height: 1.4; }
   .app--hero .search { top: calc(50% + 14px); left: 64px; width: 460px; }
   .app--hero .search input {
     padding: 18px 26px;
@@ -395,7 +397,7 @@ a { color: var(--link); }
   }
   /* el globo se aparta a la derecha para dejar sitio al logo y al buscador */
   .app--hero .globe-wrap { transform: translateX(min(17vw, 260px)); }
-  .app--hero .brand h1, .app--hero .brand .tagline, .app--hero .search { animation: hero-in 0.8s ease-out both; }
+  .app--hero .brand h1, .app--hero .brand .tagline, .app--hero .brand .promise, .app--hero .search { animation: hero-in 0.8s ease-out both; }
   .app--hero .search { animation-delay: 0.15s; }
 }
 
@@ -428,7 +430,7 @@ a { color: var(--link); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .app--hero .search input, .app--hero .brand h1, .app--hero .brand .tagline, .app--hero .search { animation: none; }
+  .app--hero .search input, .app--hero .brand h1, .app--hero .brand .tagline, .app--hero .brand .promise, .app--hero .search { animation: none; }
   .search input:focus { transform: none; }
 }
 

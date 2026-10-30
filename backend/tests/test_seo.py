@@ -92,7 +92,7 @@ def test_values_are_escaped(web):
 
 def test_home_and_legal_have_their_own_metadata(web):
     home = web.get("/").text
-    assert "<title>GEOFORA: el mundo, país a país</title>" in home
+    assert "<title>GEOFORA: el monitor de actualidad internacional</title>" in home
     assert f'<link rel="canonical" href="{SITE}/"' in home
     legal = web.get("/legal").text
     assert "<title>Aviso legal y privacidad · GEOFORA</title>" in legal

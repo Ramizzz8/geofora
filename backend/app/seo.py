@@ -39,8 +39,8 @@ def robots_txt(site_url: str) -> str:
 
 def home_meta(site_url: str) -> PageMeta:
     return PageMeta(
-        title=f"{SITE_NAME}: el mundo, país a país",
-        description="Explora el mundo en un globo 3D: noticias, música, economía, cultura y fotos de cada país.",
+        title=f"{SITE_NAME}: el monitor de actualidad internacional",
+        description="Noticias de todo el mundo, país a país y traducidas al español, con la economía, la música y la cultura de cada lugar.",
         url=f"{site_url}/",
     )
 
@@ -57,7 +57,7 @@ def country_meta(site_url: str, country: Country) -> PageMeta:
     name = country.name_es
     return PageMeta(
         title=f"{name}: noticias, música y economía · {SITE_NAME}",
-        description=f"Últimas noticias, música, economía, cultura y fotos de {name} en GEOFORA, el mundo en un globo 3D.",
+        description=f"Últimas noticias de {name} traducidas al español, con su economía, música, cultura y fotos, en GEOFORA, el monitor de actualidad internacional.",
         url=f"{site_url}/pais/{country.slug}",
         # las redes sociales no admiten el SVG de la bandera
         image=f"https://flagcdn.com/w640/{country.iso2.lower()}.png" if country.iso2 else None,

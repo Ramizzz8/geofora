@@ -6,7 +6,7 @@ test('el título es GEOFORA con la O como planeta en órbita', () => {
   const { container } = render(<Brand />)
   expect(screen.getByRole('heading', { name: 'GEOFORA' })).toBeInTheDocument()
   expect(container.querySelector('.orbit-o animateMotion')).not.toBeNull()
-  expect(screen.getByText('El mundo, país a país')).toBeInTheDocument()
+  expect(screen.getByText('El monitor de actualidad internacional')).toBeInTheDocument()
 })
 
 test('ya no hay botón para cambiar el estilo del título', () => {
