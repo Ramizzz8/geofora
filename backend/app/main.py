@@ -25,6 +25,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     async def lifespan(app: FastAPI):
         app.state.settings = settings
         app.state.countries = CountryIndex(load_countries(settings.countries_path))
+        # junto a countries.json: miembros de cada organización (scripts/build_organizations.py)
+        app.state.organizations = json.loads(
+            Path(settings.countries_path).with_name("organizations.json").read_text(encoding="utf-8"))
         app.state.db = connect(settings.db_path)
         init_db(app.state.db)
         app.state.http = get_client()

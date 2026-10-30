@@ -39,6 +39,11 @@ async def get_country(request: Request, slug: str):
     return get_country_or_404(request, slug).to_dict()
 
 
+@router.get("/organizations")
+async def list_organizations(request: Request):
+    return request.app.state.organizations
+
+
 @router.get("/heatmap")
 async def get_heatmap(request: Request):
     db = request.app.state.db

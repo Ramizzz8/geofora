@@ -110,3 +110,10 @@ def test_economy_route(client):
     body = client.get("/api/country/japon/economy").json()
     assert body["indicators"][0]["label"] == "PIB"
     assert body["stale"] is False
+
+
+def test_organizations_route(client):
+    body = client.get("/api/organizations").json()
+    otan = next(o for o in body["organizations"] if o["id"] == "otan")
+    assert otan["short"] == "OTAN" and "ESP" in otan["members"]
+    assert body["generated"]
